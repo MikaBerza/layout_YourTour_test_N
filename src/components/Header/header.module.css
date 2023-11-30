@@ -1,0 +1,133 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 999;
+  display: block;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1168px;
+  margin: auto;
+  padding: 27px 57px 29px;
+}
+
+.linkLogo {
+  margin-right: auto;
+  padding-right: 10px;
+}
+
+.linkTelephoneNumber {
+  margin-left: auto;
+  padding-left: 10px;
+}
+
+.logoYourTour,
+.logoTelephoneNumber {
+  fill: var(--white-color);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 468px;
+  margin: 0;
+  padding: 0 0 4px 0;
+  list-style-type: none;
+}
+
+.menuItem:not(:last-child) {
+  padding-right: 10px;
+}
+
+.menuLink {
+  font-size: 20px;
+  white-space: nowrap;
+  color: var(--white-color);
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.menuLink:hover {
+  border-bottom: 1px solid var(--white-color)
+}
+
+.scrolled-fix-bgn {
+  position: fixed;
+  background-color: rgba(243, 239, 232, 0.6);
+  backdrop-filter: blur(27px);
+
+  animation: appearing 2s;
+}
+
+@keyframes appearing {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.scrolled-color {
+  color: var(--black-color);
+  fill: var(--black-color);
+}
+
+.scrolled-hover:hover {
+  border-bottom: 1px solid var(--black-color)
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    max-width: 408px;
+  }
+
+  .menuLink {
+    font-size: 20px;
+  }
+
+  .logoYourTour {
+    width: 181.828px;
+  }
+
+  .logoTelephoneNumber {
+    width: 155px;
+  }
+}
+
+@media (max-width: 770px) {
+  .navbar {
+    padding: 20px 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .logoYourTour {
+    width: 133px;
+  }
+
+  .logoTelephoneNumber {
+    width: 124px;
+  }
+}
+
+@media (max-width: 359px) {
+  .logoYourTour {
+    width: 113px;
+  }
+
+  .logoTelephoneNumber {
+    width: 104px;
+  }
+}

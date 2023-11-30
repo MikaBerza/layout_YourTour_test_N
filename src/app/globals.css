@@ -65,7 +65,7 @@ a {
 }
 
 /*___heading___*/
-.heading {
+/* .heading {
   position: absolute;
   top: 0;
   left: 50%;
@@ -149,7 +149,7 @@ a {
 
 .scrolled-hover:hover {
   border-bottom: 1px solid var(--black-color)
-}
+} */
 
 /*___greeting___*/
 .greeting {
