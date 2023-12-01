@@ -1067,7 +1067,7 @@ a {
 }
 
 /*___footers___*/
-.footers {
+/* .footers {
   display: flex;
   flex-direction: column;
 }
@@ -1183,14 +1183,14 @@ a {
 .footers-social-network__link:hover {
   border-bottom: 1px solid var(--black-color);
   cursor: pointer;
-}
+} */
 
 /*___media___*/
 @media (max-width: 1024px) {
 
   /*  */
   /* __heading__ */
-  .navbar__menu {
+  /* .navbar__menu {
     max-width: 408px;
   }
 
@@ -1204,7 +1204,7 @@ a {
 
   .navbar__telephoneNumber-item {
     width: 155px;
-  }
+  } */
 
   /*  */
   /* __greeting__ */
@@ -1456,7 +1456,7 @@ a {
 
   /*  */
   /* __footer__ */
-  .footers-card__img {
+  /* .footers-card__img {
     height: 370px;
     border-radius: 50px;
   }
@@ -1477,7 +1477,7 @@ a {
 
   .footers-social-network__icon {
     margin-right: 6px;
-  }
+  } */
 
 }
 
@@ -1494,13 +1494,13 @@ a {
 
   /*  */
   /* __heading__ */
-  .navbar {
+  /* .navbar {
     padding: 20px 20px;
   }
 
   .navbar__menu {
     display: none;
-  }
+  } */
 
   /*  */
   /* __greeting__ */
@@ -1635,7 +1635,7 @@ a {
 
   /*  */
   /* __footer__ */
-  .footers-card__img {
+  /* .footers-card__img {
     width: 270px;
   }
 
@@ -1650,7 +1650,7 @@ a {
 
   .footers-social-network__title {
     margin-bottom: 8px;
-  }
+  } */
 }
 
 /*660px___________________________________________________*/
@@ -1694,13 +1694,13 @@ a {
 
   /*  */
   /* __heading__ */
-  .navbar__logo-YourTour {
+  /* .navbar__logo-YourTour {
     width: 133px;
   }
 
   .navbar__telephoneNumber-item {
     width: 124px;
-  }
+  } */
 
   /*  */
   /* __greeting__*/
@@ -2007,7 +2007,7 @@ a {
 
   /*  */
   /* __footer__ */
-  .footers-card {
+  /* .footers-card {
     flex-direction: column;
     padding: 75px 30px;
   }
@@ -2052,7 +2052,7 @@ a {
     width: 20px;
     height: 20px;
     margin-right: 5px;
-  }
+  } */
 }
 
 /*359px___________________________________________________*/
@@ -2068,13 +2068,13 @@ a {
 
   /*  */
   /* __heading__ */
-  .navbar__logo-YourTour {
+  /* .navbar__logo-YourTour {
     width: 113px;
   }
 
   .navbar__telephoneNumber-item {
     width: 104px;
-  }
+  } */
 
   /*  */
   /* __collect-tour__ */
@@ -2093,7 +2093,7 @@ a {
 
   /*  */
   /* __footer__ */
-  .footers-card__text,
+  /* .footers-card__text,
   .footers-social-network__title,
   .footers-social-network__link {
     font-size: 12px;
@@ -2107,5 +2107,5 @@ a {
     width: 15px;
     height: 15px;
     margin-right: 2px;
-  }
+  } */
 }

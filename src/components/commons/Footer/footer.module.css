@@ -1,0 +1,239 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 771px;
+  margin: auto;
+  padding: 135px 30px 135px 30px;
+}
+
+.cardImg {
+  width: 370px;
+  height: 370px;
+  background-image: url('../../../../public/images/footersPhoto.png');
+  border-radius: 50px;
+}
+
+.cardContent {
+  margin-left: 30px;
+}
+
+.cardTitle {
+  max-width: 371px;
+  margin: 0 0 20px 0;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 122%;
+  color: var(--black-color);
+}
+
+.cardText {
+  max-width: 371px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 142%;
+  color: var(--gray300-color);
+}
+
+.cardEmail {
+  padding-left: 5px;
+  color: var(--black-color);
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.cardEmail:hover {
+  color: var(--black-color);
+  border-bottom: 1px solid var(--black-color);
+}
+
+.cardEmail:active {
+  color: var(--green400-color);
+  border-bottom: 1px solid var(--green400-color);
+}
+
+.socials {
+  padding: 30px 0;
+  background: var(--beige200-color);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1168px;
+  margin: auto;
+  padding: 0 53px;
+}
+
+.socialsTitle {
+  max-width: 222px;
+  color: var(--gray300-color);
+}
+
+.socialsTitle,
+.socialsLink {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 142%;
+}
+
+.socialsName {
+  display: flex;
+  max-width: 500px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.socialsBox {
+  display: flex;
+}
+
+.socialsBox:not(:last-child) {
+  margin-right: 30px;
+}
+
+.socialsIcon {
+  display: block;
+  margin-right: 6px;
+}
+
+.socialsLink {
+  display: block;
+  color: var(--black-color);
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.socialsLink:hover {
+  border-bottom: 1px solid var(--black-color);
+  cursor: pointer;
+}
+
+/*___media___*/
+@media (max-width: 1024px) {
+
+  .cardImg {
+    height: 370px;
+    border-radius: 50px;
+  }
+
+  .cardTitle {
+    font-size: 35px;
+  }
+
+  .cardText,
+  .socialsTitle,
+  .socialsLink {
+    font-size: 20px;
+  }
+
+  .socials {
+    padding: 32px 0;
+  }
+
+  .socialsIcon {
+    margin-right: 6px;
+  }
+
+}
+
+/*770px___________________________________________________*/
+@media (max-width: 770px) {
+
+  .cardImg {
+    width: 245px;
+  }
+
+
+  .cardTitle {
+    font-size: 30px;
+  }
+
+  .inner {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .socialsTitle {
+    margin-bottom: 8px;
+  }
+}
+
+/*550px___________________________________________________*/
+@media (max-width: 550px) {
+
+  .card {
+    flex-direction: column;
+    padding: 75px 30px;
+  }
+
+  .cardImg {
+    width: 130px;
+    height: 133px;
+    border-radius: 20px;
+  }
+
+  .cardContent {
+    margin: 32px 0 0 0;
+    text-align: center;
+  }
+
+  .cardTitle {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.92px;
+  }
+
+  .cardText,
+  .socialsTitle,
+  .socialsLink {
+    font-size: 16px;
+  }
+
+  .socials {
+    padding: 21px;
+  }
+
+  .socialsName {
+    padding-left: 0px;
+  }
+
+  .socialsBox:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .socialsIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+}
+
+/*359px___________________________________________________*/
+@media (max-width: 359px) {
+
+  .cardText,
+  .socialsTitle,
+  .socialsLink {
+    font-size: 12px;
+  }
+
+  .socialsBox:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  .socialsIcon {
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+  }
+}
