@@ -1,5 +1,47 @@
 @import url('normalize.css');
-@import url('../../public/fonts/fonts.css');
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-style: normal;
+  src: url('../../public/fonts/Roboto-Thin.ttf') format('TrueType');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../../public/fonts/Roboto-Light.ttf') format('TrueType');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../../public/fonts/Roboto-Regular.ttf') format('TrueType');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../../public/fonts/Roboto-Medium.ttf') format('TrueType');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../../public/fonts/Roboto-Bold.ttf') format('TrueType');
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-style: normal;
+  src: url('../../public/fonts/Roboto-Black.ttf') format('TrueType');
+}
 
 :root {
   --black-color: #1B1F2B;
@@ -21,16 +63,20 @@
 
 body {
   margin: 0;
+  font-family: 'Roboto', 'Times New Roman', Times, serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   text-decoration: none;
 }
 
-.wrapper {
+/* .wrapper {
   font-family: 'Roboto', 'Times New Roman', Times, serif;
   font-style: normal;
-}
+} */
 
 .bgc-1 {
   background: var(--beige100-color);

@@ -1,12 +1,10 @@
 import Image from 'next/image';
-import { Header } from '../components/Header';
 // import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <div className='wrapper'>
-      <Header />
-      <main className='bgc-1'>
+    <>
+      <>
         <section className='greeting bgp-1'>
           <h1 className='section-title-main' id='YourTour'>
             Идеальные путешествия существуют
@@ -647,7 +645,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
+      </>
       <footer className='footers bgc-1'>
         <div className='footers-card'>
           <div className='footers-card__img bgp-1'></div>
@@ -728,6 +726,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 }

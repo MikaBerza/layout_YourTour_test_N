@@ -11,24 +11,14 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   max-width: 1168px;
   margin: auto;
   padding: 27px 57px 29px;
 }
 
-.linkLogo {
-  margin-right: auto;
-  padding-right: 10px;
-}
-
-.linkTelephoneNumber {
-  margin-left: auto;
-  padding-left: 10px;
-}
-
-.logoYourTour,
-.logoTelephoneNumber {
+.logo,
+.telephoneNumber {
   fill: var(--white-color);
 }
 
@@ -37,7 +27,7 @@
   justify-content: space-between;
   width: 468px;
   margin: 0;
-  padding: 0 0 4px 0;
+  padding: 0 10px 4px 10px;
   list-style-type: none;
 }
 
@@ -45,7 +35,7 @@
   padding-right: 10px;
 }
 
-.menuLink {
+.menuItemAnchor {
   font-size: 20px;
   white-space: nowrap;
   color: var(--white-color);
@@ -53,11 +43,11 @@
   transition: border-bottom 0.3s ease;
 }
 
-.menuLink:hover {
+.menuItemAnchor:hover {
   border-bottom: 1px solid var(--white-color)
 }
 
-.scrolled-fix-bgn {
+.scrolledFixBgn {
   position: fixed;
   background-color: rgba(243, 239, 232, 0.6);
   backdrop-filter: blur(27px);
@@ -75,8 +65,8 @@
   }
 }
 
-.scrolled-color {
-  color: var(--black-color);
+.scrolledColor {
+  color: var(--black-color) !important;
   fill: var(--black-color);
 }
 
@@ -85,26 +75,33 @@
 }
 
 @media (max-width: 1024px) {
+  .logo svg {
+    width: 181.828px;
+  }
+
   .menu {
     max-width: 408px;
   }
 
-  .menuLink {
+  .menuItemAnchor {
     font-size: 20px;
   }
 
-  .logoYourTour {
-    width: 181.828px;
-  }
-
-  .logoTelephoneNumber {
+  .telephoneNumber svg {
     width: 155px;
   }
 }
 
+@media (max-width: 820px) {
+  .navbar {
+    padding: 27px 30px 29px;
+  }
+
+}
+
 @media (max-width: 770px) {
   .navbar {
-    padding: 20px 20px;
+    padding: 28px 20px 12px;
   }
 
   .menu {
@@ -113,21 +110,21 @@
 }
 
 @media (max-width: 550px) {
-  .logoYourTour {
+  .logo svg {
     width: 133px;
   }
 
-  .logoTelephoneNumber {
+  .telephoneNumber svg {
     width: 124px;
   }
 }
 
 @media (max-width: 359px) {
-  .logoYourTour {
+  .logo svg {
     width: 113px;
   }
 
-  .logoTelephoneNumber {
+  .telephoneNumber svg {
     width: 104px;
   }
 }
