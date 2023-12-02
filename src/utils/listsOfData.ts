@@ -5,7 +5,7 @@ import { CardTurPropsType } from '@/types/customType';
 export const cardTurData: CardTurPropsType[] = [
   {
     id: generateId(),
-    styleName: 'img1',
+    pathImg: '/images/chooseTour/card_tour_photo_1.png',
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
@@ -13,7 +13,7 @@ export const cardTurData: CardTurPropsType[] = [
   },
   {
     id: generateId(),
-    styleName: 'img2',
+    pathImg: '/images/chooseTour/card_tour_photo_2.png',
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
@@ -21,7 +21,7 @@ export const cardTurData: CardTurPropsType[] = [
   },
   {
     id: generateId(),
-    styleName: 'img3',
+    pathImg: '/images/chooseTour/card_tour_photo_3.png',
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
@@ -29,7 +29,7 @@ export const cardTurData: CardTurPropsType[] = [
   },
   {
     id: generateId(),
-    styleName: 'img4',
+    pathImg: '/images/chooseTour/card_tour_photo_4.png',
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
@@ -37,7 +37,7 @@ export const cardTurData: CardTurPropsType[] = [
   },
   {
     id: generateId(),
-    styleName: 'img5',
+    pathImg: '/images/chooseTour/card_tour_photo_5.png',
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
@@ -45,7 +45,7 @@ export const cardTurData: CardTurPropsType[] = [
   },
   {
     id: generateId(),
-    styleName: 'img6',
+    pathImg: '/images/chooseTour/card_tour_photo_6.png',
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',

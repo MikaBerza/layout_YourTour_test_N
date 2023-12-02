@@ -1,9 +1,10 @@
 import React from 'react';
+import Image from 'next/image';
 import { CardTurPropsType } from '../../../types/customType';
 import styles from './cardTur.module.css';
 
 const CardTur: React.FC<CardTurPropsType> = ({
-  styleName,
+  pathImg,
   price,
   title,
   link,
@@ -11,7 +12,15 @@ const CardTur: React.FC<CardTurPropsType> = ({
 }) => {
   return (
     <div className={styles.wrapper}>
-      <div className={`${styles.inner} ${styles[styleName]} bgp-1`} />
+      {/* <div className={`${styles.inner} ${styles.img1} bgp-1`} /> */}
+      <Image
+        src={pathImg}
+        width={550}
+        height={531}
+        className={`${styles.img} bgp-1`}
+        alt='images'
+        priority
+      />
       <div className={styles.content}>
         <h3 className={styles.title} data-price={price}>
           {title}

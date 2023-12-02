@@ -15,7 +15,7 @@ export type SubtitlePropsType = {
 
 export type CardTurPropsType = {
   id: string;
-  styleName: string;
+  pathImg: string;
   price: string;
   title: string;
   link: string;
