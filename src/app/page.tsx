@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Title } from '../components/commons/Title';
+import { Subtitle } from '../components/commons/Subtitle';
 // import styles from './page.module.css';
 
 export default function Home() {
@@ -110,10 +111,10 @@ export default function Home() {
 
       <section className='collect-tour'>
         <Title title='Собери свой тур' uniqueName='collect-tour' />
-        <p className='section-subtitle'>
-          Идейные соображения высшего порядка, а также рамки и место обучения
-          кадров
-        </p>
+        <Subtitle
+          subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
+          кадров'
+        />
 
         <div className='collect-tour__container'>
           <form className='form-fill' action='#'>
@@ -316,10 +317,10 @@ export default function Home() {
 
       <section className='reviews'>
         <Title title='Отзывы наших путешественников' uniqueName='reviews' />
-        <p className='section-subtitle'>
-          Идейные соображения высшего порядка, а также рамки и место обучения
-          кадров
-        </p>
+        <Subtitle
+          subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
+          кадров'
+        />
 
         <div className='reviews__container'>
           <div className='card-reviews'>
@@ -377,10 +378,10 @@ export default function Home() {
 
       <section className='travel-photos'>
         <Title title='Фотографии путешествий' uniqueName='travel-photos' />
-        <p className='section-subtitle'>
-          Идейные соображения высшего порядка, а также рамки и место обучения
-          кадров
-        </p>
+        <Subtitle
+          subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
+          кадров'
+        />
 
         <div className='travel-photos__wrapper'>
           <Image
@@ -492,10 +493,10 @@ export default function Home() {
 
       <section className='stories'>
         <Title title='Истории путешествий' uniqueName='stories' />
-        <p className='section-subtitle'>
-          Идейные соображения высшего порядка, а также рамки и место обучения
-          кадров
-        </p>
+        <Subtitle
+          subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
+          кадров'
+        />
 
         <div className='stories__container'>
           <div className='card-stories'>
