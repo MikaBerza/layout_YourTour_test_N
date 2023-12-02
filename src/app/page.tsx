@@ -1,6 +1,11 @@
 import Image from 'next/image';
+
 import { Title } from '../components/commons/Title';
 import { Subtitle } from '../components/commons/Subtitle';
+import { CardTur } from '../components/commons/CardTur';
+
+import { cardTurData } from '../utils/listsOfData';
+import { CardTurPropsType } from '@/types/customType';
 // import styles from './page.module.css';
 
 export default function Home() {
@@ -40,72 +45,9 @@ export default function Home() {
         </nav>
 
         <div className='choose-tour__container'>
-          <div className='card-tur'>
-            <div className='card-tur__img card-tur__img_bgi-1 bgp-1'></div>
-            <div className='card-tur__content'>
-              <h3 className='card-tur__title'>Путешествие в горы</h3>
-              <div className='card-tur__link'>
-                <a className='card-tur__link-item' href='#MoreDetailed'>
-                  Подробнее
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className='card-tur'>
-            <div className='card-tur__img card-tur__img_bgi-2 bgp-1'></div>
-            <div className='card-tur__content'>
-              <h3 className='card-tur__title'>Путешествие в горы</h3>
-              <div className='card-tur__link'>
-                <a className='card-tur__link-item' href='#MoreDetailed'>
-                  Подробнее
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className='card-tur'>
-            <div className='card-tur__img card-tur__img_bgi-3 bgp-1'></div>
-            <div className='card-tur__content'>
-              <h3 className='card-tur__title'>Путешествие в горы</h3>
-              <div className='card-tur__link'>
-                <a className='card-tur__link-item' href='#MoreDetailed'>
-                  Подробнее
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className='card-tur'>
-            <div className='card-tur__img card-tur__img_bgi-4 bgp-1'></div>
-            <div className='card-tur__content'>
-              <h3 className='card-tur__title'>Путешествие в горы</h3>
-              <div className='card-tur__link'>
-                <a className='card-tur__link-item' href='#MoreDetailed'>
-                  Подробнее
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className='card-tur'>
-            <div className='card-tur__img card-tur__img_bgi-5 bgp-1'></div>
-            <div className='card-tur__content'>
-              <h3 className='card-tur__title'>Путешествие в горы</h3>
-              <div className='card-tur__link'>
-                <a className='card-tur__link-item' href='#MoreDetailed'>
-                  Подробнее
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className='card-tur'>
-            <div className='card-tur__img card-tur__img_bgi-6 bgp-1'></div>
-            <div className='card-tur__content'>
-              <h3 className='card-tur__title'>Путешествие в горы</h3>
-              <div className='card-tur__link'>
-                <a className='card-tur__link-item' href='#MoreDetailed'>
-                  Подробнее
-                </a>
-              </div>
-            </div>
-          </div>
+          {cardTurData.map((item: CardTurPropsType) => {
+            return <CardTur key={item.id} {...item} />;
+          })}
         </div>
       </section>
 

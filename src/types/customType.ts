@@ -12,3 +12,12 @@ export type TitlePropsType = {
 export type SubtitlePropsType = {
   subtitle: string;
 };
+
+export type CardTurPropsType = {
+  id: string;
+  styleName: string;
+  price: string;
+  title: string;
+  link: string;
+  linkName: string;
+};
