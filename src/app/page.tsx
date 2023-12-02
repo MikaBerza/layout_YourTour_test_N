@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Title } from '../components/commons/Title';
 // import styles from './page.module.css';
 
 export default function Home() {
@@ -18,9 +19,7 @@ export default function Home() {
       </section>
 
       <section className='choose-tour'>
-        <h2 className='section-title' id='choose-tour'>
-          Выбери свой тур
-        </h2>
+        <Title title='Выбери свой тур' uniqueName='choose-tour' />
         <nav className='tabs'>
           <a className='tabs__link tabs__link_active' href='#Popular'>
             Популярные
@@ -110,9 +109,7 @@ export default function Home() {
       </section>
 
       <section className='collect-tour'>
-        <h2 className='section-title' id='collect-tour'>
-          Собери свой тур
-        </h2>
+        <Title title='Собери свой тур' uniqueName='collect-tour' />
         <p className='section-subtitle'>
           Идейные соображения высшего порядка, а также рамки и место обучения
           кадров
@@ -318,9 +315,7 @@ export default function Home() {
       </section>
 
       <section className='reviews'>
-        <h2 className='section-title' id='reviews'>
-          Отзывы наших путешественников
-        </h2>
+        <Title title='Отзывы наших путешественников' uniqueName='reviews' />
         <p className='section-subtitle'>
           Идейные соображения высшего порядка, а также рамки и место обучения
           кадров
@@ -381,7 +376,7 @@ export default function Home() {
       </section>
 
       <section className='travel-photos'>
-        <h2 className='section-title'>Фотографии путешествий</h2>
+        <Title title='Фотографии путешествий' uniqueName='travel-photos' />
         <p className='section-subtitle'>
           Идейные соображения высшего порядка, а также рамки и место обучения
           кадров
@@ -496,9 +491,7 @@ export default function Home() {
       </section>
 
       <section className='stories'>
-        <h2 className='section-title' id='stories'>
-          Истории путешествий
-        </h2>
+        <Title title='Истории путешествий' uniqueName='stories' />
         <p className='section-subtitle'>
           Идейные соображения высшего порядка, а также рамки и место обучения
           кадров
