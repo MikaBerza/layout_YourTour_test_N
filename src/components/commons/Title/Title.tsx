@@ -1,10 +1,6 @@
 import React from 'react';
+import { TitlePropsType } from '../../../types/customType';
 import styles from './title.module.css';
-
-type TitlePropsType = {
-  title: string;
-  uniqueName: string;
-};
 
 const Title: React.FC<TitlePropsType> = ({ title, uniqueName }) => {
   return (

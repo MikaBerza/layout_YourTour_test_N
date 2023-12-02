@@ -1,13 +1,8 @@
 'use client';
 import React, { MouseEventHandler } from 'react';
 import { generateId } from '../../../utils/modules';
+import { menuItemType } from '../../../types/customType';
 import styles from './header.module.css';
-
-type menuItemType = {
-  id: string;
-  name: string;
-  anchor: string;
-};
 
 const Header: React.FC = () => {
   const [thisScrollY, setThisScrollY] = React.useState<number>(0);
