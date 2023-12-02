@@ -73,11 +73,6 @@ a {
   text-decoration: none;
 }
 
-/* .wrapper {
-  font-family: 'Roboto', 'Times New Roman', Times, serif;
-  font-style: normal;
-} */
-
 .bgc-1 {
   background: var(--beige100-color);
 }
@@ -89,9 +84,9 @@ a {
 }
 
 .section-title {
-  max-width: 529px;
+  max-width: 723px;
   margin: auto;
-  padding: 0 20px;
+  padding: 135px 20px 0;
   font-size: 59px;
   font-weight: 700;
   line-height: 124%;
@@ -100,7 +95,7 @@ a {
 }
 
 .section-subtitle {
-  max-width: 409px;
+  max-width: 418px;
   margin: auto;
   padding-top: 30px;
   font-size: 20px;
@@ -109,93 +104,6 @@ a {
   text-align: center;
   color: var(--gray300-color);
 }
-
-/*___heading___*/
-/* .heading {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  z-index: 999;
-  display: block;
-  width: 100%;
-  transform: translateX(-50%);
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1168px;
-  margin: auto;
-  padding: 27px 57px 29px;
-}
-
-.navbar__logo {
-  margin-right: auto;
-  padding-right: 10px;
-}
-
-.navbar__telephoneNumber {
-  margin-left: auto;
-  padding-left: 10px;
-}
-
-.navbar__logo-YourTour,
-.navbar__telephoneNumber-item {
-  fill: var(--white-color);
-}
-
-.navbar__menu {
-  display: flex;
-  justify-content: space-between;
-  width: 468px;
-  margin: 0;
-  padding: 0 0 4px 0;
-  list-style-type: none;
-}
-
-.navbar__menu-item:not(:last-child) {
-  padding-right: 10px;
-}
-
-.navbar__menu-link {
-  font-size: 20px;
-  white-space: nowrap;
-  color: var(--white-color);
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.3s ease;
-}
-
-.navbar__menu-link:hover {
-  border-bottom: 1px solid var(--white-color)
-}
-
-.scrolled-fix-bgn {
-  position: fixed;
-  background-color: rgba(243, 239, 232, 0.6);
-  backdrop-filter: blur(27px);
-
-  animation: appearing 2s;
-}
-
-@keyframes appearing {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.scrolled-color {
-  color: var(--black-color);
-  fill: var(--black-color);
-}
-
-.scrolled-hover:hover {
-  border-bottom: 1px solid var(--black-color)
-} */
 
 /*___greeting___*/
 .greeting {
@@ -270,21 +178,17 @@ a {
   justify-content: center;
 }
 
-.choose-tour .section-title {
-  padding-top: 135px;
-}
-
 .tabs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
   margin: auto;
-  padding: 20px 15px 15px 15px;
+  padding: 20px 15px 0 15px;
 }
 
 .tabs__link {
-  margin: 15px 15px 18px 15px;
+  margin: 15px 15px 0 15px;
   padding-bottom: 4px;
   font-size: 23px;
   font-weight: 700;
@@ -310,18 +214,17 @@ a {
 }
 
 .choose-tour__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 38px auto 0;
-  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 30px;
+  max-width: 1170px;
+  margin: auto;
+  padding: 100px 30px 0;
 }
 
 .card-tur {
   overflow: hidden;
-  width: calc(33.33% - 30px);
-  margin: 15px;
+  width: 100%;
   border-radius: 50px;
 }
 
@@ -443,10 +346,6 @@ a {
 }
 
 /*___collect-tour___*/
-.collect-tour .section-title {
-  padding-top: 105px;
-}
-
 .collect-tour {
   display: flex;
   flex-direction: column;
@@ -768,14 +667,6 @@ a {
   flex-direction: column;
 }
 
-.reviews .section-title {
-  padding-top: 135px;
-}
-
-.reviews .section-subtitle {
-  max-width: 410px;
-}
-
 .reviews__container {
   display: flex;
   flex-wrap: wrap;
@@ -791,7 +682,7 @@ a {
   justify-content: space-between;
   box-sizing: border-box;
   width: calc(50% - 15px);
-  margin: 0 30px 30px 0;
+  margin-right: 30px;
   padding: 40px 40px 36px 40px;
   background: var(--beige200-color);
   border-radius: 50px;
@@ -846,16 +737,6 @@ a {
 }
 
 /*___travel-photo___*/
-.travel-photos .section-title {
-  max-width: 723px;
-  padding-top: 104px;
-}
-
-.travel-photos .section-subtitle {
-  max-width: 410px;
-  padding-top: 28px;
-}
-
 .travel-photos__wrapper {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
@@ -893,15 +774,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.stories .section-title {
-  max-width: 615px;
-  padding-top: 135px;
-}
-
-.stories .section-subtitle {
-  max-width: 410px;
 }
 
 .stories__container {
@@ -1066,145 +938,8 @@ a {
   padding-bottom: 200px;
 }
 
-/*___footers___*/
-/* .footers {
-  display: flex;
-  flex-direction: column;
-}
-
-.footers-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 771px;
-  margin: auto;
-  padding: 135px 30px 135px 30px;
-}
-
-.footers-card__img {
-  width: 370px;
-  height: 370px;
-  background-image: url('../../public/images/footersPhoto.png');
-  border-radius: 50px;
-}
-
-.footers-card__content {
-  margin-left: 30px;
-}
-
-.footers-card__title {
-  max-width: 371px;
-  margin: 0 0 20px 0;
-  font-size: 35px;
-  font-weight: 500;
-  line-height: 122%;
-  color: var(--black-color);
-}
-
-.footers-card__text {
-  max-width: 371px;
-  margin: 0;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 142%;
-  color: var(--gray300-color);
-}
-
-.footers-card__email {
-  color: var(--black-color);
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-}
-
-.footers-card__email:hover {
-  color: var(--black-color);
-  border-bottom: 1px solid var(--black-color);
-}
-
-.footers-card__email:active {
-  color: var(--green400-color);
-  border-bottom: 1px solid var(--green400-color);
-}
-
-.footers-social-network {
-  padding: 30px 0;
-  background: var(--beige200-color);
-}
-
-.footers-social-network__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1168px;
-  margin: auto;
-  padding: 0 53px;
-}
-
-.footers-social-network__title {
-  max-width: 222px;
-  color: var(--gray300-color);
-}
-
-.footers-social-network__title,
-.footers-social-network__link {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 142%;
-}
-
-.footers-social-network__name {
-  display: flex;
-  max-width: 500px;
-  padding-left: 10px;
-  text-align: center;
-}
-
-.footers-social-network__inner-wrap {
-  display: flex;
-}
-
-.footers-social-network__inner-wrap:not(:last-child) {
-  margin-right: 30px;
-}
-
-.footers-social-network__icon {
-  display: block;
-  margin-right: 6px;
-}
-
-.footers-social-network__link {
-  display: block;
-  color: var(--black-color);
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.3s ease;
-}
-
-.footers-social-network__link:hover {
-  border-bottom: 1px solid var(--black-color);
-  cursor: pointer;
-} */
-
 /*___media___*/
 @media (max-width: 1024px) {
-
-  /*  */
-  /* __heading__ */
-  /* .navbar__menu {
-    max-width: 408px;
-  }
-
-  .navbar__menu-link {
-    font-size: 20px;
-  }
-
-  .navbar__logo-YourTour {
-    width: 181.828px;
-  }
-
-  .navbar__telephoneNumber-item {
-    width: 155px;
-  } */
 
   /*  */
   /* __greeting__ */
@@ -1220,34 +955,27 @@ a {
 
   /*  */
   /* __choose-tour__ */
-  .choose-tour .section-title {
-    padding-top: 135px;
-  }
-
   .choose-tour .tabs {
     padding-top: 20px;
   }
 
   .choose-tour .tabs__link {
-    margin: 15px;
     padding-bottom: 4px;
     font-size: 23px;
   }
 
   .choose-tour__container {
-    max-width: 936px;
-    margin-top: 52px;
-    padding: 9px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 18px;
+    justify-content: center;
   }
 
   .card-tur {
-    width: calc(50% - 18px);
-    margin: 9px;
-    border-radius: 50px;
+    width: 100%;
   }
 
   .card-tur__content {
-    padding: 50px 30px;
+    padding: 50px 39px 50px 30px;
   }
 
   .card-tur__title {
@@ -1256,15 +984,6 @@ a {
 
   /*  */
   /* __collect-tour__ */
-  .collect-tour .section-title {
-    padding-top: 117px;
-  }
-
-  .collect-tour .section-subtitle {
-    max-width: 409px;
-    padding-top: 30px;
-  }
-
   .collect-tour__container {
     max-width: 918px;
     margin-top: 99px;
@@ -1293,7 +1012,6 @@ a {
   .input-fields__dateTo-input,
   .comment-field__textarea {
     padding: 20px 45px 20px 20px;
-
   }
 
   .input-fields__dropdown-select::before {
@@ -1325,15 +1043,6 @@ a {
 
   /*  */
   /* __reviews__ */
-  .reviews .section-title {
-    padding-top: 134px;
-  }
-
-  .reviews .section-subtitle {
-    max-width: 410px;
-    padding-top: 30px;
-  }
-
   .reviews__container {
     max-width: 918px;
     margin-top: 98px;
@@ -1342,7 +1051,7 @@ a {
 
   .card-reviews {
     width: calc(50% - 9px);
-    margin: 0 18px 18px 0px;
+    margin-right: 18px;
     padding-top: 42px;
   }
 
@@ -1360,15 +1069,6 @@ a {
 
   /*  */
   /* __travel-photos__ */
-  .travel-photos .section-title {
-    padding-top: 119px;
-  }
-
-  .travel-photos .section-subtitle {
-    max-width: 410px;
-    padding-top: 30px;
-  }
-
   .travel-photos__wrapper {
     grid-template-columns: repeat(12, 1fr);
     gap: 30px 20px;
@@ -1396,15 +1096,6 @@ a {
 
   /*  */
   /* __stories__ */
-  .stories .section-title {
-    padding-top: 134px;
-  }
-
-  .stories .section-subtitle {
-    max-width: 410px;
-    padding-top: 30px;
-  }
-
   .stories__container {
     max-width: 918px;
     margin-top: 100px;
@@ -1454,53 +1145,21 @@ a {
     margin-right: 31px;
   }
 
-  /*  */
-  /* __footer__ */
-  /* .footers-card__img {
-    height: 370px;
-    border-radius: 50px;
-  }
-
-  .footers-card__title {
-    font-size: 35px;
-  }
-
-  .footers-card__text,
-  .footers-social-network__title,
-  .footers-social-network__link {
-    font-size: 20px;
-  }
-
-  .footers-social-network {
-    padding: 32px 0;
-  }
-
-  .footers-social-network__icon {
-    margin-right: 6px;
-  } */
-
 }
 
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
 
   .section-title {
+    padding-top: 76px;
     font-size: 50px;
+    line-height: 112%;
+    letter-spacing: 0.68px;
   }
 
   .section-subtitle {
     font-size: 16px;
   }
-
-  /*  */
-  /* __heading__ */
-  /* .navbar {
-    padding: 20px 20px;
-  }
-
-  .navbar__menu {
-    display: none;
-  } */
 
   /*  */
   /* __greeting__ */
@@ -1546,8 +1205,14 @@ a {
 
   .card-reviews {
     width: 100%;
+    margin: 0;
     padding: 20px 21px 20px 20px;
     border-radius: 20px;
+  }
+
+  /* только для не четных элементов */
+  .card-reviews:nth-child(even) {
+    margin-top: 18px;
   }
 
   .card-reviews__text {
@@ -1571,20 +1236,8 @@ a {
 
   /*  */
   /* __travel-photos__ */
-  .travel-photos .section-title {
-    max-width: 318px;
-    padding-top: 56px;
-    line-height: 112%;
-    letter-spacing: 0.68px;
-  }
-
-  .travel-photos .section-subtitle {
-    max-width: 318px;
-    padding-top: 20px;
-  }
-
   .travel-photos__wrapper {
-    margin-top: 50px;
+    margin-top: 47px;
     padding: 0 21px;
     gap: 18px 10px;
   }
@@ -1633,24 +1286,6 @@ a {
     margin-right: 10px;
   }
 
-  /*  */
-  /* __footer__ */
-  /* .footers-card__img {
-    width: 270px;
-  }
-
-  .footers-card__title {
-    font-size: 30px;
-  }
-
-  .footers-social-network__wrapper {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .footers-social-network__title {
-    margin-bottom: 8px;
-  } */
 }
 
 /*660px___________________________________________________*/
@@ -1689,18 +1324,10 @@ a {
   }
 
   .section-subtitle {
+    max-width: 318px;
+    padding-top: 20px;
     font-size: 16px;
   }
-
-  /*  */
-  /* __heading__ */
-  /* .navbar__logo-YourTour {
-    width: 133px;
-  }
-
-  .navbar__telephoneNumber-item {
-    width: 124px;
-  } */
 
   /*  */
   /* __greeting__*/
@@ -1730,12 +1357,6 @@ a {
 
   /*  */
   /* __choose-tour__ */
-  .choose-tour .section-title {
-    padding-top: 76px;
-    line-height: 112%;
-    letter-spacing: 0.68px;
-  }
-
   .choose-tour .tabs {
     padding-top: 27px;
   }
@@ -1748,12 +1369,13 @@ a {
 
   .choose-tour__container {
     max-width: 549px;
-    margin-top: 12px;
+    margin: inherit;
+    padding: 45px 21px 0;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .card-tur {
-    width: calc(100% - 24px);
-    max-height: 318px;
+    width: 100%;
     border-radius: 20px;
   }
 
@@ -1785,17 +1407,6 @@ a {
 
   /*  */
   /* __collect-tour__ */
-  .collect-tour .section-title {
-    padding-top: 58px;
-    line-height: 112%;
-    letter-spacing: 0.68px;
-  }
-
-  .collect-tour .section-subtitle {
-    max-width: 316px;
-    padding-top: 20px;
-  }
-
   .collect-tour__container {
     margin-top: 39px;
     padding: 0 21px;
@@ -1897,18 +1508,6 @@ a {
 
   /*  */
   /* __reviews__ */
-  .reviews .section-title {
-    padding-top: 75px;
-    line-height: 112%;
-    letter-spacing: 0.68px;
-  }
-
-  .reviews .section-subtitle {
-    max-width: 318px;
-    padding-top: 20px;
-    line-height: 142%;
-  }
-
   .reviews__container {
     margin-top: 50px;
     padding: 0 21px;
@@ -1933,20 +1532,6 @@ a {
 
   /*  */
   /* __stories__ */
-  .stories .section-title {
-    max-width: 319px;
-    padding-top: 75px;
-    line-height: 112%;
-    letter-spacing: 0.68px;
-  }
-
-  .stories .section-subtitle {
-    max-width: 318px;
-    padding-top: 20px;
-    font-size: 16px;
-    line-height: 142%;
-  }
-
   .stories__container {
     margin-top: 51px;
     padding: 0 21px;
@@ -2005,54 +1590,6 @@ a {
     margin-right: 5px;
   }
 
-  /*  */
-  /* __footer__ */
-  /* .footers-card {
-    flex-direction: column;
-    padding: 75px 30px;
-  }
-
-  .footers-card__img {
-    width: 130px;
-    height: 133px;
-    border-radius: 20px;
-  }
-
-  .footers-card__content {
-    margin: 32px 0 0 0;
-    text-align: center;
-  }
-
-  .footers-card__title {
-    font-size: 23px;
-    font-weight: 700;
-    line-height: 120%;
-    letter-spacing: 0.92px;
-  }
-
-  .footers-card__text,
-  .footers-social-network__title,
-  .footers-social-network__link {
-    font-size: 16px;
-  }
-
-  .footers-social-network {
-    padding: 21px;
-  }
-
-  .footers-social-network__inner-wrap:not(:last-child) {
-    margin-right: 15px;
-  }
-
-  .footers-social-network__name {
-    padding-left: 0px;
-  }
-
-  .footers-social-network__icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-  } */
 }
 
 /*359px___________________________________________________*/
@@ -2067,16 +1604,6 @@ a {
   }
 
   /*  */
-  /* __heading__ */
-  /* .navbar__logo-YourTour {
-    width: 113px;
-  }
-
-  .navbar__telephoneNumber-item {
-    width: 104px;
-  } */
-
-  /*  */
   /* __collect-tour__ */
   .buttons-group__find,
   .buttons-group__reset {
@@ -2084,28 +1611,4 @@ a {
     padding: 12px 12px;
     font-size: 14px;
   }
-
-  /*  */
-  /* __reviews__ */
-  .reviews .section-title {
-    letter-spacing: -0.9px;
-  }
-
-  /*  */
-  /* __footer__ */
-  /* .footers-card__text,
-  .footers-social-network__title,
-  .footers-social-network__link {
-    font-size: 12px;
-  }
-
-  .footers-social-network__inner-wrap:not(:last-child) {
-    margin-right: 5px;
-  }
-
-  .footers-social-network__icon {
-    width: 15px;
-    height: 15px;
-    margin-right: 2px;
-  } */
 }
