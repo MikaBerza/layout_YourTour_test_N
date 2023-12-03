@@ -12,10 +12,9 @@ const CardTur: React.FC<CardTurPropsType> = ({
 }) => {
   return (
     <div className={styles.wrapper}>
-      {/* <div className={`${styles.inner} ${styles.img1} bgp-1`} /> */}
       <Image
         src={pathImg}
-        width={550}
+        width={370}
         height={531}
         className={`${styles.img} bgp-1`}
         alt='images'
