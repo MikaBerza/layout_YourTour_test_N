@@ -13,7 +13,7 @@ export type SubtitlePropsType = {
   subtitle: string;
 };
 
-export type CardTurPropsType = {
+export type cardTurType = {
   id: string;
   pathImg: string;
   price: string;

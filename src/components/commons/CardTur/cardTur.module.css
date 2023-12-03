@@ -1,5 +1,14 @@
-/*___choose-tour___*/
 .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 30px;
+  max-width: 1170px;
+  margin: auto;
+  padding: 100px 30px 0;
+}
+
+/*___choose-tour___*/
+.inner {
   object-fit: cover;
   overflow: hidden;
   width: 100%;
@@ -77,17 +86,17 @@
   content: url('../../../../public/images/VectorRight.svg');
 }
 
-.wrapper:hover .img {
+.inner:hover .img {
   transform: scale(1.2);
   cursor: pointer;
 }
 
-.wrapper:hover .linkItem {
+.inner:hover .linkItem {
   background-color: var(--green400-color);
   border-radius: 50px;
 }
 
-.wrapper:hover .linkItem:active {
+.inner:hover .linkItem:active {
   color: var(--white-color);
   background-color: var(--orange200-color);
   border-radius: 50px;
@@ -96,6 +105,12 @@
 
 /*___media___*/
 @media (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 18px;
+    justify-content: center;
+  }
+
   .content {
     padding: 50px 39px 50px 30px;
   }
@@ -123,6 +138,13 @@
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
   .wrapper {
+    max-width: 549px;
+    margin: inherit;
+    padding: 45px 21px 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .inner {
     max-height: 318px;
     border-radius: 20px;
   }

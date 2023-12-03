@@ -1,8 +1,8 @@
 import { generateId } from './modules';
-import { CardTurPropsType } from '@/types/customType';
+import { cardTurType } from '@/types/customType';
 
 // данные для карточек CardTur
-export const cardTurData: CardTurPropsType[] = [
+export const cardTurData: cardTurType[] = [
   {
     id: generateId(),
     pathImg: '/images/chooseTour/card_tour_photo_1.png',

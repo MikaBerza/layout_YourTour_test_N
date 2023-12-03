@@ -4,8 +4,6 @@ import { Title } from '../components/commons/Title';
 import { Subtitle } from '../components/commons/Subtitle';
 import { CardTur } from '../components/commons/CardTur';
 
-import { cardTurData } from '../utils/listsOfData';
-import { CardTurPropsType } from '@/types/customType';
 // import styles from './page.module.css';
 
 export default function Home() {
@@ -43,12 +41,7 @@ export default function Home() {
             Велопрогулки
           </a>
         </nav>
-
-        <div className='choose-tour__container'>
-          {cardTurData.map((item: CardTurPropsType) => {
-            return <CardTur key={item.id} {...item} />;
-          })}
-        </div>
+        <CardTur />
       </section>
 
       <section className='collect-tour'>

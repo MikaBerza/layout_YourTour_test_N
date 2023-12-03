@@ -191,138 +191,6 @@ a {
   border-bottom: 2px solid var(--orange200-color);
 }
 
-.choose-tour__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px 30px;
-  max-width: 1170px;
-  margin: auto;
-  padding: 100px 30px 0;
-}
-
-.card-tur {
-  overflow: hidden;
-  width: 100%;
-  border-radius: 50px;
-}
-
-.card-tur__img {
-  height: 100%;
-  transition: transform 0.3s ease;
-}
-
-.card-tur__img_bgi-1 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.23) 100%),
-    url('../../public/images/chooseTour/card_tour_photo_1.png');
-}
-
-.card-tur__img_bgi-2 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.23) 100%),
-    url('../../public/images/chooseTour/card_tour_photo_2.png');
-}
-
-.card-tur__img_bgi-3 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.23) 100%),
-    url('../../public/images/chooseTour/card_tour_photo_3.png');
-}
-
-.card-tur__img_bgi-4 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.23) 100%),
-    url('../../public/images/chooseTour/card_tour_photo_4.png');
-}
-
-.card-tur__img_bgi-5 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.23) 100%),
-    url('../../public/images/chooseTour/card_tour_photo_5.png');
-}
-
-.card-tur__img_bgi-6 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.00) 100%),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.23) 100%),
-    url('../../public/images/chooseTour/card_tour_photo_6.png');
-}
-
-.card-tur__content {
-  position: sticky;
-  bottom: 892px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 531px;
-  padding: 50px 50px 50px 30px;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.card-tur__title {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  margin: 0 23px 0 0;
-  padding: 0 0 32px 20px;
-  font-size: 35px;
-  font-weight: 500;
-  line-height: 122%;
-  color: var(--white-color);
-}
-
-.card-tur__title::after {
-  position: absolute;
-  bottom: -9px;
-  left: 20px;
-  margin: 0;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 142%;
-  letter-spacing: -0.01em;
-  color: var(--white-color);
-  content: 'от 80 000 руб';
-}
-
-.card-tur__link {
-  position: relative;
-  bottom: 0;
-  left: 0;
-}
-
-.card-tur__link-item {
-  box-sizing: border-box;
-  padding: 7px 32px 7px 20px;
-  font-size: 23px;
-  font-weight: 700;
-  line-height: 122%;
-  color: var(--white-color);
-  border-radius: 50px;
-  transition: background-color 0.3s ease;
-}
-
-.card-tur__link-item::after {
-  position: relative;
-  left: 11px;
-  content: url('../../public/images/VectorRight.svg');
-}
-
-.card-tur:hover .card-tur__img {
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
-.card-tur:hover .card-tur__link-item {
-  background-color: var(--green400-color);
-  border-radius: 50px;
-}
-
-.card-tur:hover .card-tur__link-item:active {
-  color: var(--white-color);
-  background-color: var(--orange200-color);
-  border-radius: 50px;
-}
-
 /*___collect-tour___*/
 .collect-tour {
   display: flex;
@@ -942,24 +810,6 @@ a {
     font-size: 23px;
   }
 
-  .choose-tour__container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px 18px;
-    justify-content: center;
-  }
-
-  .card-tur {
-    width: 100%;
-  }
-
-  .card-tur__content {
-    padding: 50px 39px 50px 30px;
-  }
-
-  .card-tur__title {
-    font-size: 35px;
-  }
-
   /*  */
   /* __collect-tour__ */
   .collect-tour__container {
@@ -1127,24 +977,11 @@ a {
 
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
+
   /*  */
   /* __greeting__ */
   .section-title-main {
     font-size: 68px;
-  }
-
-  /*  */
-  /* __choose-tour__ */
-  .card-tur__content {
-    padding: 14% 14% 14% 8%;
-  }
-
-  .card-tur__title {
-    font-size: 28px;
-  }
-
-  .card-tur__link-item {
-    font-size: 19px;
   }
 
   /*  */
@@ -1284,6 +1121,7 @@ a {
 
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
+
   /*  */
   /* __greeting__*/
   .section-title-main {
@@ -1320,44 +1158,6 @@ a {
     margin: 5px;
     padding-bottom: 0px;
     font-size: 16px;
-  }
-
-  .choose-tour__container {
-    max-width: 549px;
-    margin: inherit;
-    padding: 45px 21px 0;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .card-tur {
-    width: 100%;
-    border-radius: 20px;
-  }
-
-  .card-tur__content {
-    min-height: 318px;
-    padding: 25px 25px 28px 5px;
-  }
-
-  .card-tur__title {
-    font-size: 23px;
-    letter-spacing: 0.92px;
-  }
-
-  .card-tur__title::after {
-    bottom: -4px;
-    font-size: 16px;
-  }
-
-  .card-tur__link-item {
-    font-size: 16px;
-  }
-
-  .card-tur__link-item::after {
-    position: relative;
-    top: 3px;
-    left: 13px;
-    content: url('../../public/images/VectorRight.svg');
   }
 
   /*  */
@@ -1549,6 +1349,7 @@ a {
 
 /*359px___________________________________________________*/
 @media (max-width: 359px) {
+
   /*  */
   /* __collect-tour__ */
   .buttons-group__find,
