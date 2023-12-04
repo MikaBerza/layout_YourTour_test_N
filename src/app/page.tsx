@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from 'next/image';
 
 import { Title } from '../components/commons/Title';
@@ -5,10 +6,10 @@ import { Subtitle } from '../components/commons/Subtitle';
 import { CardTur } from '../components/commons/CardTur';
 import { Tabs } from '../components/commons/Tabs';
 
+import { cardTurData } from '../utils/listsOfData';
 // import styles from './page.module.css';
 
 export default function Home() {
-
   return (
     <>
       <section className='greeting bgp-1'>
@@ -27,7 +28,7 @@ export default function Home() {
       <section className='choose-tour'>
         <Title title='Выбери свой тур' uniqueName='choose-tour' />
         <Tabs />
-        <CardTur />
+        <CardTur cardTurData={cardTurData} />
       </section>
 
       <section className='collect-tour'>
@@ -474,7 +475,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           <div className='card-stories'>
             <div className='card-stories__img card-stories__bgi-2 bgp-1'></div>
             <div className='card-stories__content'>

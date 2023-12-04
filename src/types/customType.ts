@@ -19,11 +19,17 @@ export type tabType = {
   tabName: string;
 };
 
-export type cardTurType = {
+export type CardTurPropsType = {
   id: string;
   pathImg: string;
   price: string;
   title: string;
   link: string;
-  linkName: string;
+  linkBtnName: string;
+};
+
+export type LinkButtonPropsType = {
+  parentStyles: string[];
+  link: string;
+  linkBtnName: string;
 };

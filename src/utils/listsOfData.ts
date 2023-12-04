@@ -1,5 +1,5 @@
 import { generateId } from './modules';
-import { cardTurType, tabType } from '@/types/customType';
+import { CardTurPropsType, tabType } from '@/types/customType';
 
 // данные вкладок
 export const tabsData: tabType[] = [
@@ -31,14 +31,14 @@ export const tabsData: tabType[] = [
 ];
 
 // данные карточек CardTur
-export const cardTurData: cardTurType[] = [
+export const cardTurData: CardTurPropsType[] = [
   {
     id: generateId(),
     pathImg: '/images/chooseTour/card_tour_photo_1.png',
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
-    linkName: 'Подробнее',
+    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -46,7 +46,7 @@ export const cardTurData: cardTurType[] = [
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
-    linkName: 'Подробнее',
+    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -54,7 +54,7 @@ export const cardTurData: cardTurType[] = [
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
-    linkName: 'Подробнее',
+    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -62,7 +62,7 @@ export const cardTurData: cardTurType[] = [
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
-    linkName: 'Подробнее',
+    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -70,7 +70,7 @@ export const cardTurData: cardTurType[] = [
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
-    linkName: 'Подробнее',
+    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -78,6 +78,6 @@ export const cardTurData: cardTurType[] = [
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
-    linkName: 'Подробнее',
+    linkBtnName: 'Подробнее',
   },
 ];
