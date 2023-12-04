@@ -21,8 +21,8 @@ const CardTur: React.FC = () => {
           <h3 className={styles.title} data-price={item.price}>
             {item.title}
           </h3>
-          <div className={styles.link}>
-            <a className={styles.linkItem} href={item.link}>
+          <div className={styles.linkBtn}>
+            <a className={styles.linkItemBtn} href={item.link}>
               {item.linkName}
             </a>
           </div>

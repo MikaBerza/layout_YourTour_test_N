@@ -63,13 +63,13 @@
   content: attr(data-price);
 }
 
-.link {
+.linkBtn {
   position: relative;
   bottom: 0;
   left: 0;
 }
 
-.linkItem {
+.linkItemBtn {
   box-sizing: border-box;
   padding: 7px 32px 7px 20px;
   font-size: 23px;
@@ -80,7 +80,7 @@
   transition: background-color 0.3s ease;
 }
 
-.linkItem::after {
+.linkItemBtn::after {
   position: relative;
   left: 11px;
   content: url('../../../../public/images/VectorRight.svg');
@@ -91,12 +91,12 @@
   cursor: pointer;
 }
 
-.inner:hover .linkItem {
+.inner:hover .linkItemBtn {
   background-color: var(--green400-color);
   border-radius: 50px;
 }
 
-.inner:hover .linkItem:active {
+.inner:hover .linkItemBtn:active {
   color: var(--white-color);
   background-color: var(--orange200-color);
   border-radius: 50px;
@@ -130,7 +130,7 @@
     font-size: 28px;
   }
 
-  .linkItem {
+  .linkItemBtn {
     font-size: 19px;
   }
 }
@@ -168,11 +168,11 @@
     font-size: 16px;
   }
 
-  .linkItem {
+  .linkItemBtn {
     font-size: 16px;
   }
 
-  .linkItem::after {
+  .linkItemBtn::after {
     position: relative;
     top: 3px;
     left: 13px;
