@@ -13,6 +13,12 @@ export type SubtitlePropsType = {
   subtitle: string;
 };
 
+export type tabType = {
+  id: string;
+  link: string;
+  tabName: string;
+};
+
 export type cardTurType = {
   id: string;
   pathImg: string;

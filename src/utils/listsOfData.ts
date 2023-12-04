@@ -1,7 +1,36 @@
 import { generateId } from './modules';
-import { cardTurType } from '@/types/customType';
+import { cardTurType, tabType } from '@/types/customType';
 
-// данные для карточек CardTur
+// данные вкладок
+export const tabsData: tabType[] = [
+  {
+    id: generateId(),
+    link: '#Popular',
+    tabName: 'Популярные',
+  },
+  {
+    id: generateId(),
+    link: '#Copyright',
+    tabName: 'Авторские',
+  },
+  {
+    id: generateId(),
+    link: '#Hiking',
+    tabName: 'Походы',
+  },
+  {
+    id: generateId(),
+    link: '#Alloys',
+    tabName: 'Сплавы',
+  },
+  {
+    id: generateId(),
+    link: '#CyclingTrips',
+    tabName: 'Велопрогулки',
+  },
+];
+
+// данные карточек CardTur
 export const cardTurData: cardTurType[] = [
   {
     id: generateId(),

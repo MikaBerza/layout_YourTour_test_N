@@ -3,10 +3,12 @@ import Image from 'next/image';
 import { Title } from '../components/commons/Title';
 import { Subtitle } from '../components/commons/Subtitle';
 import { CardTur } from '../components/commons/CardTur';
+import { Tabs } from '../components/commons/Tabs';
 
 // import styles from './page.module.css';
 
 export default function Home() {
+
   return (
     <>
       <section className='greeting bgp-1'>
@@ -24,23 +26,7 @@ export default function Home() {
 
       <section className='choose-tour'>
         <Title title='Выбери свой тур' uniqueName='choose-tour' />
-        <nav className='tabs'>
-          <a className='tabs__link tabs__link_active' href='#Popular'>
-            Популярные
-          </a>
-          <a className='tabs__link' href='#Copyright'>
-            Авторские
-          </a>
-          <a className='tabs__link' href='#Hiking'>
-            Походы
-          </a>
-          <a className='tabs__link' href='#Alloys'>
-            Сплавы
-          </a>
-          <a className='tabs__link' href='#CyclingTrips'>
-            Велопрогулки
-          </a>
-        </nav>
+        <Tabs />
         <CardTur />
       </section>
 
