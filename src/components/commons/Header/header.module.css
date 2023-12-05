@@ -66,11 +66,11 @@
 }
 
 .scrolledColor {
-  color: var(--black-color) !important;
+  color: var(--black-color);
   fill: var(--black-color);
 }
 
-.scrolled-hover:hover {
+.scrolledColor:hover {
   border-bottom: 1px solid var(--black-color)
 }
 
