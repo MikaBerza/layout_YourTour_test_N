@@ -3,11 +3,10 @@ import Image from 'next/image';
 
 import { Title } from '../components/commons/Title';
 import { Subtitle } from '../components/commons/Subtitle';
-import { CardTur } from '../components/commons/CardTur';
-import { Tabs } from '../components/commons/Tabs';
-
-import { tabsData, cardTurData, cardStoriesData } from '../utils/listsOfData';
+import {ChooseTour} from '@/components/sections/ChooseTour';
 import { CardStories } from '@/components/commons/CardStories';
+
+import { cardStoriesData } from '../utils/listsOfData';
 // import styles from './page.module.css';
 
 export default function Home() {
@@ -26,11 +25,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='choose-tour'>
-        <Title title='Выбери свой тур' uniqueName='choose-tour' />
-        <Tabs tabsData={tabsData} />
-        <CardTur cardTurData={cardTurData} />
-      </section>
+      <Title title='Выбери свой тур' uniqueName='choose-tour' />
+      <ChooseTour />
 
       <section className='collect-tour'>
         <Title title='Собери свой тур' uniqueName='collect-tour' />

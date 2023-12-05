@@ -5,7 +5,7 @@ import {
   tabType,
 } from '@/types/customType';
 
-// данные вкладок
+// страницы 1, данные вкладок
 export const tabsData: tabType[] = [
   {
     id: generateId(),
@@ -34,7 +34,7 @@ export const tabsData: tabType[] = [
   },
 ];
 
-// данные карточек CardTur
+// страницы 1, данные карточек CardTur
 export const cardTurData: CardTurPropsType[] = [
   {
     id: generateId(),
@@ -86,7 +86,211 @@ export const cardTurData: CardTurPropsType[] = [
   },
 ];
 
-// данные карточек CardStories
+export const cardTurData2: CardTurPropsType[] = [
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_6.png',
+    price: 'от 100 000 руб',
+    title: 'Авторские вечера',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_6.png',
+    price: 'от 100 000 руб',
+    title: 'Авторские вечера',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_6.png',
+    price: 'от 100 000 руб',
+    title: 'Авторские вечера',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_6.png',
+    price: 'от 100 000 руб',
+    title: 'Авторские вечера',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_6.png',
+    price: 'от 100 000 руб',
+    title: 'Авторские вечера',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_6.png',
+    price: 'от 100 000 руб',
+    title: 'Авторские вечера',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+];
+
+export const cardTurData3: CardTurPropsType[] = [
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_4.png',
+    price: 'от 30 000 руб',
+    title: 'Походы по улицам',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_4.png',
+    price: 'от 30 000 руб',
+    title: 'Походы по улицам',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_4.png',
+    price: 'от 30 000 руб',
+    title: 'Походы по улицам',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_4.png',
+    price: 'от 30 000 руб',
+    title: 'Походы по улицам',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_4.png',
+    price: 'от 30 000 руб',
+    title: 'Походы по улицам',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_4.png',
+    price: 'от 30 000 руб',
+    title: 'Походы по улицам',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+];
+
+export const cardTurData4: CardTurPropsType[] = [
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_3.png',
+    price: 'от 55 000 руб',
+    title: 'Сплавы по рекам',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_3.png',
+    price: 'от 55 000 руб',
+    title: 'Сплавы по рекам',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_3.png',
+    price: 'от 55 000 руб',
+    title: 'Сплавы по рекам',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_3.png',
+    price: 'от 55 000 руб',
+    title: 'Сплавы по рекам',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_3.png',
+    price: 'от 55 000 руб',
+    title: 'Сплавы по рекам',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_3.png',
+    price: 'от 55 000 руб',
+    title: 'Сплавы по рекам',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+];
+
+export const cardTurData5: CardTurPropsType[] = [
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_5.png',
+    price: 'от 15 000 руб',
+    title: 'Велопрогулки по побережью',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_5.png',
+    price: 'от 15 000 руб',
+    title: 'Велопрогулки по побережью',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_5.png',
+    price: 'от 15 000 руб',
+    title: 'Велопрогулки по побережью',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_5.png',
+    price: 'от 15 000 руб',
+    title: 'Велопрогулки по побережью',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_5.png',
+    price: 'от 15 000 руб',
+    title: 'Велопрогулки по побережью',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/chooseTour/card_tour_photo_5.png',
+    price: 'от 15 000 руб',
+    title: 'Велопрогулки по побережью',
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+  },
+];
+
+// страницы 1, данные карточек CardStories
 export const cardStoriesData: CardStoriesPropsType[] = [
   {
     id: generateId(),

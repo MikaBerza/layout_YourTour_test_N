@@ -1,11 +1,25 @@
-'use client';
 import React from 'react';
 import Link from 'next/link';
 import { tabType } from '../../../types/customType';
 import styles from './tabs.module.css';
 
-const Tabs: React.FC<{ tabsData: tabType[] }> = ({ tabsData }) => {
+const Tabs: React.FC<{
+  tabsData: tabType[];
+  setTabName: (itemName: string) => void;
+}> = ({ tabsData, setTabName }) => {
   const [elementId, setElementId] = React.useState<string>(tabsData[0].id);
+
+  // функция, обработать клик по вкладке
+  const handleTabClick = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    item: tabType
+  ) => {
+    // отменяем действие браузера по умолчанию, а именно
+    // прокрутку странице вверх после нажатия на вкладку
+    event.preventDefault();
+    setElementId(item.id);
+    setTabName(item.tabName);
+  };
 
   return (
     <nav className={styles.tabs}>
@@ -17,12 +31,7 @@ const Tabs: React.FC<{ tabsData: tabType[] }> = ({ tabsData }) => {
             }`}
             key={item.id}
             href={item.link}
-            onClick={(event) => {
-              // отменяем действие браузера по умолчанию, а именно
-              // прокрутку странице вверх после нажатия на вкладку
-              event.preventDefault();
-              setElementId(item.id);
-            }}
+            onClick={(event) => handleTabClick(event, item)}
           >
             {item.tabName}
           </Link>
@@ -32,4 +41,5 @@ const Tabs: React.FC<{ tabsData: tabType[] }> = ({ tabsData }) => {
   );
 };
 
+Tabs.displayName = 'Tabs';
 export default Tabs;
