@@ -66,7 +66,9 @@ const Header: React.FC = () => {
         onClick={handleSmoothScrolling}
       >
         <a
-          className={`${styles.menuItemAnchor} ${flag && styles.scrolledColor}`}
+          className={`${styles.menuItemAnchor} ${
+            flag && `${styles.scrolledColor} ${styles.scrolledHover}`
+          }`}
           href={item.anchor}
         >
           {item.name}
