@@ -6,7 +6,8 @@ import { Subtitle } from '../components/commons/Subtitle';
 import { CardTur } from '../components/commons/CardTur';
 import { Tabs } from '../components/commons/Tabs';
 
-import { cardTurData } from '../utils/listsOfData';
+import { cardTurData, cardStoriesData } from '../utils/listsOfData';
+import { CardStories } from '@/components/commons/CardStories';
 // import styles from './page.module.css';
 
 export default function Home() {
@@ -420,7 +421,8 @@ export default function Home() {
           кадров'
         />
 
-        <div className='stories__container'>
+        <CardStories cardStoriesData={cardStoriesData} />
+        {/* <div className='stories__container'>
           <div className='card-stories'>
             <div className='card-stories__img card-stories__bgi-1 bgp-1'></div>
             <div className='card-stories__content'>
@@ -556,7 +558,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );

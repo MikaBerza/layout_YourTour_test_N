@@ -1,5 +1,9 @@
 import { generateId } from './modules';
-import { CardTurPropsType, tabType } from '@/types/customType';
+import {
+  CardTurPropsType,
+  CardStoriesPropsType,
+  tabType,
+} from '@/types/customType';
 
 // данные вкладок
 export const tabsData: tabType[] = [
@@ -79,5 +83,101 @@ export const cardTurData: CardTurPropsType[] = [
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
     linkBtnName: 'Подробнее',
+  },
+];
+
+// данные карточек CardStories
+export const cardStoriesData: CardStoriesPropsType[] = [
+  {
+    id: generateId(),
+    pathImg: '/images/stories/storyPhoto1.png',
+    title: 'Автостопом в Стамбул',
+    description: `Идейные соображения высшего порядка, а также рамки и место
+    обучения кадров обеспечивает широкому кругу (специалистов)
+    участие в формировании новых предложений:`,
+    advantages: [
+      {
+        id: generateId(),
+        itemText: 'вкусная еда',
+      },
+      {
+        id: generateId(),
+        itemText: 'дешевый транспорт',
+      },
+      {
+        id: generateId(),
+        itemText: 'красивый город.',
+      },
+    ],
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+    linksSocials: [
+      {
+        id: generateId(),
+        link: '#instagram',
+        linkName: 'instagram',
+      },
+      {
+        id: generateId(),
+        link: '#facebook',
+        linkName: 'facebook',
+      },
+      {
+        id: generateId(),
+        link: '#YouTube',
+        linkName: 'YouTube',
+      },
+    ],
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/stories/storyPhoto2.png',
+    title: 'Автостопом в Стамбул',
+    description: `Идейные соображения высшего порядка, а также рамки и место
+    обучения кадров обеспечивает широкому кругу (специалистов)
+    участие в формировании новых предложений:`,
+    advantages: [],
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+    linksSocials: [
+      {
+        id: generateId(),
+        link: '#instagram',
+        linkName: 'instagram',
+      },
+      {
+        id: generateId(),
+        link: '#ВКонтакте',
+        linkName: 'ВКонтакте',
+      },
+    ],
+  },
+  {
+    id: generateId(),
+    pathImg: '/images/stories/storyPhoto3.png',
+    title: 'Автостопом в Стамбул',
+    description: `Идейные соображения высшего порядка, а также рамки и место
+    обучения кадров обеспечивает широкому кругу (специалистов)
+    участие в формировании новых предложений:`,
+    advantages: [],
+    link: '#MoreDetailed',
+    linkBtnName: 'Подробнее',
+    linksSocials: [
+      {
+        id: generateId(),
+        link: '#instagram',
+        linkName: 'instagram',
+      },
+      {
+        id: generateId(),
+        link: '#facebook',
+        linkName: 'facebook',
+      },
+      {
+        id: generateId(),
+        link: '#ВКонтакте',
+        linkName: 'ВКонтакте',
+      },
+    ],
   },
 ];

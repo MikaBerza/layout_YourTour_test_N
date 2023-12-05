@@ -28,6 +28,28 @@ export type CardTurPropsType = {
   linkBtnName: string;
 };
 
+export type advantagesItemType = {
+  id: string;
+  itemText: string;
+};
+
+export type linkItemSocialType = {
+  id: string;
+  link: string;
+  linkName: string;
+};
+
+export type CardStoriesPropsType = {
+  id: string;
+  pathImg: string;
+  title: string;
+  description: string;
+  advantages: advantagesItemType[] | [];
+  link: string;
+  linkBtnName: string;
+  linksSocials: linkItemSocialType[] | [];
+};
+
 export type LinkButtonPropsType = {
   parentStyles: string[];
   link: string;
