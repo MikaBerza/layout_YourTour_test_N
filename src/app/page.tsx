@@ -6,7 +6,7 @@ import { Subtitle } from '../components/commons/Subtitle';
 import { CardTur } from '../components/commons/CardTur';
 import { Tabs } from '../components/commons/Tabs';
 
-import { cardTurData, cardStoriesData } from '../utils/listsOfData';
+import { tabsData, cardTurData, cardStoriesData } from '../utils/listsOfData';
 import { CardStories } from '@/components/commons/CardStories';
 // import styles from './page.module.css';
 
@@ -28,7 +28,7 @@ export default function Home() {
 
       <section className='choose-tour'>
         <Title title='Выбери свой тур' uniqueName='choose-tour' />
-        <Tabs />
+        <Tabs tabsData={tabsData} />
         <CardTur cardTurData={cardTurData} />
       </section>
 
@@ -420,145 +420,7 @@ export default function Home() {
           subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
         />
-
         <CardStories cardStoriesData={cardStoriesData} />
-        {/* <div className='stories__container'>
-          <div className='card-stories'>
-            <div className='card-stories__img card-stories__bgi-1 bgp-1'></div>
-            <div className='card-stories__content'>
-              <h3 className='card-stories__title'>Автостопом в Стамбул</h3>
-              <div className='card-stories__wrapper-text'>
-                <p className='card-stories__description'>
-                  Идейные соображения высшего порядка, а также рамки и место
-                  обучения кадров обеспечивает широкому кругу (специалистов)
-                  участие в формировании новых предложений:
-                </p>
-                <ul className='card-stories__list-advantages'>
-                  <li className='card-stories__list-advantages-item'>
-                    вкусная еда
-                  </li>
-                  <li className='card-stories__list-advantages-item'>
-                    дешевый транспорт
-                  </li>
-                  <li className='card-stories__list-advantages-item'>
-                    красивый город.
-                  </li>
-                </ul>
-              </div>
-              <div className='card-stories__link-group'>
-                <div className='card-stories__button-link'>
-                  <a
-                    className='card-stories__button-link-item'
-                    href='#MoreDetailed'
-                  >
-                    Подробнее
-                  </a>
-                </div>
-                <div className='card-stories__social-network-link'>
-                  <a
-                    className='card-stories__social-network-link-item'
-                    href='#instagram'
-                  >
-                    instagram
-                  </a>
-                  <a
-                    className='card-stories__social-network-link-item'
-                    href='#facebook'
-                  >
-                    facebook
-                  </a>
-                  <a
-                    className='card-stories__social-network-link-item'
-                    href='#YouTube'
-                  >
-                    YouTube
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='card-stories'>
-            <div className='card-stories__img card-stories__bgi-2 bgp-1'></div>
-            <div className='card-stories__content'>
-              <h3 className='card-stories__title'>Автостопом в Стамбул</h3>
-              <div className='card-stories__wrapper-text pb-1'>
-                <p className='card-stories__description'>
-                  Идейные соображения высшего порядка, а также рамки и место
-                  обучения кадров обеспечивает широкому кругу (специалистов)
-                  участие в формировании новых предложений
-                </p>
-              </div>
-              <div className='card-stories__link-group'>
-                <div className='card-stories__button-link'>
-                  <a
-                    className='card-stories__button-link-item'
-                    href='#MoreDetailed'
-                  >
-                    Подробнее
-                  </a>
-                </div>
-                <div className='card-stories__social-network-link'>
-                  <a
-                    className='card-stories__social-network-link-item'
-                    href='#instagram'
-                  >
-                    instagram
-                  </a>
-                  <a
-                    className='card-stories__social-network-link-item'
-                    href='#ВКонтакте'
-                  >
-                    ВКонтакте
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className='card-stories'>
-            <div className='card-stories__img card-stories__bgi-3 bgp-1'></div>
-            <div className='card-stories__content'>
-              <h3 className='card-stories__title'>Автостопом в Стамбул</h3>
-              <div className='card-stories__wrapper-text pb-1'>
-                <p className='card-stories__description'>
-                  Идейные соображения высшего порядка, а также рамки и место
-                  обучения кадров обеспечивает широкому кругу (специалистов)
-                  участие в формировании новых предложений
-                </p>
-              </div>
-              <div className='card-stories__link-group'>
-                <div className='card-stories__button-link'>
-                  <a
-                    className='card-stories__button-link-item'
-                    href='#MoreDetailed'
-                  >
-                    Подробнее
-                  </a>
-                </div>
-                <div className='card-stories__social-network-link'>
-                  <a
-                    className='card-stories__social-network-link-item'
-                    href='#instagram'
-                  >
-                    instagram
-                  </a>
-                  <a
-                    className='card-stories__social-network-link-item'
-                    href='#facebook'
-                  >
-                    facebook
-                  </a>
-                  <a
-                    className='card-stories__social-network-link-item'
-                    href='#VKontakte'
-                  >
-                    ВКонтакте
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </section>
     </>
   );

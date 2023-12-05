@@ -1,16 +1,15 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
-import { tabsData } from '../../../utils/listsOfData';
 import { tabType } from '../../../types/customType';
 import styles from './tabs.module.css';
 
-const Tabs: React.FC = () => {
+const Tabs: React.FC<{ tabsData: tabType[] }> = ({ tabsData }) => {
   const [elementId, setElementId] = React.useState<string>(tabsData[0].id);
 
   return (
     <nav className={styles.tabs}>
-      {tabsData.map((item: tabType) => {
+      {tabsData.map((item) => {
         return (
           <Link
             className={`${styles.tabsLink} ${
