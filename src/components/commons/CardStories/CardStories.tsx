@@ -29,9 +29,9 @@ const CardStories: React.FC<{ cardStoriesData: CardStoriesPropsType[] }> = ({
     item: linkItemSocialType
   ): React.JSX.Element => {
     return (
-      <Link className={styles.linkItemSocial} key={item.id} href={item.link}>
+      <a className={styles.linkItemSocial} key={item.id} href={item.link}>
         {item.linkName}
-      </Link>
+      </a>
     );
   };
 
