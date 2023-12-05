@@ -3,6 +3,7 @@ import React, { MouseEventHandler } from 'react';
 import { generateId } from '../../../utils/modules';
 import { menuItemType } from '../../../types/customType';
 import styles from './header.module.css';
+import Link from 'next/link';
 
 const Header: React.FC = () => {
   const [thisScrollY, setThisScrollY] = React.useState<number>(0);
@@ -67,7 +68,7 @@ const Header: React.FC = () => {
       >
         <a
           className={`${styles.menuItemAnchor} ${
-            flag && `${styles.scrolledColor} ${styles.scrolledHover}`
+            flag ? `${styles.scrolledColor} ${styles.scrolledHover}` : ''
           }`}
           href={item.anchor}
         >
@@ -78,10 +79,12 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`${styles.wrapper} ${flag && styles.scrolledFixBgn}`}>
+    <header
+      className={`${styles.wrapper} ${flag ? styles.scrolledFixBgn : ''}`}
+    >
       <nav className={styles.navbar}>
-        <a
-          className={`${styles.logo} ${flag && styles.scrolledColor}`}
+        <Link
+          className={`${styles.logo} ${flag ? styles.scrolledColor : ''}`}
           href='#YourTour'
         >
           <svg width='181.84' height='32' viewBox='0 0 181.84 32'>
@@ -94,7 +97,7 @@ const Header: React.FC = () => {
             <path d='M141.307 22.7619V8.64988H148.027V21.2919C148.027 24.0639 149.049 25.4499 151.093 25.4499C151.989 25.4499 152.857 25.2119 153.697 24.7359C154.537 24.2319 155.279 23.4059 155.923 22.2579V8.64988H162.643V23.2239C162.643 23.8959 162.741 24.3719 162.937 24.6519C163.161 24.9319 163.539 25.0859 164.071 25.1139V30.6999C163.427 30.8119 162.881 30.8959 162.433 30.9519C161.985 31.0079 161.579 31.0359 161.215 31.0359C158.807 31.0359 157.435 30.0979 157.099 28.2219L156.973 26.8779C155.965 28.3339 154.705 29.4119 153.193 30.1119C151.709 30.7839 150.043 31.1199 148.195 31.1199C145.955 31.1199 144.247 30.4059 143.071 28.9779C141.895 27.5499 141.307 25.4779 141.307 22.7619Z' />
             <path d='M181.835 14.4039C180.211 14.4319 178.741 14.6979 177.425 15.2019C176.109 15.7059 175.157 16.4619 174.569 17.4699V30.6999H167.849V8.64988H174.023V13.1019C174.779 11.6179 175.759 10.4559 176.963 9.61588C178.167 8.77588 179.427 8.34188 180.743 8.31388C181.303 8.31388 181.667 8.32788 181.835 8.35588V14.4039Z' />
           </svg>
-        </a>
+        </Link>
         <ul className={styles.menu}>{menuItems.map(generateMenuItems)}</ul>
         <a
           className={`${styles.telephoneNumber} ${
