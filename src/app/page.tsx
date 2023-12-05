@@ -1,12 +1,11 @@
 import React from 'react';
-import Image from 'next/image';
 
 import { Title } from '../components/commons/Title';
 import { Subtitle } from '../components/commons/Subtitle';
-import {ChooseTour} from '@/components/sections/ChooseTour';
+import { ChooseTour, TravelPhotos } from '@/components/sections/indexSections';
 import { CardStories } from '@/components/commons/CardStories';
 
-import { cardStoriesData } from '../utils/listsOfData';
+import { cardStoriesData, travelPhotosData } from '../utils/listsOfData';
 // import styles from './page.module.css';
 
 export default function Home() {
@@ -295,120 +294,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='travel-photos'>
-        <Title title='Фотографии путешествий' uniqueName='travel-photos' />
-        <Subtitle
-          subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
+      <Title title='Фотографии путешествий' uniqueName='travel-photos' />
+      <Subtitle
+        subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
-        />
-
-        <div className='travel-photos__wrapper'>
-          <Image
-            src={'/images/travelPhotos/travelPhoto1.png'}
-            width={433}
-            height={301}
-            className='travel-photos__img1'
-            alt='images'
-            priority
-          />
-          <Image
-            src={'/images/travelPhotos/travelPhoto2.png'}
-            width={433}
-            height={301}
-            className='travel-photos__img1'
-            alt='images'
-            priority
-          />
-          <Image
-            src={'/images/travelPhotos/travelPhoto3.png'}
-            width={433}
-            height={301}
-            className='travel-photos__img1'
-            alt='images'
-            priority
-          />
-          <Image
-            src={'/images/travelPhotos/travelPhoto4.png'}
-            width={433}
-            height={301}
-            className='travel-photos__img1'
-            alt='images'
-            priority
-          />
-          <Image
-            src={'/images/travelPhotos/travelPhoto5.png'}
-            width={433}
-            height={301}
-            className='travel-photos__img2'
-            alt='images'
-            priority
-          />
-          <Image
-            src={'/images/travelPhotos/travelPhoto6.png'}
-            width={433}
-            height={301}
-            className='travel-photos__img2'
-            alt='images'
-            priority
-          />
-          <Image
-            src={'/images/travelPhotos/travelPhoto7.png'}
-            width={433}
-            height={301}
-            className='travel-photos__img2'
-            alt='images'
-            priority
-          />
-          <Image
-            src={'/images/travelPhotos/travelPhoto8.png'}
-            width={433}
-            height={301}
-            className='travel-photos__img2'
-            alt='images'
-            priority
-          />
-          <Image
-            src={'/images/travelPhotos/travelPhoto9.png'}
-            width={433}
-            height={301}
-            className='travel-photos__img2'
-            alt='images'
-            priority
-          />
-          <Image
-            src={'/images/travelPhotos/travelPhoto10.png'}
-            width={433}
-            height={301}
-            className='travel-photos__img3'
-            alt='images'
-            priority
-          />
-          <Image
-            src={'/images/travelPhotos/travelPhoto11.png'}
-            width={433}
-            height={301}
-            className='travel-photos__img3'
-            alt='images'
-            priority
-          />
-          <Image
-            src={'/images/travelPhotos/travelPhoto12.png'}
-            width={433}
-            height={301}
-            className='travel-photos__img3'
-            alt='images'
-            priority
-          />
-          <Image
-            src={'/images/travelPhotos/travelPhoto13.png'}
-            width={433}
-            height={301}
-            className='travel-photos__img3'
-            alt='images'
-            priority
-          />
-        </div>
-      </section>
+      />
+      <TravelPhotos travelPhotosData={travelPhotosData} />
 
       <section className='stories'>
         <Title title='Истории путешествий' uniqueName='stories' />

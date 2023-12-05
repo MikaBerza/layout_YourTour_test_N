@@ -3,6 +3,7 @@ import {
   CardTurPropsType,
   CardStoriesPropsType,
   tabType,
+  TravelPhotosPropsType,
 } from '@/types/customType';
 
 // страницы 1, данные вкладок
@@ -384,4 +385,21 @@ export const cardStoriesData: CardStoriesPropsType[] = [
       },
     ],
   },
+];
+
+// страницы 1, данные TravelPhotos
+export const travelPhotosData: TravelPhotosPropsType[] = [
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto1.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto2.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto3.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto4.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto5.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto6.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto7.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto8.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto9.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto10.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto11.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto12.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto13.png' },
 ];

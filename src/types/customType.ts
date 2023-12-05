@@ -55,3 +55,8 @@ export type LinkButtonPropsType = {
   link: string;
   linkBtnName: string;
 };
+
+export type TravelPhotosPropsType = {
+  id: string;
+  pathImg: string;
+};
