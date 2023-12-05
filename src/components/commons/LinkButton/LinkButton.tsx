@@ -1,5 +1,7 @@
-import { LinkButtonPropsType } from '@/types/customType';
+'use client';
 import React from 'react';
+import Link from 'next/link';
+import { LinkButtonPropsType } from '@/types/customType';
 
 const LinkButton: React.FC<LinkButtonPropsType> = ({
   parentStyles: [linkBtn, linkItemBtn],
@@ -8,9 +10,17 @@ const LinkButton: React.FC<LinkButtonPropsType> = ({
 }) => {
   return (
     <div className={linkBtn}>
-      <a className={linkItemBtn} href={link}>
+      <Link
+        className={linkItemBtn}
+        href={link}
+        onClick={(event) => {
+          // отменяем действие браузера по умолчанию, а именно
+          // прокрутку странице вверх после нажатия на вкладку
+          event.preventDefault();
+        }}
+      >
         {linkBtnName}
-      </a>
+      </Link>
     </div>
   );
 };
