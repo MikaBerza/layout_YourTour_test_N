@@ -25,15 +25,10 @@ const CardTur: React.FC<{ cardTurData: CardTurPropsType[] }> = ({
               <h3 className={styles.title} data-price={item.price}>
                 {item.title}
               </h3>
-              {/* <div className={styles.linkBtn}>
-                <a className={styles.linkItemBtn} href={item.link}>
-                  {item.linkBtnName}
-                </a>
-              </div> */}
               <LinkButton
                 parentStyles={[styles.linkBtn, styles.linkItemBtn]}
                 link={item.link}
-                linkBtnName={item.linkBtnName}
+                linkBtnName='Подробнее'
               />
             </div>
           </div>

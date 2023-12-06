@@ -25,7 +25,6 @@ export type CardTurPropsType = {
   price: string;
   title: string;
   link: string;
-  linkBtnName: string;
 };
 
 export type advantagesItemType = {
@@ -46,7 +45,6 @@ export type CardStoriesPropsType = {
   description: string;
   advantages: advantagesItemType[] | [];
   link: string;
-  linkBtnName: string;
   linksSocials: linkItemSocialType[] | [];
 };
 

@@ -8,7 +8,6 @@ import {
   advantagesItemType,
   linkItemSocialType,
 } from '@/types/customType';
-import Link from 'next/link';
 
 const CardStories: React.FC<{ cardStoriesData: CardStoriesPropsType[] }> = ({
   cardStoriesData,
@@ -63,7 +62,7 @@ const CardStories: React.FC<{ cardStoriesData: CardStoriesPropsType[] }> = ({
                 <LinkButton
                   parentStyles={[styles.linkBtn, styles.linkItemBtn]}
                   link={item.link}
-                  linkBtnName={item.linkBtnName}
+                  linkBtnName='Подробнее'
                 />
                 <div className={styles.linksSocials}>
                   {item.linksSocials.length > 0 &&

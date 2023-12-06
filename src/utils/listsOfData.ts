@@ -43,7 +43,6 @@ export const cardTurData: CardTurPropsType[] = [
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -51,7 +50,6 @@ export const cardTurData: CardTurPropsType[] = [
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -59,7 +57,6 @@ export const cardTurData: CardTurPropsType[] = [
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -67,7 +64,6 @@ export const cardTurData: CardTurPropsType[] = [
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -75,7 +71,6 @@ export const cardTurData: CardTurPropsType[] = [
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -83,7 +78,6 @@ export const cardTurData: CardTurPropsType[] = [
     price: 'от 80 000 руб',
     title: 'Путешествие в горы',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
 ];
 
@@ -94,7 +88,6 @@ export const cardTurData2: CardTurPropsType[] = [
     price: 'от 100 000 руб',
     title: 'Авторские вечера',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -102,7 +95,6 @@ export const cardTurData2: CardTurPropsType[] = [
     price: 'от 100 000 руб',
     title: 'Авторские вечера',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -110,7 +102,6 @@ export const cardTurData2: CardTurPropsType[] = [
     price: 'от 100 000 руб',
     title: 'Авторские вечера',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -118,7 +109,6 @@ export const cardTurData2: CardTurPropsType[] = [
     price: 'от 100 000 руб',
     title: 'Авторские вечера',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -126,7 +116,6 @@ export const cardTurData2: CardTurPropsType[] = [
     price: 'от 100 000 руб',
     title: 'Авторские вечера',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -134,7 +123,6 @@ export const cardTurData2: CardTurPropsType[] = [
     price: 'от 100 000 руб',
     title: 'Авторские вечера',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
 ];
 
@@ -145,7 +133,6 @@ export const cardTurData3: CardTurPropsType[] = [
     price: 'от 30 000 руб',
     title: 'Походы по улицам',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -153,7 +140,6 @@ export const cardTurData3: CardTurPropsType[] = [
     price: 'от 30 000 руб',
     title: 'Походы по улицам',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -161,7 +147,6 @@ export const cardTurData3: CardTurPropsType[] = [
     price: 'от 30 000 руб',
     title: 'Походы по улицам',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -169,7 +154,6 @@ export const cardTurData3: CardTurPropsType[] = [
     price: 'от 30 000 руб',
     title: 'Походы по улицам',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -177,7 +161,6 @@ export const cardTurData3: CardTurPropsType[] = [
     price: 'от 30 000 руб',
     title: 'Походы по улицам',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -185,7 +168,6 @@ export const cardTurData3: CardTurPropsType[] = [
     price: 'от 30 000 руб',
     title: 'Походы по улицам',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
 ];
 
@@ -196,7 +178,6 @@ export const cardTurData4: CardTurPropsType[] = [
     price: 'от 55 000 руб',
     title: 'Сплавы по рекам',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -204,7 +185,6 @@ export const cardTurData4: CardTurPropsType[] = [
     price: 'от 55 000 руб',
     title: 'Сплавы по рекам',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -212,7 +192,6 @@ export const cardTurData4: CardTurPropsType[] = [
     price: 'от 55 000 руб',
     title: 'Сплавы по рекам',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -220,7 +199,6 @@ export const cardTurData4: CardTurPropsType[] = [
     price: 'от 55 000 руб',
     title: 'Сплавы по рекам',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -228,7 +206,6 @@ export const cardTurData4: CardTurPropsType[] = [
     price: 'от 55 000 руб',
     title: 'Сплавы по рекам',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -236,7 +213,6 @@ export const cardTurData4: CardTurPropsType[] = [
     price: 'от 55 000 руб',
     title: 'Сплавы по рекам',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
 ];
 
@@ -247,7 +223,6 @@ export const cardTurData5: CardTurPropsType[] = [
     price: 'от 15 000 руб',
     title: 'Велопрогулки по побережью',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -255,7 +230,6 @@ export const cardTurData5: CardTurPropsType[] = [
     price: 'от 15 000 руб',
     title: 'Велопрогулки по побережью',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -263,7 +237,6 @@ export const cardTurData5: CardTurPropsType[] = [
     price: 'от 15 000 руб',
     title: 'Велопрогулки по побережью',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -271,7 +244,6 @@ export const cardTurData5: CardTurPropsType[] = [
     price: 'от 15 000 руб',
     title: 'Велопрогулки по побережью',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -279,7 +251,6 @@ export const cardTurData5: CardTurPropsType[] = [
     price: 'от 15 000 руб',
     title: 'Велопрогулки по побережью',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
   {
     id: generateId(),
@@ -287,7 +258,6 @@ export const cardTurData5: CardTurPropsType[] = [
     price: 'от 15 000 руб',
     title: 'Велопрогулки по побережью',
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
   },
 ];
 
@@ -315,7 +285,7 @@ export const cardStoriesData: CardStoriesPropsType[] = [
       },
     ],
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
+
     linksSocials: [
       {
         id: generateId(),
@@ -343,7 +313,7 @@ export const cardStoriesData: CardStoriesPropsType[] = [
     участие в формировании новых предложений:`,
     advantages: [],
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
+
     linksSocials: [
       {
         id: generateId(),
@@ -366,7 +336,7 @@ export const cardStoriesData: CardStoriesPropsType[] = [
     участие в формировании новых предложений:`,
     advantages: [],
     link: '#MoreDetailed',
-    linkBtnName: 'Подробнее',
+
     linksSocials: [
       {
         id: generateId(),
