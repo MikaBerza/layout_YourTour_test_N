@@ -1,1 +1,0 @@
-export { default as TravelPhotos } from './TravelPhotos';

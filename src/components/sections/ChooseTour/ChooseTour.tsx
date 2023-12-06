@@ -11,11 +11,13 @@ import {
   cardTurData5,
 } from '../../../utils/listsOfData';
 
+import styles from './chooseTour.module.css'
+
 const ChooseTour: React.FC = () => {
   const [tabName, setTabName] = React.useState('Популярные');
 
   return (
-    <section className='choose-tour'>
+    <section className={styles.wrapper}>
       <Tabs tabsData={tabsData} setTabName={setTabName} />
       {tabName === 'Популярные' && <CardTur cardTurData={cardTurData} />}
       {tabName === 'Авторские' && <CardTur cardTurData={cardTurData2} />}

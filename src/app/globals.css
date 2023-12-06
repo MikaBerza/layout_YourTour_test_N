@@ -149,48 +149,6 @@ a {
   cursor: pointer;
 }
 
-/*___choose-tour___*/
-.choose-tour {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px 15px 0 15px;
-}
-
-.tabs__link {
-  margin: 15px 15px 0 15px;
-  padding-bottom: 4px;
-  font-size: 23px;
-  font-weight: 700;
-  line-height: 122%;
-  color: var(--black-color);
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s ease, color 0.3s ease;
-}
-
-.tabs__link:hover {
-  color: var(--black-color);
-  border-bottom: 2px solid var(--black-color);
-}
-
-.tabs__link_active {
-  color: var(--orange200-color);
-  border-bottom: 2px solid var(--orange200-color);
-}
-
-.tabs__link_active:hover {
-  color: var(--orange200-color);
-  border-bottom: 2px solid var(--orange200-color);
-}
-
 /*___collect-tour___*/
 .collect-tour {
   display: flex;
@@ -507,246 +465,6 @@ a {
   background: var(--gray200-color);
 }
 
-/*___reviews___*/
-.reviews {
-  display: flex;
-  flex-direction: column;
-}
-
-.reviews__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1170px;
-  margin: 100px auto 0;
-  padding: 0 30px;
-}
-
-.card-reviews {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
-  width: calc(50% - 15px);
-  margin-right: 30px;
-  padding: 40px 40px 36px 40px;
-  background: var(--beige200-color);
-  border-radius: 50px;
-}
-
-.card-reviews:nth-child(2n) {
-  margin-right: 0px;
-}
-
-.card-reviews__wrapper-text {
-  margin: 0;
-  font-size: 23px;
-  font-weight: 700;
-  line-height: 28px;
-  color: var(--black-color);
-}
-
-.card-reviews__text {
-  margin: 0;
-}
-
-.card-reviews__text:nth-child(n+2) {
-  margin-top: 27px;
-}
-
-.card-reviews__about-author {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 70px;
-}
-
-.card-reviews__author-name {
-  display: block;
-  font-size: 35px;
-  font-weight: 500;
-  line-height: 122%;
-}
-
-.card-reviews__author-tour-name {
-  display: block;
-  margin-top: 8px;
-  font-size: 17px;
-  line-height: 142%;
-  letter-spacing: -0.17px;
-  color: var(--gray300-color);
-}
-
-.card-reviews__author-photo img {
-  width: 75px;
-  height: 75px;
-  border-radius: 100px;
-}
-
-/*___stories___*/
-.stories {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.stories__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 1170px;
-  margin: 100px auto 0;
-  padding: 0 30px;
-}
-
-.card-stories {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: auto;
-  border-radius: 50px;
-}
-
-.card-stories:not(:last-child) {
-  margin-bottom: 49px;
-}
-
-.card-stories__img {
-  height: 100%;
-  transition: transform 0.3s ease;
-}
-
-.card-stories__bgi-1 {
-  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
-    url('../../public/images/stories/storyPhoto1.png');
-}
-
-.card-stories__bgi-2 {
-  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
-    url('../../public/images/stories/storyPhoto2.png');
-}
-
-.card-stories__bgi-3 {
-  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%),
-    url('../../public/images/stories/storyPhoto3.png');
-}
-
-.card-stories__content {
-  position: sticky;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding: 60px 60px 60px 40px;
-  cursor: pointer;
-}
-
-.card-stories__title {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  max-width: 554px;
-  margin: 0;
-  padding: 0 0 37px 20px;
-  font-size: 35px;
-  font-weight: 500;
-  line-height: 122%;
-  color: var(--white-color);
-}
-
-.card-stories__wrapper-text {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  max-width: 554px;
-  margin: 0;
-  padding: 0 0 115px 20px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 142%;
-  color: var(--white-color);
-}
-
-.card-stories__description,
-.card-stories__list-advantages {
-  margin: 0;
-}
-
-.card-stories__description {
-  padding-bottom: 25px;
-}
-
-.card-stories__list-advantages {
-  padding-left: 12px;
-  list-style: none;
-}
-
-.card-stories__list-advantages .card-stories__list-advantages-item::before {
-  margin-right: 10px;
-  font-size: 20px;
-  content: "•";
-}
-
-.card-stories__link-group {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.card-stories__button-link-item {
-  padding: 7px 32px 7px 20px;
-  font-size: 23px;
-  font-weight: 700;
-  line-height: 122%;
-  color: var(--white-color);
-  border-radius: 50px;
-  transition: background-color 0.3s ease;
-}
-
-.card-stories__button-link-item::after {
-  position: relative;
-  left: 15px;
-  content: url('../../public/images/VectorRight.svg');
-}
-
-.card-stories__social-network-link-item {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 142%;
-  color: var(--white-color);
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.3s ease, color 0.3s ease;
-}
-
-.card-stories__social-network-link-item:not(:last-child) {
-  margin-right: 31px;
-}
-
-.card-stories__social-network-link-item:hover {
-  color: var(--white-color);
-  border-bottom: 1px solid var(--white-color);
-}
-
-.card-stories__social-network-link-item:active {
-  color: var(--orange200-color);
-  border-bottom: 1px solid var(--orange200-color);
-}
-
-.card-stories:hover .card-stories__img {
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
-.card-stories:hover .card-stories__button-link-item {
-  background-color: var(--green400-color);
-  border-radius: 50px;
-}
-
-.card-stories:hover .card-stories__button-link-item:active {
-  color: var(--white-color);
-  background-color: var(--orange200-color);
-  border-radius: 50px;
-}
-
 .pb-1 {
   padding-bottom: 200px;
 }
@@ -764,17 +482,6 @@ a {
     max-width: 442px;
     padding-top: 50px;
     font-size: 20px;
-  }
-
-  /*  */
-  /* __choose-tour__ */
-  .choose-tour .tabs {
-    padding-top: 20px;
-  }
-
-  .choose-tour .tabs__link {
-    padding-bottom: 4px;
-    font-size: 23px;
   }
 
   /*  */
@@ -836,83 +543,9 @@ a {
     margin-right: 25px;
   }
 
-  /*  */
-  /* __reviews__ */
-  .reviews__container {
-    max-width: 918px;
-    margin-top: 98px;
-    padding: 0 30px;
-  }
-
-  .card-reviews {
-    width: calc(50% - 9px);
-    margin-right: 18px;
-    padding-top: 42px;
-  }
-
-  .card-reviews__text {
-    font-size: 23px;
-  }
-
-  .card-reviews__author-name {
-    font-size: 35px;
-  }
-
-  .card-reviews__author-tour-name {
-    font-size: 17px;
-  }
-
-  /*  */
-  /* __stories__ */
-  .stories__container {
-    max-width: 918px;
-    margin-top: 100px;
-    padding: 0 30px;
-  }
-
-  .card-stories {
-    border-radius: 50px;
-  }
-
-  .card-stories:not(:last-child) {
-    margin-bottom: 49px;
-  }
-
-  .card-stories__title {
-    font-size: 35px;
-  }
-
-  .card-stories__wrapper-text {
-    padding-bottom: 111px;
-  }
-
   .pb-1 {
     padding-bottom: 198px;
   }
-
-  .card-stories__description,
-  .card-stories__list-advantages {
-    font-size: 20px;
-    line-height: 144%;
-  }
-
-  .card-stories__button-link-item {
-    font-size: 23px;
-  }
-
-  .card-stories__button-link-item::after {
-    top: 0px;
-    left: 15px;
-  }
-
-  .card-stories__social-network-link-item {
-    font-size: 20px;
-  }
-
-  .card-stories__social-network-link-item:not(:last-child) {
-    margin-right: 31px;
-  }
-
 }
 
 /*770px___________________________________________________*/
@@ -940,62 +573,6 @@ a {
     width: 177px;
   }
 
-  /*  */
-  /* __reviews__ */
-  .reviews__container {
-    flex-direction: column;
-  }
-
-  .card-reviews {
-    width: 100%;
-    margin: 0;
-    padding: 20px 21px 20px 20px;
-    border-radius: 20px;
-  }
-
-  /* только для не четных элементов */
-  .card-reviews:nth-child(even) {
-    margin-top: 18px;
-  }
-
-  .card-reviews__text {
-    line-height: 143%;
-  }
-
-  .card-reviews__text:nth-child(n+2) {
-    margin-top: 25px;
-  }
-
-  .card-reviews__about-author {
-    align-items: end;
-    margin-top: 37px;
-    letter-spacing: 0.92px;
-  }
-
-  .card-reviews__author-photo img {
-    position: relative;
-    top: 3px;
-  }
-
-  /*  */
-  /* __stories__ */
-  .card-stories__title {
-    font-size: 23px;
-  }
-
-  .card-stories__description,
-  .card-stories__list-advantages,
-  .card-stories__button-link-item {
-    font-size: 16px;
-  }
-
-  .card-stories__social-network-link-item {
-    font-size: 14px;
-  }
-
-  .card-stories__social-network-link-item:not(:last-child) {
-    margin-right: 10px;
-  }
 
 }
 
@@ -1024,7 +601,6 @@ a {
   .buttons-group__find {
     margin-right: 10px;
   }
-
 }
 
 /*550px___________________________________________________*/
@@ -1053,18 +629,6 @@ a {
 
   .buttons__small {
     width: 114px;
-    font-size: 16px;
-  }
-
-  /*  */
-  /* __choose-tour__ */
-  .choose-tour .tabs {
-    padding-top: 27px;
-  }
-
-  .choose-tour .tabs__link {
-    margin: 5px;
-    padding-bottom: 0px;
     font-size: 16px;
   }
 
@@ -1169,82 +733,9 @@ a {
     margin-right: 5px;
   }
 
-  /*  */
-  /* __reviews__ */
-  .reviews__container {
-    margin-top: 50px;
-    padding: 0 21px;
-  }
-
-  .card-reviews__text,
-  .card-reviews__author-tour-name {
-    font-size: 16px;
-  }
-
-  .card-reviews__author-name {
-    font-size: 23px;
-  }
-
-  /*  */
-  /* __stories__ */
-  .stories__container {
-    margin-top: 51px;
-    padding: 0 21px;
-  }
-
-  .card-stories {
-    border-radius: 20px;
-  }
-
-  .card-stories:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  .card-stories__content {
-    padding: 30px 30px 32px 10px;
-  }
-
-  .card-stories__title {
-    max-width: 162px;
-    padding-bottom: 20px;
-    font-size: 23px;
-    letter-spacing: 0.92px;
-  }
-
-  .card-stories__wrapper-text {
-    padding-bottom: 64px;
-  }
-
   .pb-1 {
     padding-bottom: 134px;
   }
-
-  .card-stories__social-network-link {
-    display: none;
-  }
-
-  .card-stories__description {
-    padding-bottom: 24px;
-  }
-
-  .card-stories__list-advantages {
-    padding-left: 9px;
-    line-height: 137%;
-  }
-
-  .card-stories__button-link-item::after {
-    top: 2px;
-    left: 17px;
-  }
-
-  .card-stories__social-network-link-item {
-    font-size: 16px;
-  }
-
-  .card-stories__social-network-link-item:not(:last-child) {
-    margin-right: 5px;
-  }
-
 }
 
 /*359px___________________________________________________*/

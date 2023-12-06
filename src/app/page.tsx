@@ -6,8 +6,8 @@ import {
   ChooseTour,
   Reviews,
   TravelPhotos,
+  Stories,
 } from '@/components/sections/indexSections';
-import { CardStories } from '@/components/commons/CardStories';
 
 import {
   cardReviewsData,
@@ -20,6 +20,7 @@ import {
 export default function Home() {
   return (
     <>
+      {/*___greeting */}
       <section className='greeting bgp-1'>
         <h1 className='section-title-main' id='YourTour'>
           Идеальные путешествия существуют
@@ -33,16 +34,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/*___choose-tour */}
       <Title title='Выбери свой тур' uniqueName='choose-tour' />
       <ChooseTour />
 
+      {/*___collect-tour */}
       <section className='collect-tour'>
         <Title title='Собери свой тур' uniqueName='collect-tour' />
         <Subtitle
           subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
         />
-
         <div className='collect-tour__container'>
           <form className='form-fill' action='#'>
             <div className='input-fields'>
@@ -242,6 +244,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/*___reviews */}
       <Title title='Отзывы наших путешественников' uniqueName='reviews' />
       <Subtitle
         subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
@@ -249,6 +252,7 @@ export default function Home() {
       />
       <Reviews cardReviewsData={cardReviewsData} />
 
+      {/*___travel-photos */}
       <Title title='Фотографии путешествий' uniqueName='travel-photos' />
       <Subtitle
         subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
@@ -256,14 +260,13 @@ export default function Home() {
       />
       <TravelPhotos travelPhotosData={travelPhotosData} />
 
-      <section className='stories'>
-        <Title title='Истории путешествий' uniqueName='stories' />
-        <Subtitle
-          subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
+      {/*___stories */}
+      <Title title='Истории путешествий' uniqueName='stories' />
+      <Subtitle
+        subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
-        />
-        <CardStories cardStoriesData={cardStoriesData} />
-      </section>
+      />
+      <Stories cardStoriesData={cardStoriesData} />
     </>
   );
 }
