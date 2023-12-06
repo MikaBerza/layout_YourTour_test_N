@@ -1,0 +1,168 @@
+/*___reviews___*/
+/* .reviews {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .reviews__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1170px;
+  margin: 100px auto 0;
+  padding: 0 30px;
+} */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: calc(50% - 15px);
+  margin-right: 30px;
+  padding: 40px 40px 36px 40px;
+  background: var(--beige200-color);
+  border-radius: 50px;
+}
+
+.wrapper:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.innerText {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--black-color);
+}
+
+.text {
+  margin: 0;
+}
+
+.text:nth-child(n+2) {
+  margin-top: 27px;
+}
+
+.aboutAuthor {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.authorName {
+  display: block;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 122%;
+}
+
+.tourName {
+  display: block;
+  margin-top: 8px;
+  font-size: 17px;
+  line-height: 142%;
+  letter-spacing: -0.17px;
+  color: var(--gray300-color);
+}
+
+.authorPhoto img {
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+}
+
+/*___media___*/
+@media (max-width: 1024px) {
+
+  /*  */
+  /* __reviews__ */
+  .reviews__container {
+    max-width: 918px;
+    margin-top: 98px;
+    padding: 0 30px;
+  }
+
+  .wrapper {
+    width: calc(50% - 9px);
+    margin-right: 18px;
+    padding-top: 42px;
+  }
+
+  .text {
+    font-size: 23px;
+  }
+
+  .authorName {
+    font-size: 35px;
+  }
+
+  .tourName {
+    font-size: 17px;
+  }
+}
+
+/*770px___________________________________________________*/
+@media (max-width: 770px) {
+
+
+
+  /*  */
+  /* __reviews__ */
+  .reviews__container {
+    flex-direction: column;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 20px 21px 20px 20px;
+    border-radius: 20px;
+  }
+
+  /* только для не четных элементов */
+  .wrapper:nth-child(even) {
+    margin-top: 18px;
+  }
+
+  .text {
+    line-height: 143%;
+  }
+
+  .text:nth-child(n+2) {
+    margin-top: 25px;
+  }
+
+  .aboutAuthor {
+    align-items: end;
+    margin-top: 37px;
+    letter-spacing: 0.92px;
+  }
+
+  .authorPhoto img {
+    position: relative;
+    top: 3px;
+  }
+
+}
+
+/*550px___________________________________________________*/
+@media (max-width: 550px) {
+
+  /*  */
+  /* __reviews__ */
+  .reviews__container {
+    margin-top: 50px;
+    padding: 0 21px;
+  }
+
+  .text,
+  .tourName {
+    font-size: 16px;
+  }
+
+  .authorName {
+    font-size: 23px;
+  }
+}

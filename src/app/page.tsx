@@ -2,10 +2,19 @@ import React from 'react';
 
 import { Title } from '../components/commons/Title';
 import { Subtitle } from '../components/commons/Subtitle';
-import { ChooseTour, TravelPhotos } from '@/components/sections/indexSections';
+import {
+  ChooseTour,
+  Reviews,
+  TravelPhotos,
+} from '@/components/sections/indexSections';
 import { CardStories } from '@/components/commons/CardStories';
 
-import { cardStoriesData, travelPhotosData } from '../utils/listsOfData';
+import {
+  cardReviewsData,
+  cardStoriesData,
+  travelPhotosData,
+} from '../utils/listsOfData';
+
 // import styles from './page.module.css';
 
 export default function Home() {
@@ -233,66 +242,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='reviews'>
-        <Title title='Отзывы наших путешественников' uniqueName='reviews' />
-        <Subtitle
-          subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
+      <Title title='Отзывы наших путешественников' uniqueName='reviews' />
+      <Subtitle
+        subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
-        />
-
-        <div className='reviews__container'>
-          <div className='card-reviews'>
-            <div className='card-reviews__wrapper-text'>
-              <p className='card-reviews__text'>
-                Идейные соображения высшего порядка, а также рамки и место
-                обучения кадров обеспечивает широкому кругу (специалистов)
-                участие в формировании новых предложений. Идейные соображения
-                высшего порядка, а также начало повседневной работы по
-                формированию позиции позволяет оценить значение модели развития.
-              </p>
-            </div>
-            <div className='card-reviews__about-author'>
-              <div className='card-reviews__author-data'>
-                <span className='card-reviews__author-name'>Мария</span>
-                <span className='card-reviews__author-tour-name'>
-                  Тур: Вдали от дома{' '}
-                </span>
-              </div>
-              <div className='card-reviews__author-photo'>
-                <img src='./images/reviewPhoto1.png' alt='photo' />
-              </div>
-            </div>
-          </div>
-          <div className='card-reviews'>
-            <div className='card-reviews__wrapper-text'>
-              <p className='card-reviews__text'>
-                Равным образом постоянный количественный рост и сфера нашей
-                активности играет важную роль в формировании системы обучения
-                кадров, соответствует насущным потребностям.
-              </p>
-              <p className='card-reviews__text'>
-                Значимость этих проблем настолько очевидна, что дальнейшее
-                развитие различных форм деятельности обеспечивает широкому кругу
-                (специалистов) участие в формировании новых предложений.
-                Повседневная практика показывает, что реализация намеченных
-                плановых заданий в значительной степени обуславливает создание
-                модели развития.
-              </p>
-            </div>
-            <div className='card-reviews__about-author'>
-              <div className='card-reviews__author-data'>
-                <span className='card-reviews__author-name'>Павел</span>
-                <span className='card-reviews__author-tour-name'>
-                  Тур: Путешествие в горы
-                </span>
-              </div>
-              <div className='card-reviews__author-photo'>
-                <img src='./images/reviewPhoto2.png' alt='photo' />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      />
+      <Reviews cardReviewsData={cardReviewsData} />
 
       <Title title='Фотографии путешествий' uniqueName='travel-photos' />
       <Subtitle

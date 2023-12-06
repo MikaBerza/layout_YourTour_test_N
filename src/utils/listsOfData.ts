@@ -4,6 +4,7 @@ import {
   CardStoriesPropsType,
   tabType,
   TravelPhotosPropsType,
+  CardReviewsPropsType,
 } from '@/types/customType';
 
 // страницы 1, данные вкладок
@@ -261,6 +262,52 @@ export const cardTurData5: CardTurPropsType[] = [
   },
 ];
 
+// страницы 1, данные CardReviews
+export const cardReviewsData: CardReviewsPropsType[] = [
+  {
+    id: generateId(),
+    text: `Идейные соображения высшего порядка, а также рамки и место обучения
+    кадров обеспечивает широкому кругу (специалистов) участие в
+    формировании новых предложений. Идейные соображения высшего порядка, а
+    также начало повседневной работы по формированию позиции позволяет
+    оценить значение модели развития.`,
+    authorName: 'Мария',
+    tourName: 'Тур: Вдали от дома',
+    pathImg: '/images/reviewPhoto1.png',
+  },
+  {
+    id: generateId(),
+    text: `Равным образом постоянный количественный рост и сфера нашей
+    активности играет важную роль в формировании системы обучения
+    кадров, соответствует насущным потребностям. \nЗначимость этих проблем настолько очевидна, что дальнейшее
+    развитие различных форм деятельности обеспечивает широкому кругу
+    (специалистов) участие в формировании новых предложений.
+    Повседневная практика показывает, что реализация намеченных
+    плановых заданий в значительной степени обуславливает создание
+    модели развития.`,
+    authorName: 'Павел',
+    tourName: 'Тур: Путешествие в горы',
+    pathImg: '/images/reviewPhoto2.png',
+  },
+];
+
+// страницы 1, данные TravelPhotos
+export const travelPhotosData: TravelPhotosPropsType[] = [
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto1.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto2.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto3.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto4.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto5.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto6.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto7.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto8.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto9.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto10.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto11.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto12.png' },
+  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto13.png' },
+];
+
 // страницы 1, данные карточек CardStories
 export const cardStoriesData: CardStoriesPropsType[] = [
   {
@@ -355,21 +402,4 @@ export const cardStoriesData: CardStoriesPropsType[] = [
       },
     ],
   },
-];
-
-// страницы 1, данные TravelPhotos
-export const travelPhotosData: TravelPhotosPropsType[] = [
-  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto1.png' },
-  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto2.png' },
-  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto3.png' },
-  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto4.png' },
-  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto5.png' },
-  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto6.png' },
-  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto7.png' },
-  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto8.png' },
-  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto9.png' },
-  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto10.png' },
-  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto11.png' },
-  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto12.png' },
-  { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto13.png' },
 ];

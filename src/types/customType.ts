@@ -58,3 +58,11 @@ export type TravelPhotosPropsType = {
   id: string;
   pathImg: string;
 };
+
+export type CardReviewsPropsType= {
+  id: string;
+  text: string;
+  authorName: string;
+  tourName: string;
+  pathImg: string;
+};
