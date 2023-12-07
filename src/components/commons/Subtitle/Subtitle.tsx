@@ -1,8 +1,7 @@
 import React from 'react';
-import { SubtitlePropsType } from '../../../types/customType';
 import styles from './subtitle.module.css';
 
-const Subtitle: React.FC<SubtitlePropsType> = ({ subtitle }) => {
+const Subtitle: React.FC<{ subtitle: string }> = ({ subtitle }) => {
   return <p className={styles.text}>{subtitle}</p>;
 };
 

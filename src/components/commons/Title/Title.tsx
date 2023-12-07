@@ -1,8 +1,10 @@
 import React from 'react';
-import { TitlePropsType } from '../../../types/customType';
 import styles from './title.module.css';
 
-const Title: React.FC<TitlePropsType> = ({ title, uniqueName }) => {
+const Title: React.FC<{ title: string; uniqueName: string }> = ({
+  title,
+  uniqueName,
+}) => {
   return (
     <h2 className={styles.text} id={uniqueName}>
       {title}

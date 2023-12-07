@@ -4,15 +4,6 @@ export type menuItemType = {
   anchor: string;
 };
 
-export type TitlePropsType = {
-  title: string;
-  uniqueName: string;
-};
-
-export type SubtitlePropsType = {
-  subtitle: string;
-};
-
 export type tabType = {
   id: string;
   link: string;
