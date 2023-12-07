@@ -1,34 +1,54 @@
-.text {
-  max-width: 418px;
+.generalText {
   margin: auto;
-  padding-top: 30px;
   font-size: 20px;
   font-weight: 400;
   line-height: 142%;
   text-align: center;
+}
+
+.mainText {
+  max-width: 562px;
+  padding-top: 50px;
+  color: var(--white-color);
+}
+
+.minorText {
+  max-width: 418px;
+  padding-top: 30px;
   color: var(--gray300-color);
 }
 
 /*___media___*/
+@media (max-width: 1024px) {
+  .mainText {
+    max-width: 442px;
+    padding-top: 50px;
+  }
+}
+
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
-  .text {
+  .generalText {
     font-size: 16px;
   }
 }
 
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
-  .text {
+  .mainText {
+    max-width: 310px;
+    padding-top: 40px;
+  }
+
+  .minorText {
     max-width: 318px;
     padding-top: 20px;
-    font-size: 16px;
   }
 }
 
 /*359px___________________________________________________*/
 @media (max-width: 359px) {
-  .text {
+  .minorText {
     font-size: 14px;
   }
 }

@@ -93,17 +93,6 @@ a {
     url('../../public/images/greeting/greetingBackgroundImg.png');
 }
 
-.section-subtitle-main {
-  max-width: 562px;
-  margin: auto;
-  padding-top: 50px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 142%;
-  text-align: center;
-  color: var(--white-color);
-}
-
 /*___collect-tour___*/
 .collect-tour {
   display: flex;
@@ -428,14 +417,6 @@ a {
 @media (max-width: 1024px) {
 
   /*  */
-  /* __greeting__ */
-  .section-subtitle-main {
-    max-width: 442px;
-    padding-top: 50px;
-    font-size: 20px;
-  }
-
-  /*  */
   /* __collect-tour__ */
   .collect-tour__container {
     max-width: 918px;
@@ -550,15 +531,6 @@ a {
 
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
-
-  /*  */
-  /* __greeting__*/
-  .section-subtitle-main {
-    max-width: 310px;
-    padding-top: 40px;
-    font-size: 16px;
-    line-height: 142%;
-  }
 
   /*  */
   /* __collect-tour__ */

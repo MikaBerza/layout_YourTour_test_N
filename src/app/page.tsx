@@ -29,13 +29,11 @@ export default function Home() {
           title='Идеальные путешествия существуют'
           uniqueName='greeting'
         />
-        {/* <h1 className='section-title-main' id='YourTour'>
-          Идеальные путешествия существуют
-        </h1> */}
-        <p className='section-subtitle-main'>
-          Идейные соображения высшего порядка, а также рамки и место обучения
-          кадров
-        </p>
+        <Subtitle
+          nameStyles={'mainText'}
+          text='Идейные соображения высшего порядка, а также рамки и место обучения
+          кадров'
+        />
         <AnchorButton name='Найти тур' />
       </section>
 
@@ -55,7 +53,8 @@ export default function Home() {
           uniqueName='collect-tour'
         />
         <Subtitle
-          subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
+          nameStyles={'minorText'}
+          text='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
         />
         <div className='collect-tour__container'>
@@ -264,7 +263,8 @@ export default function Home() {
         uniqueName='reviews'
       />
       <Subtitle
-        subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
+        nameStyles={'minorText'}
+        text='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
       />
       <Reviews cardReviewsData={cardReviewsData} />
@@ -276,7 +276,8 @@ export default function Home() {
         uniqueName='travel-photos'
       />
       <Subtitle
-        subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
+        nameStyles={'minorText'}
+        text='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
       />
       <TravelPhotos travelPhotosData={travelPhotosData} />
@@ -288,7 +289,8 @@ export default function Home() {
         uniqueName='stories'
       />
       <Subtitle
-        subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
+        nameStyles={'minorText'}
+        text='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
       />
       <Stories cardStoriesData={cardStoriesData} />
