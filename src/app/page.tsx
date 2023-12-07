@@ -30,7 +30,7 @@ export default function Home() {
           Идейные соображения высшего порядка, а также рамки и место обучения
           кадров
         </p>
-        <AnchorButton />
+        <AnchorButton name='Найти тур'/>
       </section>
 
       {/*___choose-tour */}
