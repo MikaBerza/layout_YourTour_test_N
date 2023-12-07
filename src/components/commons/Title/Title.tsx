@@ -8,7 +8,7 @@ const Title: React.FC<{
 }> = ({ nameStyles, title, uniqueName }) => {
   return (
     <h2
-      className={`${styles[nameStyles]} ${styles.generalTitle}`}
+      className={`${styles[nameStyles]} ${styles.generalText}`}
       id={uniqueName}
     >
       {title}

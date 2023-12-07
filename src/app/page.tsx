@@ -25,7 +25,7 @@ export default function Home() {
       {/*___greeting */}
       <section className='greeting bgp-1'>
         <Title
-          nameStyles={'mainTitle'}
+          nameStyles={'mainText'}
           title='Идеальные путешествия существуют'
           uniqueName='greeting'
         />
@@ -39,7 +39,7 @@ export default function Home() {
 
       {/*___choose-tour */}
       <Title
-        nameStyles={'minorTitle'}
+        nameStyles={'minorText'}
         title='Выбери свой тур'
         uniqueName='choose-tour'
       />
@@ -48,7 +48,7 @@ export default function Home() {
       {/*___collect-tour */}
       <section className='collect-tour'>
         <Title
-          nameStyles={'minorTitle'}
+          nameStyles={'minorText'}
           title='Собери свой тур'
           uniqueName='collect-tour'
         />
@@ -258,7 +258,7 @@ export default function Home() {
 
       {/*___reviews */}
       <Title
-        nameStyles={'minorTitle'}
+        nameStyles={'minorText'}
         title='Отзывы наших путешественников'
         uniqueName='reviews'
       />
@@ -271,7 +271,7 @@ export default function Home() {
 
       {/*___travel-photos */}
       <Title
-        nameStyles={'minorTitle'}
+        nameStyles={'minorText'}
         title='Фотографии путешествий'
         uniqueName='travel-photos'
       />
@@ -284,7 +284,7 @@ export default function Home() {
 
       {/*___stories */}
       <Title
-        nameStyles={'minorTitle'}
+        nameStyles={'minorText'}
         title='Истории путешествий'
         uniqueName='stories'
       />

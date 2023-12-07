@@ -1,10 +1,10 @@
-.generalTitle {
+.generalText {
   margin: auto;
   font-weight: 700;
   text-align: center;
 }
 
-.mainTitle {
+.mainText {
   max-width: 768px;
   padding-top: 207px;
   font-size: 96px;
@@ -13,7 +13,7 @@
   color: var(--white-color);
 }
 
-.minorTitle {
+.minorText {
   max-width: 723px;
   padding: 135px 20px 0;
   font-size: 59px;
@@ -23,18 +23,18 @@
 
 /*___media___*/
 @media (max-width: 1024px) {
-  .mainTitle {
+  .mainText {
     padding-top: 207px;
   }
 }
 
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
-  .mainTitle {
+  .mainText {
     font-size: 68px;
   }
 
-  .minorTitle {
+  .minorText {
     padding-top: 76px;
     font-size: 50px;
     line-height: 112%;
@@ -44,7 +44,7 @@
 
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
-  .mainTitle {
+  .mainText {
     max-width: 360px;
     padding-top: 141px;
     font-size: 34px;
@@ -52,14 +52,14 @@
     letter-spacing: 0.68px;
   }
 
-  .minorTitle {
+  .minorText {
     font-size: 34px;
   }
 }
 
 /*359px___________________________________________________*/
 @media (max-width: 359px) {
-  .minorTitle {
+  .minorText {
     font-size: 28px;
   }
 }
