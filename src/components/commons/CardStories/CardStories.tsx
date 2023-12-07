@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import styles from './cardStories.module.css';
-import { LinkButton } from '../LinkButton';
+import { LinkButton } from '../buttons/indexButtons';
 import {
   CardStoriesPropsType,
   AdvantagesItemType,
