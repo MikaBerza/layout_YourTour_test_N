@@ -1,3 +1,5 @@
+import { MouseEventHandler } from 'react';
+
 // функция для генерации id
 export const generateId = (): string =>
   Math.round(Math.random() * 100000000000000).toString(16);
@@ -22,4 +24,21 @@ export const splitSentenceWithLineBreak = (text: string): string[] => {
     return [...firstSentence, otherSentences];
   }
   return splitSentences;
+};
+
+// функция, обработать плавную прокрутку
+export const handleSmoothScrolling: MouseEventHandler<HTMLLIElement> = (
+  event
+): void => {
+  event.preventDefault();
+  const hrefAttribute = (event.target as HTMLLIElement).getAttribute('href');
+
+  if (hrefAttribute !== null) {
+    const target = document.querySelector(hrefAttribute) as HTMLElement;
+
+    window.scrollTo({
+      behavior: 'smooth',
+      top: target.offsetTop,
+    });
+  }
 };

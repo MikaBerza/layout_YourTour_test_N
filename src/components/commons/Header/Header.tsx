@@ -2,6 +2,7 @@
 import React, { MouseEventHandler } from 'react';
 import Link from 'next/link';
 import { headerMenuData } from '../../../utils/listsOfData';
+import { handleSmoothScrolling } from '../../../utils/modules';
 import styles from './header.module.css';
 import { MenuItemType } from '../../../types/customType';
 
@@ -33,23 +34,6 @@ const Header: React.FC = () => {
       setFlag(false);
     }
   }, [thisScrollY]);
-
-  // функция, обработать плавную прокрутку
-  const handleSmoothScrolling: MouseEventHandler<HTMLLIElement> = (
-    event
-  ): void => {
-    event.preventDefault();
-    const hrefAttribute = (event.target as HTMLLIElement).getAttribute('href');
-
-    if (hrefAttribute !== null) {
-      const target = document.querySelector(hrefAttribute) as HTMLElement;
-
-      window.scrollTo({
-        behavior: 'smooth',
-        top: target.offsetTop,
-      });
-    }
-  };
 
   // функция, сгенерировать пункты меню (JSX-элементы)
   const generateMenuItems = (item: MenuItemType): React.JSX.Element => {
