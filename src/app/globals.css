@@ -93,18 +93,6 @@ a {
     url('../../public/images/greeting/greetingBackgroundImg.png');
 }
 
-.section-title-main {
-  max-width: 768px;
-  margin: auto;
-  padding-top: 207px;
-  font-size: 96px;
-  font-weight: 700;
-  line-height: 109%;
-  text-align: center;
-  letter-spacing: 1.92px;
-  color: var(--white-color);
-}
-
 .section-subtitle-main {
   max-width: 562px;
   margin: auto;
@@ -441,10 +429,6 @@ a {
 
   /*  */
   /* __greeting__ */
-  .section-title-main {
-    padding-top: 207px;
-  }
-
   .section-subtitle-main {
     max-width: 442px;
     padding-top: 50px;
@@ -519,12 +503,6 @@ a {
 @media (max-width: 770px) {
 
   /*  */
-  /* __greeting__ */
-  .section-title-main {
-    font-size: 68px;
-  }
-
-  /*  */
   /* __collect-tour__ */
   .input-fields__name-input::placeholder,
   .input-fields__dropdown-select-item,
@@ -575,14 +553,6 @@ a {
 
   /*  */
   /* __greeting__*/
-  .section-title-main {
-    max-width: 360px;
-    padding-top: 141px;
-    font-size: 34px;
-    line-height: 112%;
-    letter-spacing: 0.68px;
-  }
-
   .section-subtitle-main {
     max-width: 310px;
     padding-top: 40px;

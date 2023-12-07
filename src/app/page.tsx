@@ -17,29 +17,43 @@ import {
 } from '../utils/listsOfData';
 
 // import styles from './page.module.css';
+// import styles from '../components/commons/Title/title.module.css';
 
 export default function Home() {
   return (
     <>
       {/*___greeting */}
       <section className='greeting bgp-1'>
-        <h1 className='section-title-main' id='YourTour'>
+        <Title
+          nameStyles={'mainTitle'}
+          title='Идеальные путешествия существуют'
+          uniqueName='greeting'
+        />
+        {/* <h1 className='section-title-main' id='YourTour'>
           Идеальные путешествия существуют
-        </h1>
+        </h1> */}
         <p className='section-subtitle-main'>
           Идейные соображения высшего порядка, а также рамки и место обучения
           кадров
         </p>
-        <AnchorButton name='Найти тур'/>
+        <AnchorButton name='Найти тур' />
       </section>
 
       {/*___choose-tour */}
-      <Title title='Выбери свой тур' uniqueName='choose-tour' />
+      <Title
+        nameStyles={'minorTitle'}
+        title='Выбери свой тур'
+        uniqueName='choose-tour'
+      />
       <ChooseTour />
 
       {/*___collect-tour */}
       <section className='collect-tour'>
-        <Title title='Собери свой тур' uniqueName='collect-tour' />
+        <Title
+          nameStyles={'minorTitle'}
+          title='Собери свой тур'
+          uniqueName='collect-tour'
+        />
         <Subtitle
           subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
@@ -244,7 +258,11 @@ export default function Home() {
       </section>
 
       {/*___reviews */}
-      <Title title='Отзывы наших путешественников' uniqueName='reviews' />
+      <Title
+        nameStyles={'minorTitle'}
+        title='Отзывы наших путешественников'
+        uniqueName='reviews'
+      />
       <Subtitle
         subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
@@ -252,7 +270,11 @@ export default function Home() {
       <Reviews cardReviewsData={cardReviewsData} />
 
       {/*___travel-photos */}
-      <Title title='Фотографии путешествий' uniqueName='travel-photos' />
+      <Title
+        nameStyles={'minorTitle'}
+        title='Фотографии путешествий'
+        uniqueName='travel-photos'
+      />
       <Subtitle
         subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
@@ -260,7 +282,11 @@ export default function Home() {
       <TravelPhotos travelPhotosData={travelPhotosData} />
 
       {/*___stories */}
-      <Title title='Истории путешествий' uniqueName='stories' />
+      <Title
+        nameStyles={'minorTitle'}
+        title='Истории путешествий'
+        uniqueName='stories'
+      />
       <Subtitle
         subtitle='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'

@@ -1,12 +1,16 @@
 import React from 'react';
 import styles from './title.module.css';
 
-const Title: React.FC<{ title: string; uniqueName: string }> = ({
-  title,
-  uniqueName,
-}) => {
+const Title: React.FC<{
+  nameStyles: string;
+  title: string;
+  uniqueName: string;
+}> = ({ nameStyles, title, uniqueName }) => {
   return (
-    <h2 className={styles.text} id={uniqueName}>
+    <h2
+      className={`${styles[nameStyles]} ${styles.generalTitle}`}
+      id={uniqueName}
+    >
       {title}
     </h2>
   );
