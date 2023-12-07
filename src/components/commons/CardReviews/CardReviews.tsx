@@ -7,39 +7,20 @@ import { splitSentenceWithLineBreak } from '@/utils/modules';
 import styles from './cardReviews.module.css';
 
 const CardReviews: React.FC<CardReviewsPropsType> = (item) => {
-  // функция, генерации текста отзывов
-  // const generateListOfReviews = (str: string): React.JSX.Element | null => {
-  //   if (splitSentenceWithLineBreak(str).length === 1) {
-  //     return (
-  //       <p className={styles.text}>{splitSentenceWithLineBreak(str)[0]}</p>
-  //     );
-  //   } else if (splitSentenceWithLineBreak(str).length > 1) {
-  //     splitSentenceWithLineBreak(str).map((item, index) => {
-  //       return (
-  //         <p className={styles.text} key={index}>
-  //           {item}
-  //         </p>
-  //       );
-  //     });
-  //   }
-  //   return null;
-  // };
+  // функция, генерации списка отзывов
+  const generateListOfReviews = (itemText: string, index: number) => {
+    return (
+      <p className={styles.text} key={index}>
+        {itemText}
+      </p>
+    );
+  };
 
   return (
     <div className={styles.wrapper} key={item.id}>
       <div className={styles.innerText}>
-        {splitSentenceWithLineBreak(item.text).length === 1 ? (
-          <p className={styles.text}>
-            {splitSentenceWithLineBreak(item.text)[0]}
-          </p>
-        ) : (
-          splitSentenceWithLineBreak(item.text).map((item, index) => {
-            return (
-              <p className={styles.text} key={index}>
-                {item}
-              </p>
-            );
-          })
+        {splitSentenceWithLineBreak(item.text).map((item, index) =>
+          generateListOfReviews(item, index)
         )}
       </div>
       <div className={styles.aboutAuthor}>
@@ -57,10 +38,6 @@ const CardReviews: React.FC<CardReviewsPropsType> = (item) => {
             priority
           />
         </div>
-
-        {/* <div className='authorPhoto'>
-          <img src='./images/reviewPhoto1.png' alt='photo' />
-        </div> */}
       </div>
     </div>
   );

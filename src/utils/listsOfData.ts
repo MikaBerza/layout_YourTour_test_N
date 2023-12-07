@@ -320,15 +320,15 @@ export const cardStoriesData: CardStoriesPropsType[] = [
     advantages: [
       {
         id: generateId(),
-        itemText: 'вкусная еда',
+        text: 'вкусная еда',
       },
       {
         id: generateId(),
-        itemText: 'дешевый транспорт',
+        text: 'дешевый транспорт',
       },
       {
         id: generateId(),
-        itemText: 'красивый город.',
+        text: 'красивый город.',
       },
     ],
     link: '#MoreDetailed',
