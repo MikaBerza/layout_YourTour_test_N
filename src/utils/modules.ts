@@ -27,9 +27,9 @@ export const splitSentenceWithLineBreak = (text: string): string[] => {
 };
 
 // функция, обработать плавную прокрутку
-export const handleSmoothScrolling: MouseEventHandler<HTMLLIElement> = (
-  event
-): void => {
+export const handleSmoothScrolling: MouseEventHandler<
+  HTMLLIElement | HTMLDivElement
+> = (event): void => {
   event.preventDefault();
   const hrefAttribute = (event.target as HTMLLIElement).getAttribute('href');
 

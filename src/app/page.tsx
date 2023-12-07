@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { AnchorButton } from '../components/commons/buttons/indexButtons';
 import { Title } from '../components/commons/Title';
 import { Subtitle } from '../components/commons/Subtitle';
 import {
@@ -29,9 +30,7 @@ export default function Home() {
           Идейные соображения высшего порядка, а также рамки и место обучения
           кадров
         </p>
-        <div className='buttons'>
-          <button className='buttons__small'>Найти тур</button>
-        </div>
+        <AnchorButton />
       </section>
 
       {/*___choose-tour */}
