@@ -2,37 +2,37 @@ import { generateId } from './modules';
 import {
   CardTurPropsType,
   CardStoriesPropsType,
-  tabType,
+  MenuItemType,
   TravelPhotosPropsType,
   CardReviewsPropsType,
 } from '@/types/customType';
 
 // страницы 1, данные вкладок
-export const tabsData: tabType[] = [
+export const tabsData: MenuItemType[] = [
   {
     id: generateId(),
     link: '#Popular',
-    tabName: 'Популярные',
+    name: 'Популярные',
   },
   {
     id: generateId(),
     link: '#Copyright',
-    tabName: 'Авторские',
+    name: 'Авторские',
   },
   {
     id: generateId(),
     link: '#Hiking',
-    tabName: 'Походы',
+    name: 'Походы',
   },
   {
     id: generateId(),
     link: '#Alloys',
-    tabName: 'Сплавы',
+    name: 'Сплавы',
   },
   {
     id: generateId(),
     link: '#CyclingTrips',
-    tabName: 'Велопрогулки',
+    name: 'Велопрогулки',
   },
 ];
 

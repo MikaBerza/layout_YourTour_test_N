@@ -1,13 +1,7 @@
-export type menuItemType = {
-  id: string;
-  name: string;
-  anchor: string;
-};
-
-export type tabType = {
+export type MenuItemType = {
   id: string;
   link: string;
-  tabName: string;
+  name: string;
 };
 
 export type CardTurPropsType = {
@@ -18,15 +12,15 @@ export type CardTurPropsType = {
   link: string;
 };
 
-export type advantagesItemType = {
-  id: string;
-  itemText: string;
-};
-
 export type linkItemSocialType = {
   id: string;
   link: string;
   linkName: string;
+};
+
+export type advantagesItemType = {
+  id: string;
+  itemText: string;
 };
 
 export type CardStoriesPropsType = {
@@ -50,7 +44,7 @@ export type TravelPhotosPropsType = {
   pathImg: string;
 };
 
-export type CardReviewsPropsType= {
+export type CardReviewsPropsType = {
   id: string;
   text: string;
   authorName: string;
