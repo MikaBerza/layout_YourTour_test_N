@@ -6,37 +6,37 @@ export type MenuItemType = {
 
 export type CardTurPropsType = {
   id: string;
-  pathImg: string;
-  price: string;
-  title: string;
   link: string;
+  pathImg: string;
+  title: string;
+  price: string;
 };
 
-export type linkItemSocialType = {
+export type LinkItemSocialType = {
   id: string;
   link: string;
   linkName: string;
 };
 
-export type advantagesItemType = {
+export type AdvantagesItemType = {
   id: string;
-  itemText: string;
+  text: string;
 };
 
 export type CardStoriesPropsType = {
   id: string;
+  link: string;
+  linksSocials: LinkItemSocialType[] | [];
   pathImg: string;
   title: string;
   description: string;
-  advantages: advantagesItemType[] | [];
-  link: string;
-  linksSocials: linkItemSocialType[] | [];
+  advantages: AdvantagesItemType[] | [];
 };
 
 export type LinkButtonPropsType = {
-  parentStyles: string[];
   link: string;
   linkBtnName: string;
+  parentStyles: string[];
 };
 
 export type TravelPhotosPropsType = {
@@ -46,8 +46,8 @@ export type TravelPhotosPropsType = {
 
 export type CardReviewsPropsType = {
   id: string;
+  pathImg: string;
   text: string;
   authorName: string;
   tourName: string;
-  pathImg: string;
 };

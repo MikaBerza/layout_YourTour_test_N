@@ -5,25 +5,25 @@ import styles from './cardStories.module.css';
 import { LinkButton } from '../LinkButton';
 import {
   CardStoriesPropsType,
-  advantagesItemType,
-  linkItemSocialType,
+  AdvantagesItemType,
+  LinkItemSocialType,
 } from '@/types/customType';
 
 const CardStories: React.FC<{ item: CardStoriesPropsType }> = ({ item }) => {
   // функция, генерации списка преимуществ
   const generateListOfAdvantages = (
-    item: advantagesItemType
+    item: AdvantagesItemType
   ): React.JSX.Element => {
     return (
       <li className={styles.advantagesItem} key={item.id}>
-        {item.itemText}
+        {item.text}
       </li>
     );
   };
 
   // функция, генерация списка социальных сетей
   const generateListOfSocials = (
-    item: linkItemSocialType
+    item: LinkItemSocialType
   ): React.JSX.Element => {
     return (
       <a className={styles.linkItemSocial} key={item.id} href={item.link}>
