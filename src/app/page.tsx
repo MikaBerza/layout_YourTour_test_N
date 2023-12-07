@@ -17,7 +17,6 @@ import {
 } from '../utils/listsOfData';
 
 // import styles from './page.module.css';
-// import styles from '../components/commons/Title/title.module.css';
 
 export default function Home() {
   return (
@@ -26,7 +25,7 @@ export default function Home() {
       <section className='greeting bgp-1'>
         <Title
           nameStyles={'mainText'}
-          title='Идеальные путешествия существуют'
+          text='Идеальные путешествия существуют'
           uniqueName='greeting'
         />
         <Subtitle
@@ -40,7 +39,7 @@ export default function Home() {
       {/*___choose-tour */}
       <Title
         nameStyles={'minorText'}
-        title='Выбери свой тур'
+        text='Выбери свой тур'
         uniqueName='choose-tour'
       />
       <ChooseTour />
@@ -49,7 +48,7 @@ export default function Home() {
       <section className='collect-tour'>
         <Title
           nameStyles={'minorText'}
-          title='Собери свой тур'
+          text='Собери свой тур'
           uniqueName='collect-tour'
         />
         <Subtitle
@@ -259,7 +258,7 @@ export default function Home() {
       {/*___reviews */}
       <Title
         nameStyles={'minorText'}
-        title='Отзывы наших путешественников'
+        text='Отзывы наших путешественников'
         uniqueName='reviews'
       />
       <Subtitle
@@ -272,7 +271,7 @@ export default function Home() {
       {/*___travel-photos */}
       <Title
         nameStyles={'minorText'}
-        title='Фотографии путешествий'
+        text='Фотографии путешествий'
         uniqueName='travel-photos'
       />
       <Subtitle
@@ -285,7 +284,7 @@ export default function Home() {
       {/*___stories */}
       <Title
         nameStyles={'minorText'}
-        title='Истории путешествий'
+        text='Истории путешествий'
         uniqueName='stories'
       />
       <Subtitle

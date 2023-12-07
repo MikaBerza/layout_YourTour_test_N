@@ -4,6 +4,12 @@ export type MenuItemType = {
   name: string;
 };
 
+export type TitleElementsPropsType = {
+  nameStyles: string;
+  text: string;
+  uniqueName?: string;
+};
+
 export type CardTurPropsType = {
   id: string;
   link: string;
