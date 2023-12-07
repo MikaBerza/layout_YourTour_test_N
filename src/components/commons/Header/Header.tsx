@@ -1,20 +1,13 @@
 'use client';
 import React, { MouseEventHandler } from 'react';
-import { generateId } from '../../../utils/modules';
-import { menuItemType } from '../../../types/customType';
-import styles from './header.module.css';
 import Link from 'next/link';
+import { headerMenuData } from '../../../utils/listsOfData';
+import styles from './header.module.css';
+import { MenuItemType } from '../../../types/customType';
 
 const Header: React.FC = () => {
   const [thisScrollY, setThisScrollY] = React.useState<number>(0);
   const [flag, setFlag] = React.useState<boolean>(false);
-
-  const menuItems: menuItemType[] = [
-    { id: generateId(), name: 'Туры', anchor: '#choose-tour' },
-    { id: generateId(), name: 'Создать тур', anchor: '#collect-tour' },
-    { id: generateId(), name: 'Отзывы', anchor: '#reviews' },
-    { id: generateId(), name: 'Истории', anchor: '#stories' },
-  ];
 
   React.useEffect(() => {
     // функция, отследить прокрутку
@@ -59,7 +52,7 @@ const Header: React.FC = () => {
   };
 
   // функция, сгенерировать пункты меню (JSX-элементы)
-  const generateMenuItems = (item: menuItemType): React.JSX.Element => {
+  const generateMenuItems = (item: MenuItemType): React.JSX.Element => {
     return (
       <li
         key={item.id}
@@ -70,7 +63,7 @@ const Header: React.FC = () => {
           className={`${styles.menuItemAnchor} ${
             flag ? `${styles.scrolledColor} ${styles.scrolledHover}` : ''
           }`}
-          href={item.anchor}
+          href={item.link}
         >
           {item.name}
         </a>
@@ -98,7 +91,7 @@ const Header: React.FC = () => {
             <path d='M181.835 14.4039C180.211 14.4319 178.741 14.6979 177.425 15.2019C176.109 15.7059 175.157 16.4619 174.569 17.4699V30.6999H167.849V8.64988H174.023V13.1019C174.779 11.6179 175.759 10.4559 176.963 9.61588C178.167 8.77588 179.427 8.34188 180.743 8.31388C181.303 8.31388 181.667 8.32788 181.835 8.35588V14.4039Z' />
           </svg>
         </Link>
-        <ul className={styles.menu}>{menuItems.map(generateMenuItems)}</ul>
+        <ul className={styles.menu}>{headerMenuData.map(generateMenuItems)}</ul>
         <a
           className={`${styles.telephoneNumber} ${
             flag && styles.scrolledColor

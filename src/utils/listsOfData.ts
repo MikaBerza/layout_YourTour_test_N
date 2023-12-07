@@ -7,7 +7,15 @@ import {
   CardReviewsPropsType,
 } from '@/types/customType';
 
-// страницы 1, данные вкладок
+// страница 1, данные headerMenuData
+export const headerMenuData: MenuItemType[] = [
+  { id: generateId(), name: 'Туры', link: '#choose-tour' },
+  { id: generateId(), name: 'Создать тур', link: '#collect-tour' },
+  { id: generateId(), name: 'Отзывы', link: '#reviews' },
+  { id: generateId(), name: 'Истории', link: '#stories' },
+];
+
+// страница 1, данные вкладок
 export const tabsData: MenuItemType[] = [
   {
     id: generateId(),
@@ -36,7 +44,7 @@ export const tabsData: MenuItemType[] = [
   },
 ];
 
-// страницы 1, данные карточек CardTur
+// страница 1, данные карточек CardTur
 export const cardTurData: CardTurPropsType[] = [
   {
     id: generateId(),
@@ -262,7 +270,7 @@ export const cardTurData5: CardTurPropsType[] = [
   },
 ];
 
-// страницы 1, данные CardReviews
+// страница 1, данные карточек CardReviews
 export const cardReviewsData: CardReviewsPropsType[] = [
   {
     id: generateId(),
@@ -291,7 +299,7 @@ export const cardReviewsData: CardReviewsPropsType[] = [
   },
 ];
 
-// страницы 1, данные TravelPhotos
+// страница 1, данные фотогалереи TravelPhotos
 export const travelPhotosData: TravelPhotosPropsType[] = [
   { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto1.png' },
   { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto2.png' },
@@ -308,7 +316,7 @@ export const travelPhotosData: TravelPhotosPropsType[] = [
   { id: generateId(), pathImg: '/images/travelPhotos/travelPhoto13.png' },
 ];
 
-// страницы 1, данные карточек CardStories
+// страница 1, данные карточек CardStories
 export const cardStoriesData: CardStoriesPropsType[] = [
   {
     id: generateId(),
