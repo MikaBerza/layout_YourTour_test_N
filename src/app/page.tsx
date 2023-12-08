@@ -22,7 +22,8 @@ import {
   RadiosField,
   FieldTitle,
   TextareaField,
-  DateInput
+  DateInput,
+  PhoneInput,
 } from '@/components/commons/forms/indexForms';
 
 // import styles from './page.module.css';
@@ -117,7 +118,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className='input-fields__phone'>
+              {/* <div className='input-fields__phone'>
                 <FieldTitle htmlForAttribute='connectionPhone' text='Телефон' />
                 <input
                   className='input-fields__phone-input'
@@ -130,7 +131,13 @@ export default function Home() {
                   autoComplete='off'
                   required
                 />
-              </div>
+              </div> */}
+              <PhoneInput
+                title='Телефон'
+                nameAttribute='phone'
+                idAttribute='connectionPhone'
+                placeholderAttribute='+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _'
+              />
 
               {/* <div className='input-fields__dateFrom'>
                 <FieldTitle
