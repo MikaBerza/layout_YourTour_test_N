@@ -369,46 +369,6 @@ a {
   border-bottom: 1px solid var(--green400-color);
 }
 
-/* .buttons-group__find,
-.buttons-group__reset {
-  align-items: center;
-  width: 235px;
-  padding: 18px 30px;
-  font-size: 20px;
-  color: var(--white-color);
-  border: none;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-} */
-
-/* .buttons-group__find {
-  margin-right: 25px;
-  background: var(--green400-color);
-} */
-
-/* .buttons-group__find:hover {
-  background: var(--green300-color);
-  cursor: pointer;
-} */
-
-/* .buttons-group__find:active {
-  background: var(--green200-color);
-} */
-
-/* .buttons-group__reset {
-  color: var(--green400-color);
-  background: var(--green100-color);
-} */
-
-/* .buttons-group__reset:hover {
-  background: var(--gray100-color);
-  cursor: pointer;
-} */
-
-/* .buttons-group__reset:active {
-  background: var(--gray200-color);
-} */
-
 .pb-1 {
   padding-bottom: 200px;
 }
@@ -464,16 +424,6 @@ a {
   .agreement-field__input+.agreement-field__customCheckbox::before {
     margin-right: 11px;
   }
-/* 
-  .buttons-group__find,
-  .buttons-group__reset {
-    width: 235px;
-    font-size: 20px;
-  } */
-
-  /* .buttons-group__find {
-    margin-right: 25px;
-  } */
 
   .pb-1 {
     padding-bottom: 198px;
@@ -493,13 +443,6 @@ a {
   .input-fields__dateTo-input {
     font-size: 18px;
   }
-
-  /* .buttons-group__find,
-  .buttons-group__reset {
-    width: 177px;
-  } */
-
-
 }
 
 /*660px___________________________________________________*/
@@ -523,10 +466,6 @@ a {
     width: 100%;
     margin-bottom: 30px;
   }
-
-  /* .buttons-group__find {
-    margin-right: 10px;
-  } */
 }
 
 /*550px___________________________________________________*/
@@ -622,31 +561,7 @@ a {
     margin-right: 10px;
   }
 
-  /* .buttons-group__find,
-  .buttons-group__reset {
-    width: 134px;
-    padding: 14px 29px;
-    font-size: 16px;
-  } */
-
-  /* .buttons-group__find {
-    margin-right: 5px;
-  } */
-
   .pb-1 {
     padding-bottom: 134px;
   }
-}
-
-/*359px___________________________________________________*/
-@media (max-width: 359px) {
-
-  /*  */
-  /* __collect-tour__ */
-  /* .buttons-group__find,
-  .buttons-group__reset {
-    width: 90px;
-    padding: 12px 12px;
-    font-size: 14px;
-  } */
 }

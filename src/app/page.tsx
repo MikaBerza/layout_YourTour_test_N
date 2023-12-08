@@ -17,7 +17,10 @@ import {
 } from '../utils/listsOfData';
 
 import ButtonsGroup from '@/components/group/ButtonsGroup/ButtonsGroup';
-import { Radio, AgreementField } from '@/components/commons/forms/indexForms';
+import {
+  AgreementField,
+  FieldsetRadio,
+} from '@/components/commons/forms/indexForms';
 // import styles from './page.module.css';
 
 export default function Home() {
@@ -193,82 +196,12 @@ export default function Home() {
                 required
               />
             </div>
-
-            <fieldset className='radio-fields'>
-              <legend className='legend-title'>Вам есть 18 лет?</legend>
-              <div className='radio-group'>
-                {/* <div className='radio-group__item'>
-                  <input
-                    className='radio-group__item-input'
-                    type='radio'
-                    name='clientAge'
-                    id='connectionAgeYes'
-                    value='Yes'
-                  />
-                  <label
-                    className='radio-group__item-label'
-                    htmlFor='connectionAgeYes'
-                  >
-                    Да
-                  </label>
-                </div> */}
-                <Radio
-                  nameAttribute='clientAge'
-                  idAttribute='connectionAgeYes'
-                  valueAttribute='Yes'
-                  text='Да'
-                />
-                {/* <div className='radio-group__item'>
-                  <input
-                    className='radio-group__item-input'
-                    type='radio'
-                    name='clientAge'
-                    id='connectionAgeNo'
-                    value='No'
-                  />
-                  <label
-                    className='radio-group__item-label'
-                    htmlFor='connectionAgeNo'
-                  >
-                    Нет
-                  </label>
-                </div> */}
-                <Radio
-                  nameAttribute='clientAge'
-                  idAttribute='connectionAgeNo'
-                  valueAttribute='No'
-                  text='Нет'
-                />
-              </div>
-            </fieldset>
-
-            {/* <div className='agreement-field'>
-              <input
-                className='agreement-field__input'
-                type='checkbox'
-                name='acceptAgreement'
-                id='connectionAgreement'
-              />
-              <label
-                className='agreement-field__customCheckbox'
-                htmlFor='connectionAgreement'
-              ></label>
-              <p className='agreement-field__text'>
-                Нажимая кнопку, я принимаю условия
-                <a className='agreement-field__link' href='#licenseAgreement'>
-                  Лицензионного договора
-                </a>
-              </p>
-            </div> */}
+            <FieldsetRadio title='Вам есть 18 лет?' />
             <AgreementField
               text='Нажимая кнопку, я принимаю условия'
               link='#licenseAgreement'
               linkText='Лицензионного договора'
             />
-            {/* <div className='buttons-group'>
-              <button className='buttons-group__find'>Найти тур</button>
-              <button className='buttons-group__reset'>Сбросить</button>
-            </div> */}
             <ButtonsGroup />
           </form>
         </div>
