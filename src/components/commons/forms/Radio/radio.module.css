@@ -1,4 +1,4 @@
-.inpRadio {
+.inp {
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -13,13 +13,13 @@
   cursor: pointer;
 }
 
-.inpRadio+.text {
+.inp+.text {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.inpRadio+.text::before {
+.inp+.text::before {
   width: 24px;
   height: 24px;
   margin-right: 11px;
@@ -29,7 +29,7 @@
   content: '';
 }
 
-.inpRadio:checked+.text::before {
+.inp:checked+.text::before {
   position: relative;
   font-size: 59px;
   text-align: center;
@@ -44,7 +44,7 @@
     margin-right: 30px;
   }
 
-  .inpRadio+.text::before {
+  .inp+.text::before {
     width: 19px;
     height: 19px;
     margin-right: 9px;

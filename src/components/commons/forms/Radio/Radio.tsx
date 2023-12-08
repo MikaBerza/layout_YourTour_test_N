@@ -10,7 +10,7 @@ const Radio: React.FC<{
   return (
     <div className={styles.inner}>
       <input
-        className={styles.inpRadio}
+        className={styles.inp}
         type='radio'
         name={nameAttribute}
         id={idAttribute}
