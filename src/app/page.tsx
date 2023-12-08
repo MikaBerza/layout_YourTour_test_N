@@ -21,6 +21,7 @@ import {
   AgreementField,
   FieldsetRadio,
 } from '@/components/commons/forms/indexForms';
+import FieldTitle from '@/components/commons/forms/FieldTitle/FieldTitle';
 // import styles from './page.module.css';
 
 export default function Home() {
@@ -65,12 +66,7 @@ export default function Home() {
           <form className='form-fill' action='#'>
             <div className='input-fields'>
               <div className='input-fields__name'>
-                <label
-                  className='input-fields__name-label'
-                  htmlFor='connectionName'
-                >
-                  Имя
-                </label>
+                <FieldTitle htmlForAttribute='connectionName' text='Имя' />
                 <input
                   className='input-fields__name-input'
                   name='name'
@@ -82,12 +78,10 @@ export default function Home() {
                 />
               </div>
               <div className='input-fields__dropdown'>
-                <label
-                  className='input-fields__dropdown-label'
-                  htmlFor='connectionDropdown'
-                >
-                  Направление
-                </label>
+                <FieldTitle
+                  htmlForAttribute='connectionDropdown'
+                  text='Направление'
+                />
                 <div className='input-fields__dropdown-select'>
                   <select
                     className='input-fields__dropdown-select-item'
@@ -108,12 +102,7 @@ export default function Home() {
               </div>
 
               <div className='input-fields__email'>
-                <label
-                  className='input-fields__email-label'
-                  htmlFor='connectionEmail'
-                >
-                  Email
-                </label>
+                <FieldTitle htmlForAttribute='connectionEmail' text='Email' />
                 <input
                   className='input-fields__email-input'
                   name='email'
@@ -126,12 +115,7 @@ export default function Home() {
               </div>
 
               <div className='input-fields__phone'>
-                <label
-                  className='input-fields__phone-label'
-                  htmlFor='connectionPhone'
-                >
-                  Телефон
-                </label>
+                <FieldTitle htmlForAttribute='connectionPhone' text='Телефон' />
                 <input
                   className='input-fields__phone-input'
                   name='phone'
@@ -146,12 +130,10 @@ export default function Home() {
               </div>
 
               <div className='input-fields__dateFrom'>
-                <label
-                  className='input-fields__dateFrom-label'
-                  htmlFor='connectionDateFrom'
-                >
-                  Дата от
-                </label>
+                <FieldTitle
+                  htmlForAttribute='connectionDateFrom'
+                  text='Дата от'
+                />
                 <input
                   className='input-fields__dateFrom-input'
                   name='dateFrom'
@@ -163,12 +145,10 @@ export default function Home() {
               </div>
 
               <div className='input-fields__dateTo'>
-                <label
-                  className='input-fields__dateTo-label'
-                  htmlFor='connectionDateTo'
-                >
-                  Дата до
-                </label>
+                <FieldTitle
+                  htmlForAttribute='connectionDateTo'
+                  text='Дата до'
+                />
                 <input
                   className='input-fields__dateTo-input'
                   name='dateTo'
@@ -181,12 +161,10 @@ export default function Home() {
             </div>
 
             <div className='comment-field'>
-              <label
-                className='comment-field__label'
-                htmlFor='connectionComment'
-              >
-                Комментарий
-              </label>
+              <FieldTitle
+                htmlForAttribute='connectionComment'
+                text='Комментарий'
+              />
               <textarea
                 className='comment-field__textarea'
                 name='comment'
