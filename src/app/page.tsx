@@ -24,6 +24,7 @@ import {
   TextareaField,
   DateInput,
   PhoneInput,
+  EmailInput,
 } from '@/components/commons/forms/indexForms';
 
 // import styles from './page.module.css';
@@ -105,7 +106,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className='input-fields__email'>
+              {/* <div className='input-fields__email'>
                 <FieldTitle htmlForAttribute='connectionEmail' text='Email' />
                 <input
                   className='input-fields__email-input'
@@ -116,8 +117,13 @@ export default function Home() {
                   autoComplete='off'
                   required
                 />
-              </div>
-
+              </div> */}
+              <EmailInput
+                title='Email'
+                nameAttribute='email'
+                idAttribute='connectionEmail'
+                placeholderAttribute='example@mail.com'
+              />
               {/* <div className='input-fields__phone'>
                 <FieldTitle htmlForAttribute='connectionPhone' text='Телефон' />
                 <input
