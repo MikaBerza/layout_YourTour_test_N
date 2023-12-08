@@ -25,6 +25,7 @@ import {
   DateInput,
   PhoneInput,
   EmailInput,
+  NameInput,
 } from '@/components/commons/forms/indexForms';
 
 // import styles from './page.module.css';
@@ -70,7 +71,7 @@ export default function Home() {
         <div className='collect-tour__container'>
           <form className='form-fill' action='#'>
             <div className='input-fields'>
-              <div className='input-fields__name'>
+              {/* <div className='input-fields__name'>
                 <FieldTitle htmlForAttribute='connectionName' text='Имя' />
                 <input
                   className='input-fields__name-input'
@@ -81,7 +82,13 @@ export default function Home() {
                   autoComplete='off'
                   required
                 />
-              </div>
+              </div> */}
+              <NameInput
+                title='Имя'
+                nameAttribute='name'
+                idAttribute='connectionName'
+                placeholderAttribute='Введите Ваше имя'
+              />
               <div className='input-fields__dropdown'>
                 <FieldTitle
                   htmlForAttribute='connectionDropdown'

@@ -6,3 +6,4 @@ export { default as TextareaField } from './TextareaField/TextareaField';
 export { default as DateInput } from './DateInput/DateInput';
 export { default as PhoneInput } from './PhoneInput/PhoneInput';
 export { default as EmailInput } from './EmailInput/EmailInput';
+export { default as NameInput } from './NameInput/NameInput';
