@@ -20,8 +20,10 @@ import ButtonsGroup from '@/components/group/ButtonsGroup/ButtonsGroup';
 import {
   ChecksField,
   RadiosField,
-  FieldTitle
+  FieldTitle,
+  TextareaField,
 } from '@/components/commons/forms/indexForms';
+
 // import styles from './page.module.css';
 
 export default function Home() {
@@ -165,13 +167,10 @@ export default function Home() {
                 htmlForAttribute='connectionComment'
                 text='Комментарий'
               />
-              <textarea
-                className='comment-field__textarea'
-                name='comment'
-                id='connectionComment'
-                autoComplete='off'
-                maxLength={300}
-                required
+              <TextareaField
+                nameAttribute='comment'
+                idAttribute='connectionComment'
+                maxLengthAttribute={300}
               />
             </div>
             <RadiosField title='Вам есть 18 лет?' />
