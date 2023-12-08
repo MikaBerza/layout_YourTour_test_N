@@ -16,6 +16,7 @@ import {
   travelPhotosData,
 } from '../utils/listsOfData';
 
+import ButtonsGroup from '@/components/group/ButtonsGroup/ButtonsGroup';
 // import styles from './page.module.css';
 
 export default function Home() {
@@ -247,10 +248,11 @@ export default function Home() {
               </p>
             </div>
 
-            <div className='buttons-group'>
+            <ButtonsGroup />
+            {/* <div className='buttons-group'>
               <button className='buttons-group__find'>Найти тур</button>
               <button className='buttons-group__reset'>Сбросить</button>
-            </div>
+            </div> */}
           </form>
         </div>
       </section>
