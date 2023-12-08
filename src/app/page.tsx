@@ -17,7 +17,7 @@ import {
 } from '../utils/listsOfData';
 
 import ButtonsGroup from '@/components/group/ButtonsGroup/ButtonsGroup';
-import { AgreementField } from '@/components/commons/forms/indexForms';
+import { Radio, AgreementField } from '@/components/commons/forms/indexForms';
 // import styles from './page.module.css';
 
 export default function Home() {
@@ -197,7 +197,7 @@ export default function Home() {
             <fieldset className='radio-fields'>
               <legend className='legend-title'>Вам есть 18 лет?</legend>
               <div className='radio-group'>
-                <div className='radio-group__item'>
+                {/* <div className='radio-group__item'>
                   <input
                     className='radio-group__item-input'
                     type='radio'
@@ -211,8 +211,14 @@ export default function Home() {
                   >
                     Да
                   </label>
-                </div>
-                <div className='radio-group__item'>
+                </div> */}
+                <Radio
+                  nameAttribute='clientAge'
+                  idAttribute='connectionAgeYes'
+                  valueAttribute='Yes'
+                  text='Да'
+                />
+                {/* <div className='radio-group__item'>
                   <input
                     className='radio-group__item-input'
                     type='radio'
@@ -226,7 +232,13 @@ export default function Home() {
                   >
                     Нет
                   </label>
-                </div>
+                </div> */}
+                <Radio
+                  nameAttribute='clientAge'
+                  idAttribute='connectionAgeNo'
+                  valueAttribute='No'
+                  text='Нет'
+                />
               </div>
             </fieldset>
 
