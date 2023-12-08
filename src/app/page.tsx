@@ -22,6 +22,7 @@ import {
   RadiosField,
   FieldTitle,
   TextareaField,
+  DateInput
 } from '@/components/commons/forms/indexForms';
 
 // import styles from './page.module.css';
@@ -131,7 +132,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className='input-fields__dateFrom'>
+              {/* <div className='input-fields__dateFrom'>
                 <FieldTitle
                   htmlForAttribute='connectionDateFrom'
                   text='Дата от'
@@ -144,9 +145,13 @@ export default function Home() {
                   autoComplete='off'
                   required
                 />
-              </div>
-
-              <div className='input-fields__dateTo'>
+              </div> */}
+              <DateInput
+                title='Дата от'
+                nameAttribute='dateFrom'
+                idAttribute='connectionDateFrom'
+              />
+              {/* <div className='input-fields__dateTo'>
                 <FieldTitle
                   htmlForAttribute='connectionDateTo'
                   text='Дата до'
@@ -159,11 +164,15 @@ export default function Home() {
                   autoComplete='off'
                   required
                 />
-              </div>
+              </div> */}
+              <DateInput
+                title='Дата до'
+                nameAttribute='dateTo'
+                idAttribute='connectionDateTo'
+              />
             </div>
 
-            <TextareaField title='Комментарий'/>
-
+            <TextareaField title='Комментарий' />
             <RadiosField title='Вам есть 18 лет?' />
             <ChecksField
               text='Нажимая кнопку, я принимаю условия'
