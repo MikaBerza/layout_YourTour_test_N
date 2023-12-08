@@ -17,6 +17,7 @@ import {
 } from '../utils/listsOfData';
 
 import ButtonsGroup from '@/components/group/ButtonsGroup/ButtonsGroup';
+import { AgreementField } from '@/components/commons/forms/indexForms';
 // import styles from './page.module.css';
 
 export default function Home() {
@@ -229,7 +230,7 @@ export default function Home() {
               </div>
             </fieldset>
 
-            <div className='agreement-field'>
+            {/* <div className='agreement-field'>
               <input
                 className='agreement-field__input'
                 type='checkbox'
@@ -246,13 +247,17 @@ export default function Home() {
                   Лицензионного договора
                 </a>
               </p>
-            </div>
-
-            <ButtonsGroup />
+            </div> */}
+            <AgreementField
+              text='Нажимая кнопку, я принимаю условия'
+              link='#licenseAgreement'
+              linkText='Лицензионного договора'
+            />
             {/* <div className='buttons-group'>
               <button className='buttons-group__find'>Найти тур</button>
               <button className='buttons-group__reset'>Сбросить</button>
             </div> */}
+            <ButtonsGroup />
           </form>
         </div>
       </section>
