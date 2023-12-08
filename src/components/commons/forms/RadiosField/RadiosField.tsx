@@ -1,9 +1,9 @@
 import React from 'react';
 import { Radio } from '../indexForms';
 
-import styles from './fieldsetRadio.module.css';
+import styles from './radiosField.module.css';
 
-const FieldsetRadio: React.FC<{ title: string }> = ({ title }) => {
+const RadiosField: React.FC<{ title: string }> = ({ title }) => {
   return (
     <fieldset className={styles.wrapper}>
       <legend className={styles.title}>{title}</legend>
@@ -25,5 +25,5 @@ const FieldsetRadio: React.FC<{ title: string }> = ({ title }) => {
   );
 };
 
-FieldsetRadio.displayName = 'FieldsetRadio';
-export default FieldsetRadio;
+RadiosField.displayName = 'RadiosField';
+export default RadiosField;

@@ -19,7 +19,7 @@ import {
 import ButtonsGroup from '@/components/group/ButtonsGroup/ButtonsGroup';
 import {
   ChecksField,
-  FieldsetRadio,
+  RadiosField,
   FieldTitle
 } from '@/components/commons/forms/indexForms';
 // import styles from './page.module.css';
@@ -174,7 +174,7 @@ export default function Home() {
                 required
               />
             </div>
-            <FieldsetRadio title='Вам есть 18 лет?' />
+            <RadiosField title='Вам есть 18 лет?' />
             <ChecksField
               text='Нажимая кнопку, я принимаю условия'
               link='#licenseAgreement'
