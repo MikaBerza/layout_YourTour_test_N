@@ -5,6 +5,7 @@ import {
   MenuItemType,
   TravelPhotosPropsType,
   CardReviewsPropsType,
+  ListOptionType,
 } from '@/types/customType';
 
 // страница 1, данные headerMenuData
@@ -409,5 +410,25 @@ export const cardStoriesData: CardStoriesPropsType[] = [
         linkName: 'ВКонтакте',
       },
     ],
+  },
+];
+
+// страница 1, список данных опций
+export const listOptionData: ListOptionType[] = [
+  {
+    id: generateId(),
+    valueText: 'Вариант 1',
+  },
+  {
+    id: generateId(),
+    valueText: 'Вариант 2',
+  },
+  {
+    id: generateId(),
+    valueText: 'Вариант 3',
+  },
+  {
+    id: generateId(),
+    valueText: 'Вариант 4',
   },
 ];

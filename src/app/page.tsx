@@ -26,6 +26,7 @@ import {
   PhoneInput,
   EmailInput,
   NameInput,
+  SelectionField,
 } from '@/components/commons/forms/indexForms';
 
 // import styles from './page.module.css';
@@ -89,7 +90,7 @@ export default function Home() {
                 idAttribute='connectionName'
                 placeholderAttribute='Введите Ваше имя'
               />
-              <div className='input-fields__dropdown'>
+              {/* <div className='input-fields__dropdown'>
                 <FieldTitle
                   htmlForAttribute='connectionDropdown'
                   text='Направление'
@@ -111,8 +112,13 @@ export default function Home() {
                     <option value='Вариант 4'>Вариант 4</option>
                   </select>
                 </div>
-              </div>
-
+              </div> */}
+              <SelectionField
+                title='Направление'
+                nameAttribute='direction'
+                idAttribute='connectionDropdown'
+                placeholderAttribute='Куда хотите ехать'
+              />
               {/* <div className='input-fields__email'>
                 <FieldTitle htmlForAttribute='connectionEmail' text='Email' />
                 <input

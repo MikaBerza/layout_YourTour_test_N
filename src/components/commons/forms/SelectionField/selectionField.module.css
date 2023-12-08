@@ -1,0 +1,106 @@
+.wrapper {
+  width: calc(50% - 15px);
+  margin-bottom: 33px;
+}
+
+/* .selectItem {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} */
+
+.selectItem {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 100%;
+  height: 68px;
+  margin-top: 8px;
+  padding: 20px 45px 20px 20px;
+  color: var(--black-color);
+  background: var(--beige100-color);
+  border: 1px solid var(--beige200-color);
+  border-radius: 10px;
+  outline: none;
+
+  /* уберем стрелку у select */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.selectItem {
+  color: var(--gray300-color);
+}
+
+.selectItem:hover {
+  background: var(--beige200-color);
+  cursor: pointer;
+}
+
+.selectItem:focus {
+  border: 1px solid var(--gray300-color);
+}
+
+.inner {
+  position: relative;
+}
+
+.inner::before {
+  position: absolute;
+  top: 50%;
+  right: 23.59px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  content: url('../../../../../public/images/VectorDown.svg');
+}
+
+.innerItemActive {
+  color: var(--black-color);
+}
+
+/*___media___*/
+@media (max-width: 1024px) {
+  .wrapper {
+    width: calc(50% - 10px);
+  }
+
+  .selectItem {
+    padding: 20px 45px 20px 20px;
+    font-size: 20px;
+  }
+
+  .inner::before {
+    right: 23.59px;
+  }
+}
+
+/*770px___________________________________________________*/
+@media (max-width: 770px) {
+  .selectItem {
+    font-size: 18px;
+  }
+}
+
+/*660px___________________________________________________*/
+@media (max-width: 660px) {
+  .wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/*550px___________________________________________________*/
+@media (max-width: 550px) {
+  .selectItem {
+    height: 46px;
+    padding: 10px 31px 10px 10px;
+    font-size: 16px;
+  }
+
+  .inner::before {
+    top: 54%;
+    right: 13.59px;
+  }
+}

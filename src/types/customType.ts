@@ -57,3 +57,8 @@ export type CardReviewsPropsType = {
   authorName: string;
   tourName: string;
 };
+
+export type ListOptionType = {
+  id: string;
+  valueText: string;
+};
