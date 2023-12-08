@@ -1,20 +1,20 @@
 import React from 'react';
 import styles from './textareaField.module.css';
+import { FieldTitle } from '../indexForms';
 
-const TextareaField: React.FC<{
-  nameAttribute: string;
-  idAttribute: string;
-  maxLengthAttribute: number;
-}> = ({ nameAttribute, idAttribute, maxLengthAttribute }) => {
+const TextareaField: React.FC<{ title: string }> = ({ title }) => {
   return (
-    <textarea
-      className={styles.comment}
-      name={nameAttribute}
-      id={idAttribute}
-      autoComplete='off'
-      maxLength={maxLengthAttribute}
-      required
-    />
+    <div className={styles.wrapper}>
+      <FieldTitle htmlForAttribute='connectionComment' text={title} />
+      <textarea
+        className={styles.comment}
+        name='comment'
+        id='connectionComment'
+        autoComplete='off'
+        maxLength={300}
+        required
+      />
+    </div>
   );
 };
 

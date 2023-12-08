@@ -1,5 +1,5 @@
 @import url('normalize.css');
-
+/* comment-field */
 @font-face {
   font-family: 'Roboto';
   font-weight: 100;
@@ -128,7 +128,6 @@ a {
 }
 
 .input-fields,
-.comment-field,
 .radio-fields,
 .agreement-field,
 .buttons-group {
@@ -141,7 +140,6 @@ a {
 .input-fields__phone,
 .input-fields__dateFrom,
 .input-fields__dateTo,
-.comment-field,
 .radio-fields,
 .agreement-field {
   margin-bottom: 33px;
@@ -460,7 +458,6 @@ a {
   .input-fields__phone,
   .input-fields__dateFrom,
   .input-fields__dateTo,
-  .comment-field,
   .radio-fields,
   .agreement-field {
     width: 100%;

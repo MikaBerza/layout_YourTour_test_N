@@ -162,17 +162,8 @@ export default function Home() {
               </div>
             </div>
 
-            <div className='comment-field'>
-              <FieldTitle
-                htmlForAttribute='connectionComment'
-                text='Комментарий'
-              />
-              <TextareaField
-                nameAttribute='comment'
-                idAttribute='connectionComment'
-                maxLengthAttribute={300}
-              />
-            </div>
+            <TextareaField title='Комментарий'/>
+
             <RadiosField title='Вам есть 18 лет?' />
             <ChecksField
               text='Нажимая кнопку, я принимаю условия'
