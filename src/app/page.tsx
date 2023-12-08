@@ -18,10 +18,10 @@ import {
 
 import ButtonsGroup from '@/components/group/ButtonsGroup/ButtonsGroup';
 import {
-  AgreementField,
+  ChecksField,
   FieldsetRadio,
+  FieldTitle
 } from '@/components/commons/forms/indexForms';
-import FieldTitle from '@/components/commons/forms/FieldTitle/FieldTitle';
 // import styles from './page.module.css';
 
 export default function Home() {
@@ -175,7 +175,7 @@ export default function Home() {
               />
             </div>
             <FieldsetRadio title='Вам есть 18 лет?' />
-            <AgreementField
+            <ChecksField
               text='Нажимая кнопку, я принимаю условия'
               link='#licenseAgreement'
               linkText='Лицензионного договора'

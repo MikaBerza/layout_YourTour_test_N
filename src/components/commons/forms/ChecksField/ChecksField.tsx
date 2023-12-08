@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-import styles from './agreementField.module.css';
+import styles from './checksField.module.css';
 
-const AgreementField: React.FC<{
+const ChecksField: React.FC<{
   text: string;
   link: string;
   linkText: string;
@@ -27,5 +27,5 @@ const AgreementField: React.FC<{
   );
 };
 
-AgreementField.displayName = 'AgreementField';
-export default AgreementField;
+ChecksField.displayName = 'ChecksField';
+export default ChecksField;
