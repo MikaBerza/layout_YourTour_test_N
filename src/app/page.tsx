@@ -23,7 +23,15 @@ export default function Home() {
   return (
     <>
       {/*___greeting */}
-      <Greeting />
+      <Greeting
+        titleStyleName='mainText'
+        titleText='Идеальные путешествия существуют'
+        titleUniqueName='greeting'
+        //
+        subtitleStyeName='mainText'
+        subtitleText='Идейные соображения высшего порядка, а также рамки и место обучения
+      кадров'
+      />
 
       {/*___choose-tour */}
       <Title

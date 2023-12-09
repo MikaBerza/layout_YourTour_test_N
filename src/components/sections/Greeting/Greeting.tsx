@@ -4,20 +4,26 @@ import { Subtitle } from '@/components/commons/Subtitle';
 import { AnchorButton } from '@/components/commons/buttons/indexButtons';
 
 import styles from './greeting.module.css';
+import { SectionsPropsType } from '@/types/customType';
 
-const Greeting: React.FC = () => {
+const Greeting: React.FC<SectionsPropsType> = ({
+  titleStyleName,
+  titleText,
+  titleUniqueName,
+  subtitleStyeName,
+  subtitleText,
+}) => {
   return (
     <section className={`${styles.wrapper} ${'bgp-1'}`}>
       <Title
-        nameStyles={'mainText'}
-        text='Идеальные путешествия существуют'
-        uniqueName='greeting'
+        nameStyles={titleStyleName}
+        text={titleText}
+        uniqueName={titleUniqueName}
       />
-      <Subtitle
-        nameStyles={'mainText'}
-        text='Идейные соображения высшего порядка, а также рамки и место обучения
-      кадров'
-      />
+      {subtitleStyeName && subtitleText && (
+        <Subtitle nameStyles={subtitleStyeName} text={subtitleText} />
+      )}
+
       <AnchorButton name='Найти тур' />
     </section>
   );

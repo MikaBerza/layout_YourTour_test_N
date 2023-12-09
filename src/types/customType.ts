@@ -10,6 +10,15 @@ export type TitleElementsPropsType = {
   uniqueName?: string;
 };
 
+export type SectionsPropsType = {
+  titleStyleName: string;
+  titleText: string;
+  titleUniqueName: string;
+
+  subtitleStyeName?: string;
+  subtitleText?: string;
+};
+
 export type CardTurPropsType = {
   id: string;
   link: string;
