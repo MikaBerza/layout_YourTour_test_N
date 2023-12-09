@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Title } from '@/components/commons/Title';
+import { Subtitle } from '@/components/commons/Subtitle';
 import {
   ChecksField,
   DateInput,
@@ -9,13 +12,27 @@ import {
   SelectionField,
   TextareaField,
 } from '@/components/commons/forms/indexForms';
-
-import styles from './collectTour.module.css';
 import ButtonsGroup from '@/components/group/ButtonsGroup/ButtonsGroup';
 
-const CollectTour: React.FC = () => {
+import styles from './collectTour.module.css';
+import { SectionsPropsType } from '@/types/customType';
+
+const CollectTour: React.FC<SectionsPropsType> = ({
+  titleStyleName,
+  titleText,
+  titleUniqueName,
+  subtitleStyeName,
+  subtitleText,
+}) => {
   return (
     <section className={styles.wrapper}>
+      <Title
+        nameStyles={titleStyleName}
+        text={titleText}
+        uniqueName={titleUniqueName}
+      />
+      <Subtitle nameStyles={subtitleStyeName} text={subtitleText} />
+
       <div className={styles.inner}>
         <form className={styles.formFill} action='#'>
           <div className={styles.inputsFields}>

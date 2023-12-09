@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Title } from '../components/commons/Title';
-import { Subtitle } from '../components/commons/Subtitle';
 import {
   Greeting,
   ChooseTour,
@@ -10,12 +8,6 @@ import {
   Stories,
   CollectTour,
 } from '@/components/sections/indexSections';
-
-import {
-  cardReviewsData,
-  cardStoriesData,
-  travelPhotosData,
-} from '../utils/listsOfData';
 
 // import styles from './page.module.css';
 
@@ -34,64 +26,55 @@ export default function Home() {
       />
 
       {/*___choose-tour */}
-      <Title
-        nameStyles='minorText'
-        text='Выбери свой тур'
-        uniqueName='choose-tour'
+      <ChooseTour
+        titleStyleName='minorText'
+        titleText='Выбери свой тур'
+        titleUniqueName='choose-tour'
       />
-      <ChooseTour />
 
       {/*___collect-tour */}
-      <Title
-        nameStyles='minorText'
-        text='Собери свой тур'
-        uniqueName='collect-tour'
+      <CollectTour
+        titleStyleName='minorText'
+        titleText='Собери свой тур'
+        titleUniqueName='collect-tour'
+        //
+        subtitleStyeName='minorText'
+        subtitleText='Идейные соображения высшего порядка, а также рамки и место обучения
+        кадров'
       />
-      <Subtitle
-        nameStyles='minorText'
-        text='Идейные соображения высшего порядка, а также рамки и место обучения
-          кадров'
-      />
-      <CollectTour />
 
       {/*___reviews */}
-      <Title
-        nameStyles='minorText'
-        text='Отзывы наших путешественников'
-        uniqueName='reviews'
+      <Reviews
+        titleStyleName='minorText'
+        titleText='Отзывы наших путешественников'
+        titleUniqueName='reviews'
+        //
+        subtitleStyeName='minorText'
+        subtitleText='Идейные соображения высшего порядка, а также рамки и место обучения
+        кадров'
       />
-      <Subtitle
-        nameStyles='minorText'
-        text='Идейные соображения высшего порядка, а также рамки и место обучения
-          кадров'
-      />
-      <Reviews cardReviewsData={cardReviewsData} />
 
       {/*___travel-photos */}
-      <Title
-        nameStyles='minorText'
-        text='Фотографии путешествий'
-        uniqueName='travel-photos'
+      <TravelPhotos
+        titleStyleName='minorText'
+        titleText='Фотографии путешествий'
+        titleUniqueName='travel-photos'
+        //
+        subtitleStyeName='minorText'
+        subtitleText='Идейные соображения высшего порядка, а также рамки и место обучения
+        кадров'
       />
-      <Subtitle
-        nameStyles='minorText'
-        text='Идейные соображения высшего порядка, а также рамки и место обучения
-          кадров'
-      />
-      <TravelPhotos travelPhotosData={travelPhotosData} />
 
       {/*___stories */}
-      <Title
-        nameStyles='minorText'
-        text='Истории путешествий'
-        uniqueName='stories'
+      <Stories
+        titleStyleName='minorText'
+        titleText='Истории путешествий'
+        titleUniqueName='stories'
+        //
+        subtitleStyeName='minorText'
+        subtitleText='Идейные соображения высшего порядка, а также рамки и место обучения
+              кадров'
       />
-      <Subtitle
-        nameStyles='minorText'
-        text='Идейные соображения высшего порядка, а также рамки и место обучения
-          кадров'
-      />
-      <Stories cardStoriesData={cardStoriesData} />
     </>
   );
 }
