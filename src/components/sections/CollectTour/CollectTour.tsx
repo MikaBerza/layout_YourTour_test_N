@@ -12,7 +12,7 @@ import {
   SelectionField,
   TextareaField,
 } from '@/components/commons/forms/indexForms';
-import ButtonsGroup from '@/components/group/ButtonsGroup/ButtonsGroup';
+import { ButtonsGroup } from '@/components/commons/buttons/indexButtons';
 
 import styles from './collectTour.module.css';
 import { SectionsPropsType } from '@/types/customType';

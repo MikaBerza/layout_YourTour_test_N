@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button1 } from '../../commons/buttons/indexButtons';
+import { Button1 } from '../indexButtons';
 import styles from './buttonsGroup.module.css';
 
 const ButtonsGroup: React.FC = () => {
