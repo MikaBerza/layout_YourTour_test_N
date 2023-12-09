@@ -72,139 +72,63 @@ export default function Home() {
         <div className='collect-tour__container'>
           <form className='form-fill' action='#'>
             <div className='input-fields'>
-              {/* <div className='input-fields__name'>
-                <FieldTitle htmlForAttribute='connectionName' text='Имя' />
-                <input
-                  className='input-fields__name-input'
-                  name='name'
-                  type='text'
-                  id='connectionName'
-                  placeholder='Введите Ваше имя'
-                  autoComplete='off'
-                  required
-                />
-              </div> */}
+              {/* Ввод имени */}
               <NameInput
                 title='Имя'
-                nameAttribute='name'
-                idAttribute='connectionName'
-                placeholderAttribute='Введите Ваше имя'
+                nameAttr='name'
+                idAttr='connectionName'
+                placeholderAttr='Введите Ваше имя'
               />
-              {/* <div className='input-fields__dropdown'>
-                <FieldTitle
-                  htmlForAttribute='connectionDropdown'
-                  text='Направление'
-                />
-                <div className='input-fields__dropdown-select'>
-                  <select
-                    className='input-fields__dropdown-select-item'
-                    name='direction'
-                    id='connectionDropdown'
-                    required
-                    defaultValue=''
-                  >
-                    <option value='' disabled>
-                      Куда хотите ехать
-                    </option>
-                    <option value='Вариант 1'>Вариант 1</option>
-                    <option value='Вариант 2'>Вариант 2</option>
-                    <option value='Вариант 3'>Вариант 3</option>
-                    <option value='Вариант 4'>Вариант 4</option>
-                  </select>
-                </div>
-              </div> */}
+              {/* Ввод направления */}
               <SelectionField
                 title='Направление'
-                nameAttribute='direction'
-                idAttribute='connectionDropdown'
-                placeholderAttribute='Куда хотите ехать'
+                nameAttr='direction'
+                idAttr='connectionDropdown'
+                placeholderAttr='Куда хотите ехать'
               />
-              {/* <div className='input-fields__email'>
-                <FieldTitle htmlForAttribute='connectionEmail' text='Email' />
-                <input
-                  className='input-fields__email-input'
-                  name='email'
-                  type='email'
-                  id='connectionEmail'
-                  placeholder='example@mail.com'
-                  autoComplete='off'
-                  required
-                />
-              </div> */}
+              {/* Ввод email */}
               <EmailInput
                 title='Email'
-                nameAttribute='email'
-                idAttribute='connectionEmail'
-                placeholderAttribute='example@mail.com'
+                nameAttr='email'
+                idAttr='connectionEmail'
+                placeholderAttr='example@mail.com'
               />
-              {/* <div className='input-fields__phone'>
-                <FieldTitle htmlForAttribute='connectionPhone' text='Телефон' />
-                <input
-                  className='input-fields__phone-input'
-                  name='phone'
-                  type='tel'
-                  pattern='\+7\d{10}'
-                  maxLength={12}
-                  id='connectionPhone'
-                  placeholder='+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _'
-                  autoComplete='off'
-                  required
-                />
-              </div> */}
+              {/* Ввод телефона */}
               <PhoneInput
                 title='Телефон'
-                nameAttribute='phone'
-                idAttribute='connectionPhone'
-                placeholderAttribute='+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _'
+                nameAttr='phone'
+                idAttr='connectionPhone'
+                placeholderAttr='+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _'
               />
 
-              {/* <div className='input-fields__dateFrom'>
-                <FieldTitle
-                  htmlForAttribute='connectionDateFrom'
-                  text='Дата от'
-                />
-                <input
-                  className='input-fields__dateFrom-input'
-                  name='dateFrom'
-                  type='date'
-                  id='connectionDateFrom'
-                  autoComplete='off'
-                  required
-                />
-              </div> */}
+              {/* Ввод даты от*/}
               <DateInput
                 title='Дата от'
-                nameAttribute='dateFrom'
-                idAttribute='connectionDateFrom'
+                nameAttr='dateFrom'
+                idAttr='connectionDateFrom'
               />
-              {/* <div className='input-fields__dateTo'>
-                <FieldTitle
-                  htmlForAttribute='connectionDateTo'
-                  text='Дата до'
-                />
-                <input
-                  className='input-fields__dateTo-input'
-                  name='dateTo'
-                  type='date'
-                  id='connectionDateTo'
-                  autoComplete='off'
-                  required
-                />
-              </div> */}
+              {/* Ввод даты до*/}
               <DateInput
                 title='Дата до'
-                nameAttribute='dateTo'
-                idAttribute='connectionDateTo'
+                nameAttr='dateTo'
+                idAttr='connectionDateTo'
               />
             </div>
-
-            <TextareaField title='Комментарий' />
-            <RadiosField title='Вам есть 18 лет?' />
+            {/* Ввод комментария*/}
+            <TextareaField
+              title='Комментарий'
+              nameAttr='comment'
+              idAttr='connectionComment'
+            />
+            {/* Радио кнопки */}
+            <RadiosField legendTitle='Вам есть 18 лет?' />
+            {/* Чекбокс */}
             <ChecksField
               text='Нажимая кнопку, я принимаю условия'
               link='#licenseAgreement'
               linkText='Лицензионного договора'
             />
+            {/* Группа кнопок */}
             <ButtonsGroup />
           </form>
         </div>

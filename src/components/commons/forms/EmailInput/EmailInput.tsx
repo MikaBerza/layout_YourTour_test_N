@@ -2,22 +2,23 @@ import React from 'react';
 import { FieldTitle } from '../indexForms';
 
 import styles from './emailInput.module.css';
+import { FormItemPropsType } from '@/types/customType';
 
-const EmailInput: React.FC<{
-  title: string;
-  nameAttribute: string;
-  idAttribute: string;
-  placeholderAttribute: string;
-}> = ({ title, nameAttribute, idAttribute, placeholderAttribute }) => {
+const EmailInput: React.FC<FormItemPropsType> = ({
+  title,
+  nameAttr,
+  idAttr,
+  placeholderAttr,
+}) => {
   return (
     <div className={styles.wrapper}>
-      <FieldTitle htmlForAttribute={idAttribute} text={title} />
+      <FieldTitle htmlForAttr={idAttr} text={title} />
       <input
         className={styles.emailInp}
-        name={nameAttribute}
+        name={nameAttr}
         type='email'
-        id={idAttribute}
-        placeholder={placeholderAttribute}
+        id={idAttr}
+        placeholder={placeholderAttr}
         autoComplete='off'
         required
       />

@@ -2,20 +2,17 @@ import React from 'react';
 import { FieldTitle } from '../indexForms';
 
 import styles from './dateInput.module.css';
+import { FormItemPropsType } from '@/types/customType';
 
-const DateInput: React.FC<{
-  title: string;
-  nameAttribute: string;
-  idAttribute: string;
-}> = ({ title, nameAttribute, idAttribute }) => {
+const DateInput: React.FC<FormItemPropsType> = ({ title, nameAttr, idAttr }) => {
   return (
     <div className={styles.wrapper}>
-      <FieldTitle htmlForAttribute={idAttribute} text={title} />
+      <FieldTitle htmlForAttr={idAttr} text={title} />
       <input
         className={styles.inpDate}
-        name={nameAttribute}
+        name={nameAttr}
         type='date'
-        id={idAttribute}
+        id={idAttr}
         autoComplete='off'
         required
       />

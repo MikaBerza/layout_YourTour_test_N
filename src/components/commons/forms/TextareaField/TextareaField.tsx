@@ -1,15 +1,21 @@
 import React from 'react';
-import styles from './textareaField.module.css';
 import { FieldTitle } from '../indexForms';
 
-const TextareaField: React.FC<{ title: string }> = ({ title }) => {
+import styles from './textareaField.module.css';
+import { FormItemPropsType } from '@/types/customType';
+
+const TextareaField: React.FC<FormItemPropsType> = ({
+  title,
+  nameAttr,
+  idAttr,
+}) => {
   return (
     <div className={styles.wrapper}>
-      <FieldTitle htmlForAttribute='connectionComment' text={title} />
+      <FieldTitle htmlForAttr={idAttr} text={title} />
       <textarea
         className={styles.comment}
-        name='comment'
-        id='connectionComment'
+        name={nameAttr}
+        id={idAttr}
         autoComplete='off'
         maxLength={300}
         required

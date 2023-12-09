@@ -3,26 +3,27 @@ import { FieldTitle } from '../indexForms';
 import { listOptionData } from '@/utils/listsOfData';
 
 import styles from './selectionField.module.css';
+import { FormItemPropsType } from '@/types/customType';
 
-const SelectionField: React.FC<{
-  title: string;
-  nameAttribute: string;
-  idAttribute: string;
-  placeholderAttribute: string;
-}> = ({ title, nameAttribute, idAttribute, placeholderAttribute }) => {
+const SelectionField: React.FC<FormItemPropsType> = ({
+  title,
+  nameAttr,
+  idAttr,
+  placeholderAttr,
+}) => {
   return (
     <div className={styles.wrapper}>
-      <FieldTitle htmlForAttribute={idAttribute} text={title} />
+      <FieldTitle htmlForAttr={idAttr} text={title} />
       <div className={styles.inner}>
         <select
           className={styles.selectItem}
-          name={nameAttribute}
-          id={idAttribute}
+          name={nameAttr}
+          id={idAttr}
           required
           defaultValue=''
         >
           <option value='' disabled>
-            {placeholderAttribute}
+            {placeholderAttr}
           </option>
           {listOptionData.map((item) => {
             return (

@@ -3,22 +3,22 @@ import { Radio } from '../indexForms';
 
 import styles from './radiosField.module.css';
 
-const RadiosField: React.FC<{ title: string }> = ({ title }) => {
+const RadiosField: React.FC<{ legendTitle: string }> = ({ legendTitle }) => {
   return (
     <fieldset className={styles.wrapper}>
-      <legend className={styles.title}>{title}</legend>
+      <legend className={styles.title}>{legendTitle}</legend>
       <div className={styles.group}>
         <Radio
-          nameAttribute='clientAge'
-          idAttribute='connectionAgeYes'
-          valueAttribute='Yes'
-          text='Да'
+          title='Да'
+          nameAttr='clientAge'
+          idAttr='connectionAgeYes'
+          valueAttr='Yes'
         />
         <Radio
-          nameAttribute='clientAge'
-          idAttribute='connectionAgeNo'
-          valueAttribute='No'
-          text='Нет'
+          title='Нет'
+          nameAttr='clientAge'
+          idAttr='connectionAgeNo'
+          valueAttr='No'
         />
       </div>
     </fieldset>

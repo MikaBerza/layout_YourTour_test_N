@@ -18,6 +18,14 @@ export type CardTurPropsType = {
   price: string;
 };
 
+export type FormItemPropsType = {
+  title: string;
+  nameAttr: string;
+  idAttr: string;
+  placeholderAttr?: string;
+  valueAttr?: string;
+};
+
 export type LinkItemSocialType = {
   id: string;
   link: string;
