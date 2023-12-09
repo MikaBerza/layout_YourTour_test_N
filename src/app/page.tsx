@@ -8,6 +8,7 @@ import {
   Reviews,
   TravelPhotos,
   Stories,
+  CollectTour,
 } from '@/components/sections/indexSections';
 
 import {
@@ -15,19 +16,6 @@ import {
   cardStoriesData,
   travelPhotosData,
 } from '../utils/listsOfData';
-
-import ButtonsGroup from '@/components/group/ButtonsGroup/ButtonsGroup';
-import {
-  ChecksField,
-  RadiosField,
-  FieldTitle,
-  TextareaField,
-  DateInput,
-  PhoneInput,
-  EmailInput,
-  NameInput,
-  SelectionField,
-} from '@/components/commons/forms/indexForms';
 
 // import styles from './page.module.css';
 
@@ -58,81 +46,17 @@ export default function Home() {
       <ChooseTour />
 
       {/*___collect-tour */}
-      <section className='collect-tour'>
-        <Title
-          nameStyles={'minorText'}
-          text='Собери свой тур'
-          uniqueName='collect-tour'
-        />
-        <Subtitle
-          nameStyles={'minorText'}
-          text='Идейные соображения высшего порядка, а также рамки и место обучения
+      <Title
+        nameStyles={'minorText'}
+        text='Собери свой тур'
+        uniqueName='collect-tour'
+      />
+      <Subtitle
+        nameStyles={'minorText'}
+        text='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
-        />
-        <div className='collect-tour__container'>
-          <form className='form-fill' action='#'>
-            <div className='input-fields'>
-              {/* Ввод имени */}
-              <NameInput
-                title='Имя'
-                nameAttr='name'
-                idAttr='connectionName'
-                placeholderAttr='Введите Ваше имя'
-              />
-              {/* Ввод направления */}
-              <SelectionField
-                title='Направление'
-                nameAttr='direction'
-                idAttr='connectionDropdown'
-                placeholderAttr='Куда хотите ехать'
-              />
-              {/* Ввод email */}
-              <EmailInput
-                title='Email'
-                nameAttr='email'
-                idAttr='connectionEmail'
-                placeholderAttr='example@mail.com'
-              />
-              {/* Ввод телефона */}
-              <PhoneInput
-                title='Телефон'
-                nameAttr='phone'
-                idAttr='connectionPhone'
-                placeholderAttr='+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _'
-              />
-
-              {/* Ввод даты от*/}
-              <DateInput
-                title='Дата от'
-                nameAttr='dateFrom'
-                idAttr='connectionDateFrom'
-              />
-              {/* Ввод даты до*/}
-              <DateInput
-                title='Дата до'
-                nameAttr='dateTo'
-                idAttr='connectionDateTo'
-              />
-            </div>
-            {/* Ввод комментария*/}
-            <TextareaField
-              title='Комментарий'
-              nameAttr='comment'
-              idAttr='connectionComment'
-            />
-            {/* Радио кнопки */}
-            <RadiosField legendTitle='Вам есть 18 лет?' />
-            {/* Чекбокс */}
-            <ChecksField
-              text='Нажимая кнопку, я принимаю условия'
-              link='#licenseAgreement'
-              linkText='Лицензионного договора'
-            />
-            {/* Группа кнопок */}
-            <ButtonsGroup />
-          </form>
-        </div>
-      </section>
+      />
+      <CollectTour />
 
       {/*___reviews */}
       <Title
