@@ -14,7 +14,7 @@ const EmailInput: React.FC<FormItemPropsType> = ({
     <div className={styles.wrapper}>
       <FieldTitle htmlForAttr={idAttr} text={title} />
       <input
-        className={styles.emailInp}
+        className={styles.item}
         name={nameAttr}
         type='email'
         id={idAttr}

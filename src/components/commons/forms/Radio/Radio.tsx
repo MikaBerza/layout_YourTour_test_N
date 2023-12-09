@@ -11,7 +11,7 @@ const Radio: React.FC<FormItemPropsType> = ({
   return (
     <div className={styles.inner}>
       <input
-        className={styles.inp}
+        className={styles.item}
         type='radio'
         name={nameAttr}
         id={idAttr}

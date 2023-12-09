@@ -3,7 +3,7 @@
   margin-bottom: 33px;
 }
 
-.inpDate {
+.item {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -19,21 +19,21 @@
   outline: none;
 }
 
-.inpDate[type="date"]::-webkit-calendar-picker-indicator {
+.item[type="date"]::-webkit-calendar-picker-indicator {
   /* уберем значок календаря у (input type="date") */
   display: none;
 }
 
-.inpDate:hover {
+.item:hover {
   background: var(--beige200-color);
   cursor: pointer;
 }
 
-.inpDate:focus {
+.item:focus {
   border: 1px solid var(--gray300-color);
 }
 
-.inpDate {
+.item {
   text-transform: uppercase;
   color: var(--gray300-color);
 }
@@ -45,7 +45,7 @@
     width: calc(50% - 10px);
   }
 
-  .inpDate {
+  .item {
     padding: 20px 45px 20px 20px;
     font-size: 20px;
   }
@@ -53,7 +53,7 @@
 
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
-  .inpDate {
+  .item {
     font-size: 18px;
   }
 }
@@ -69,7 +69,7 @@
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
 
-  .inpDate {
+  .item {
     height: 43.5px;
     padding: 10px 31px 10px 10px;
     font-size: 16px;

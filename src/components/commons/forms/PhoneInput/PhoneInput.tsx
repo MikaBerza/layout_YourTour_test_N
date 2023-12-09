@@ -14,7 +14,7 @@ const PhoneInput: React.FC<FormItemPropsType> = ({
     <div className={styles.wrapper}>
       <FieldTitle htmlForAttr={idAttr} text={title} />
       <input
-        className={styles.phoneInp}
+        className={styles.item}
         name={nameAttr}
         type='tel'
         pattern='\+7\d{10}'

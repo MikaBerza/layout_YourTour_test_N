@@ -16,7 +16,7 @@ const SelectionField: React.FC<FormItemPropsType> = ({
       <FieldTitle htmlForAttr={idAttr} text={title} />
       <div className={styles.inner}>
         <select
-          className={styles.selectItem}
+          className={styles.item}
           name={nameAttr}
           id={idAttr}
           required

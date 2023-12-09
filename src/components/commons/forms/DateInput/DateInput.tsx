@@ -9,7 +9,7 @@ const DateInput: React.FC<FormItemPropsType> = ({ title, nameAttr, idAttr }) => 
     <div className={styles.wrapper}>
       <FieldTitle htmlForAttr={idAttr} text={title} />
       <input
-        className={styles.inpDate}
+        className={styles.item}
         name={nameAttr}
         type='date'
         id={idAttr}

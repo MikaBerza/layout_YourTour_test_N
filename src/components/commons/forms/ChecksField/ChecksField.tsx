@@ -11,7 +11,7 @@ const ChecksField: React.FC<{
   return (
     <div className={styles.wrapper}>
       <input
-        className={styles.inpCheckbox}
+        className={styles.item}
         type='checkbox'
         name='acceptAgreement'
         id='connectionAgreement'

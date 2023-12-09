@@ -3,7 +3,7 @@
   margin-bottom: 33px;
 }
 
-.emailInp {
+.item {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -19,16 +19,16 @@
   outline: none;
 }
 
-.emailInp::placeholder {
+.item::placeholder {
   color: var(--gray300-color);
 }
 
-.emailInp:hover {
+.item:hover {
   background: var(--beige200-color);
   cursor: pointer;
 }
 
-.emailInp:focus {
+.item:focus {
   border: 1px solid var(--gray300-color);
 }
 
@@ -39,18 +39,18 @@
     width: calc(50% - 10px);
   }
 
-  .emailInp {
+  .item {
     padding: 20px 45px 20px 20px;
   }
 
-  .emailInp::placeholder {
+  .item::placeholder {
     font-size: 20px;
   }
 }
 
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
-  .emailInp::placeholder {
+  .item::placeholder {
     font-size: 18px;
   }
 }
@@ -65,12 +65,12 @@
 
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
-  .emailInp {
+  .item {
     height: 43.5px;
     padding: 10px 31px 10px 10px;
   }
 
-  .emailInp::placeholder {
+  .item::placeholder {
     font-size: 16px;
   }
 }

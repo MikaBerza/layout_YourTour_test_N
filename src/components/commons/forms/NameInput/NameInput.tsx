@@ -14,7 +14,7 @@ const NameInput: React.FC<FormItemPropsType> = ({
     <div className={styles.wrapper}>
       <FieldTitle htmlForAttr={idAttr} text={title} />
       <input
-        className={styles.nameInp}
+        className={styles.item}
         name={nameAttr}
         type='text'
         id={idAttr}

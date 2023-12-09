@@ -13,7 +13,7 @@ const TextareaField: React.FC<FormItemPropsType> = ({
     <div className={styles.wrapper}>
       <FieldTitle htmlForAttr={idAttr} text={title} />
       <textarea
-        className={styles.comment}
+        className={styles.item}
         name={nameAttr}
         id={idAttr}
         autoComplete='off'

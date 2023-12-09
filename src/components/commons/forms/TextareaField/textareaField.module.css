@@ -3,7 +3,7 @@
   margin-bottom: 33px;
 }
 
-.comment {
+.item {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -20,25 +20,18 @@
   resize: none;
 }
 
-.comment:hover {
+.item:hover {
   background: var(--beige200-color);
   cursor: pointer;
 }
 
-.comment:focus {
+.item:focus {
   border: 1px solid var(--gray300-color);
 }
 
-/* .comment {
-  height: 152px;
-  resize: none;
-} */
-
-
-
 /*___media___*/
 @media (max-width: 1024px) {
-  .comment {
+  .item {
     padding: 20px 45px 20px 20px;
   }
 }
@@ -53,7 +46,7 @@
 
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
-  .comment {
+  .item {
     height: 132px;
     padding: 10px 31px 10px 10px;
   }

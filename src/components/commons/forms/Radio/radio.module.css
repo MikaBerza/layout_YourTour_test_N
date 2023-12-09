@@ -1,11 +1,11 @@
-.inp {
+.inner:not(:last-child) {
+  margin-right: 31px;
+}
+
+.item {
   position: absolute;
   z-index: -1;
   opacity: 0;
-}
-
-.inner:not(:last-child) {
-  margin-right: 31px;
 }
 
 .text {
@@ -13,13 +13,13 @@
   cursor: pointer;
 }
 
-.inp+.text {
+.item+.text {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.inp+.text::before {
+.item+.text::before {
   width: 24px;
   height: 24px;
   margin-right: 11px;
@@ -29,7 +29,7 @@
   content: '';
 }
 
-.inp:checked+.text::before {
+.item:checked+.text::before {
   position: relative;
   font-size: 59px;
   text-align: center;
@@ -44,7 +44,7 @@
     margin-right: 30px;
   }
 
-  .inp+.text::before {
+  .item+.text::before {
     width: 19px;
     height: 19px;
     margin-right: 9px;
