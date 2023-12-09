@@ -35,7 +35,7 @@ export default function Home() {
 
       {/*___choose-tour */}
       <Title
-        nameStyles={'minorText'}
+        nameStyles='minorText'
         text='Выбери свой тур'
         uniqueName='choose-tour'
       />
@@ -43,12 +43,12 @@ export default function Home() {
 
       {/*___collect-tour */}
       <Title
-        nameStyles={'minorText'}
+        nameStyles='minorText'
         text='Собери свой тур'
         uniqueName='collect-tour'
       />
       <Subtitle
-        nameStyles={'minorText'}
+        nameStyles='minorText'
         text='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
       />
@@ -56,12 +56,12 @@ export default function Home() {
 
       {/*___reviews */}
       <Title
-        nameStyles={'minorText'}
+        nameStyles='minorText'
         text='Отзывы наших путешественников'
         uniqueName='reviews'
       />
       <Subtitle
-        nameStyles={'minorText'}
+        nameStyles='minorText'
         text='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
       />
@@ -69,12 +69,12 @@ export default function Home() {
 
       {/*___travel-photos */}
       <Title
-        nameStyles={'minorText'}
+        nameStyles='minorText'
         text='Фотографии путешествий'
         uniqueName='travel-photos'
       />
       <Subtitle
-        nameStyles={'minorText'}
+        nameStyles='minorText'
         text='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
       />
@@ -82,12 +82,12 @@ export default function Home() {
 
       {/*___stories */}
       <Title
-        nameStyles={'minorText'}
+        nameStyles='minorText'
         text='Истории путешествий'
         uniqueName='stories'
       />
       <Subtitle
-        nameStyles={'minorText'}
+        nameStyles='minorText'
         text='Идейные соображения высшего порядка, а также рамки и место обучения
           кадров'
       />

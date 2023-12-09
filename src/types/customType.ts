@@ -5,8 +5,8 @@ export type MenuItemType = {
 };
 
 export type TitleElementsPropsType = {
-  nameStyles: string;
-  text: string;
+  nameStyles: string | undefined;
+  text: string | undefined;
   uniqueName?: string;
 };
 

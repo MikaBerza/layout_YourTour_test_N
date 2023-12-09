@@ -20,10 +20,7 @@ const Greeting: React.FC<SectionsPropsType> = ({
         text={titleText}
         uniqueName={titleUniqueName}
       />
-      {subtitleStyeName && subtitleText && (
-        <Subtitle nameStyles={subtitleStyeName} text={subtitleText} />
-      )}
-
+      <Subtitle nameStyles={subtitleStyeName} text={subtitleText} />
       <AnchorButton name='Найти тур' />
     </section>
   );
