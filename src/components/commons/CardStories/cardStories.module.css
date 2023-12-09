@@ -150,10 +150,6 @@
   border-radius: 50px;
 }
 
-.pb-1 {
-  padding-bottom: 200px;
-}
-
 /*___media___*/
 @media (max-width: 1024px) {
   .wrap {
@@ -170,10 +166,6 @@
 
   .boxText {
     padding-bottom: 111px;
-  }
-
-  .pb-1 {
-    padding-bottom: 198px;
   }
 
   .description,
@@ -258,10 +250,6 @@
 
   .boxText {
     padding-bottom: 64px;
-  }
-
-  .pb-1 {
-    padding-bottom: 134px;
   }
 
   .linksSocials {
