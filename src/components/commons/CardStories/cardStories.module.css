@@ -121,7 +121,7 @@
 }
 
 .linkItemSocial:not(:last-child) {
-  margin-right: 31px;
+  margin-right: 36px;
 }
 
 .linkItemSocial:hover {
@@ -186,19 +186,11 @@
   .linkItemSocial {
     font-size: 20px;
   }
-
-  .linkItemSocial:not(:last-child) {
-    margin-right: 31px;
-  }
-
 }
 
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
 
-
-  /*  */
-  /* __stories__ */
   .title {
     font-size: 23px;
   }
