@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-
 import styles from './checksField.module.css';
 
 const ChecksField: React.FC<{

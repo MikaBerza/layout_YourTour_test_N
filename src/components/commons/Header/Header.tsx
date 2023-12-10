@@ -1,6 +1,7 @@
 'use client';
-import React, { MouseEventHandler } from 'react';
+import React from 'react';
 import Link from 'next/link';
+
 import { headerMenuData } from '../../../utils/listsOfData';
 import { handleSmoothScrolling } from '../../../utils/modules';
 import styles from './header.module.css';

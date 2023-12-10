@@ -3,6 +3,7 @@ import React from 'react';
 import { Title } from '@/components/commons/Title';
 import { Tabs } from '@/components/commons/Tabs';
 import { CardTur } from '@/components/commons/CardTur';
+
 import {
   tabsData,
   cardTurData,

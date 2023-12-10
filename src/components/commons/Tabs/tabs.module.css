@@ -1,10 +1,3 @@
-/*___choose-tour___*/
-/* .choose-tour {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
 .tabs {
   display: flex;
   flex-wrap: wrap;
@@ -40,11 +33,8 @@
   border-bottom: 2px solid var(--orange200-color);
 }
 
-/*___media___*/
 @media (max-width: 1024px) {
 
-  /*  */
-  /* __choose-tour__ */
   .tabs {
     padding-top: 20px;
   }
@@ -58,6 +48,7 @@
 
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
+
   .tabs {
     padding-top: 27px;
   }

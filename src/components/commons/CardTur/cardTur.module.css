@@ -7,7 +7,6 @@
   padding: 100px 30px 0;
 }
 
-/*___choose-tour___*/
 .inner {
   object-fit: cover;
   overflow: hidden;
@@ -102,9 +101,8 @@
   border-radius: 50px;
 }
 
-
-/*___media___*/
 @media (max-width: 1024px) {
+
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 18px 18px;
@@ -122,6 +120,7 @@
 
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
+
   .content {
     padding: 14% 14% 14% 8%;
   }
@@ -137,6 +136,7 @@
 
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
+
   .wrapper {
     max-width: 549px;
     margin: inherit;

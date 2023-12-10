@@ -21,8 +21,8 @@
   color: var(--black-color);
 }
 
-/*___media___*/
 @media (max-width: 1024px) {
+
   .mainText {
     padding-top: 207px;
   }
@@ -30,6 +30,7 @@
 
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
+
   .mainText {
     font-size: 68px;
   }
@@ -44,6 +45,7 @@
 
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
+
   .mainText {
     max-width: 360px;
     padding-top: 141px;
@@ -59,6 +61,7 @@
 
 /*359px___________________________________________________*/
 @media (max-width: 359px) {
+  
   .minorText {
     font-size: 28px;
   }

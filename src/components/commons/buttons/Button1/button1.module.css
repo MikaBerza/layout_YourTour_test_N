@@ -38,7 +38,6 @@
   background: var(--gray200-color);
 }
 
-/*___media___*/
 @media (max-width: 1024px) {
 
   .find,
@@ -46,7 +45,6 @@
     width: 235px;
     font-size: 20px;
   }
-
 }
 
 /*770px___________________________________________________*/
@@ -60,6 +58,7 @@
 
 /*660px___________________________________________________*/
 @media (max-width: 660px) {
+
   .find {
     margin-right: 10px;
   }

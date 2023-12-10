@@ -54,8 +54,8 @@
   color: var(--black-color);
 }
 
-/*___media___*/
 @media (max-width: 1024px) {
+
   .wrapper {
     width: calc(50% - 10px);
   }
@@ -72,6 +72,7 @@
 
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
+
   .item {
     font-size: 18px;
   }
@@ -79,6 +80,7 @@
 
 /*660px___________________________________________________*/
 @media (max-width: 660px) {
+
   .wrapper {
     width: 100%;
     margin-bottom: 30px;
@@ -87,6 +89,7 @@
 
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
+
   .item {
     height: 46px;
     padding: 10px 31px 10px 10px;

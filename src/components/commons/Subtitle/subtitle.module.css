@@ -18,8 +18,8 @@
   color: var(--gray300-color);
 }
 
-/*___media___*/
 @media (max-width: 1024px) {
+
   .mainText {
     max-width: 442px;
     padding-top: 50px;
@@ -28,6 +28,7 @@
 
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
+
   .generalText {
     font-size: 16px;
   }
@@ -35,6 +36,7 @@
 
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
+
   .mainText {
     max-width: 310px;
     padding-top: 40px;
@@ -48,6 +50,7 @@
 
 /*359px___________________________________________________*/
 @media (max-width: 359px) {
+
   .minorText {
     font-size: 14px;
   }

@@ -1,13 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 
-import styles from './cardStories.module.css';
 import { LinkButton } from '../buttons/indexButtons';
 import {
   CardStoriesPropsType,
   AdvantagesItemType,
   LinkItemSocialType,
 } from '@/types/customType';
+
+import styles from './cardStories.module.css';
 
 const CardStories: React.FC<{ item: CardStoriesPropsType }> = ({ item }) => {
   // функция, генерации списка преимуществ

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Radio } from '../indexForms';
-
 import styles from './radiosField.module.css';
 
 const RadiosField: React.FC<{ legendTitle: string }> = ({ legendTitle }) => {

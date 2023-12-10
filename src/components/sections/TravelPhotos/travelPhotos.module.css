@@ -23,9 +23,8 @@
   object-fit: cover;
 }
 
-
-/*___media___*/
 @media (max-width: 1024px) {
+
   .wrapper {
     grid-template-columns: repeat(12, 1fr);
     gap: 30px 20px;
@@ -50,6 +49,7 @@
 
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
+
   .wrapper {
     margin-top: 47px;
     padding: 0 21px;

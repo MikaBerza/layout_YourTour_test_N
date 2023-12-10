@@ -12,9 +12,8 @@
   padding: 0 30px;
 }
 
-
-/*___media___*/
 @media (max-width: 1024px) {
+
   .inner {
     max-width: 918px;
     margin-top: 98px;
@@ -24,6 +23,7 @@
 
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
+
   .inner {
     flex-direction: column;
   }
@@ -31,9 +31,9 @@
 
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
+
   .inner {
     margin-top: 50px;
     padding: 0 21px;
   }
-
 }

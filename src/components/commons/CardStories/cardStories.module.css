@@ -150,8 +150,8 @@
   border-radius: 50px;
 }
 
-/*___media___*/
 @media (max-width: 1024px) {
+
   .wrap {
     border-radius: 50px;
   }
@@ -208,7 +208,6 @@
   .linkItemSocial:not(:last-child) {
     margin-right: 10px;
   }
-
 }
 
 
@@ -269,5 +268,4 @@
   .linkItemSocial:not(:last-child) {
     margin-right: 5px;
   }
-
 }

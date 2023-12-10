@@ -7,14 +7,16 @@ const Title: React.FC<TitleElementsPropsType> = ({
   text,
   uniqueName,
 }) => {
-  return (
-    <h2
-      className={`${styles[nameStyles]} ${styles.generalText}`}
-      id={uniqueName}
-    >
-      {text}
-    </h2>
-  );
+  if (nameStyles) {
+    return (
+      <h2
+        className={`${styles[nameStyles]} ${styles.generalText}`}
+        id={uniqueName}
+      >
+        {text}
+      </h2>
+    );
+  }
 };
 
 Title.displayName = 'Title';

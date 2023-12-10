@@ -18,6 +18,7 @@
 
 /*660px___________________________________________________*/
 @media (max-width: 660px) {
+
   .wrapper {
     width: 100%;
     margin-bottom: 30px;
@@ -26,6 +27,7 @@
 
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
+
   .group {
     height: 23px;
     margin-top: 8px;

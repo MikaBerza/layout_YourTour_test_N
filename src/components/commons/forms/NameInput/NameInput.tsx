@@ -1,6 +1,5 @@
 import React from 'react';
 import { FieldTitle } from '../indexForms';
-
 import styles from './nameInput.module.css';
 import { FormItemPropsType } from '@/types/customType';
 

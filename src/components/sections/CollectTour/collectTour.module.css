@@ -32,8 +32,8 @@
   width: 100%;
 }
 
-/*___media___*/
 @media (max-width: 1024px) {
+
   .inner {
     max-width: 918px;
     margin-top: 99px;
@@ -48,6 +48,7 @@
 
 /*660px___________________________________________________*/
 @media (max-width: 660px) {
+
   .inputsFields {
     flex-direction: column;
   }
@@ -55,6 +56,7 @@
 
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
+
   .inner {
     margin-top: 39px;
     padding: 0 21px;
