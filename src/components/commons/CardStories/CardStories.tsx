@@ -6,7 +6,7 @@ import {
   CardStoriesPropsType,
   AdvantagesItemType,
   LinkItemSocialType,
-} from '@/types/customType';
+} from '../../../types/customType';
 
 import styles from './cardStories.module.css';
 

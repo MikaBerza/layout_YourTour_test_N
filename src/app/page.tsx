@@ -7,7 +7,7 @@ import {
   TravelPhotos,
   Stories,
   CollectTour,
-} from '@/components/sections/indexSections';
+} from '../components/sections/indexSections';
 // import styles from './page.module.css';
 
 export default function Home() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FieldTitle } from '../indexForms';
 import styles from './emailInput.module.css';
-import { FormItemPropsType } from '@/types/customType';
+import { FormItemPropsType } from '../../../../types/customType';
 
 const EmailInput: React.FC<FormItemPropsType> = ({
   title,

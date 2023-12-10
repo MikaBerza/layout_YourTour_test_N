@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
-import { LinkButtonPropsType } from '@/types/customType';
+import { LinkButtonPropsType } from '../../../../types/customType';
 
 const LinkButton: React.FC<LinkButtonPropsType> = ({
   parentStyles: [linkBtn, linkItemBtn],

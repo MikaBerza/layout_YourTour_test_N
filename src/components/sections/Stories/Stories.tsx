@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { Title } from '@/components/commons/Title';
-import { Subtitle } from '@/components/commons/Subtitle';
-import { CardStories } from '@/components/commons/CardStories';
-import { cardStoriesData } from '@/utils/listsOfData';
+import { Title } from '../../../components/commons/Title';
+import { Subtitle } from '../../../components/commons/Subtitle';
+import { CardStories } from '../../../components/commons/CardStories';
+import { cardStoriesData } from '../../../utils/listsOfData';
 
 import styles from './stories.module.css';
-import { SectionsPropsType } from '@/types/customType';
+import { SectionsPropsType } from '../../../types/customType';
 
 const Stories: React.FC<SectionsPropsType> = ({
   titleStyleName,

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './subtitle.module.css';
-import { TitleElementsPropsType } from '@/types/customType';
+import { TitleElementsPropsType } from '../../../types/customType';
 
 const Subtitle: React.FC<TitleElementsPropsType> = ({ nameStyles, text }) => {
   if (

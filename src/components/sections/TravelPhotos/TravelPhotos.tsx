@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { Title } from '@/components/commons/Title';
-import { Subtitle } from '@/components/commons/Subtitle';
-import { travelPhotosData } from '@/utils/listsOfData';
+import { Title } from '../../../components/commons/Title';
+import { Subtitle } from '../../../components/commons/Subtitle';
+import { travelPhotosData } from '../../../utils/listsOfData';
 
 import styles from './travelPhotos.module.css';
-import { SectionsPropsType } from '@/types/customType';
+import { SectionsPropsType } from '../../../types/customType';
 
 const TravelPhotos: React.FC<SectionsPropsType> = ({
   titleStyleName,

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Title } from '@/components/commons/Title';
-import { Subtitle } from '@/components/commons/Subtitle';
+import { Title } from '../../../components/commons/Title';
+import { Subtitle } from '../../../components/commons/Subtitle';
 
 import {
   ChecksField,
@@ -11,11 +11,11 @@ import {
   RadiosField,
   SelectionField,
   TextareaField,
-} from '@/components/commons/forms/indexForms';
-import { ButtonsGroup } from '@/components/commons/buttons/indexButtons';
+} from '../../../components/commons/forms/indexForms';
+import { ButtonsGroup } from '../../../components/commons/buttons/indexButtons';
 
 import styles from './collectTour.module.css';
-import { SectionsPropsType } from '@/types/customType';
+import { SectionsPropsType } from '../../../types/customType';
 
 const CollectTour: React.FC<SectionsPropsType> = ({
   titleStyleName,

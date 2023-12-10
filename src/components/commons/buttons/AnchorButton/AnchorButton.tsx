@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { handleSmoothScrolling } from '@/utils/modules';
+import { handleSmoothScrolling } from '../../../../utils/modules';
 import styles from './anchorButton.module.css';
 
 const AnchorButton: React.FC<{ name: string }> = ({ name }) => {

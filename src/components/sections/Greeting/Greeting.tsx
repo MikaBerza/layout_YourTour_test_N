@@ -1,10 +1,10 @@
 import React from 'react';
-import { Title } from '@/components/commons/Title';
-import { Subtitle } from '@/components/commons/Subtitle';
-import { AnchorButton } from '@/components/commons/buttons/indexButtons';
+import { Title } from '../../../components/commons/Title';
+import { Subtitle } from '../../../components/commons/Subtitle';
+import { AnchorButton } from '../../../components/commons/buttons/indexButtons';
 
 import styles from './greeting.module.css';
-import { SectionsPropsType } from '@/types/customType';
+import { SectionsPropsType } from '../../../types/customType';
 
 const Greeting: React.FC<SectionsPropsType> = ({
   titleStyleName,

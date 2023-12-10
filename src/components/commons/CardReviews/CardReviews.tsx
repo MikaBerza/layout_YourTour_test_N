@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { CardReviewsPropsType } from '@/types/customType';
-import { splitSentenceWithLineBreak } from '@/utils/modules';
+import { CardReviewsPropsType } from '../../../types/customType';
+import { splitSentenceWithLineBreak } from '../../../utils/modules';
 import styles from './cardReviews.module.css';
 
 const CardReviews: React.FC<CardReviewsPropsType> = (item) => {

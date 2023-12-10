@@ -1,7 +1,7 @@
 import React from 'react';
 import { FieldTitle } from '../indexForms';
 import styles from './textareaField.module.css';
-import { FormItemPropsType } from '@/types/customType';
+import { FormItemPropsType } from '../../../../types/customType';
 
 const TextareaField: React.FC<FormItemPropsType> = ({
   title,

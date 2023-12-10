@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
-import { Title } from '@/components/commons/Title';
-import { Tabs } from '@/components/commons/Tabs';
-import { CardTur } from '@/components/commons/CardTur';
+import { Title } from '../../../components/commons/Title';
+import { Tabs } from '../../../components/commons/Tabs';
+import { CardTur } from '../../../components/commons/CardTur';
 
 import {
   tabsData,
@@ -14,7 +14,7 @@ import {
 } from '../../../utils/listsOfData';
 
 import styles from './chooseTour.module.css';
-import { SectionsPropsType } from '@/types/customType';
+import { SectionsPropsType } from '../../../types/customType';
 
 const ChooseTour: React.FC<SectionsPropsType> = ({
   titleStyleName,

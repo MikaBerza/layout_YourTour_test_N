@@ -6,7 +6,7 @@ import {
   TravelPhotosPropsType,
   CardReviewsPropsType,
   ListOptionType,
-} from '@/types/customType';
+} from '../types/customType';
 
 // страница 1, данные headerMenuData
 export const headerMenuData: MenuItemType[] = [
