@@ -3,7 +3,6 @@ import React from 'react';
 import Link from 'next/link';
 
 import { headerMenuData } from '../../../utils/listsOfData';
-import { handleSmoothScrolling } from '../../../utils/modules';
 import Logo from './Logo';
 
 import styles from './Header.module.css';
@@ -40,7 +39,6 @@ const Header: React.FC = () => {
       <li
         key={item.id}
         className={styles.menuItem}
-        onClick={handleSmoothScrolling}
       >
         <a
           className={`${styles.menuItemAnchor} ${

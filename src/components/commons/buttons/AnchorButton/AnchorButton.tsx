@@ -1,11 +1,10 @@
 'use client';
 import React from 'react';
-import { handleSmoothScrolling } from '../../../../utils/modules';
 import styles from './AnchorButton.module.css';
 
 const AnchorButton: React.FC<{ name: string }> = ({ name }) => {
   return (
-    <div className={styles.wrapper} onClick={handleSmoothScrolling}>
+    <div className={styles.wrapper}>
       <a className={styles.item} href='#collect-tour'>
         {name}
       </a>

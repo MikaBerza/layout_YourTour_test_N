@@ -61,6 +61,10 @@
   --green100-color: #E0F0E5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', 'Times New Roman', Times, serif;
