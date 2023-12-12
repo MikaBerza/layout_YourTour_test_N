@@ -42,24 +42,20 @@
   bottom: 0;
   left: 0;
   margin: 0 23px 0 0;
-  padding: 0 0 32px 20px;
+  padding: 0 0 16px 20px;
   font-size: 35px;
   font-weight: 500;
   line-height: 122%;
   color: var(--white-color);
 }
 
-.title::after {
-  position: absolute;
-  bottom: -9px;
-  left: 20px;
+.price {
   margin: 0;
+  padding: 0 0 0 20px;
   font-size: 17px;
-  font-weight: 400;
   line-height: 142%;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.17px;
   color: var(--white-color);
-  content: attr(data-price);
 }
 
 .linkBtn {
@@ -81,7 +77,7 @@
 
 .linkItemBtn::after {
   position: relative;
-  left: 11px;
+  left: 16px;
   content: url('../../../../public/images/VectorRight.svg');
 }
 
@@ -159,13 +155,14 @@
   }
 
   .title {
+    padding: 0 0 13px 20px;
     font-size: 23px;
     letter-spacing: 0.92px;
   }
 
-  .title::after {
-    bottom: -4px;
+  .price {
     font-size: 16px;
+    letter-spacing: -0.17px;
   }
 
   .linkItemBtn {
@@ -175,7 +172,7 @@
   .linkItemBtn::after {
     position: relative;
     top: 3px;
-    left: 13px;
+    left: 17px;
     content: url('../../../../public/images/VectorRight.svg');
   }
 }
