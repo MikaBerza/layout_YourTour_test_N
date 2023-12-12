@@ -1,3 +1,4 @@
+/* telephoneNumber */
 .wrapper {
   position: absolute;
   top: 0;
@@ -17,8 +18,7 @@
   padding: 27px 57px 29px;
 }
 
-.logo,
-.telephoneNumber {
+.logo {
   fill: var(--white-color);
 }
 
@@ -46,6 +46,16 @@
 .menuItemAnchor:hover {
   border-bottom: 1px solid var(--white-color)
 }
+
+.telephoneNumber {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 142%;
+  white-space: nowrap;
+  color: var(--white-color);
+}
+
 
 .scrolledFixBgn {
   position: fixed;
@@ -87,10 +97,6 @@
   .menuItemAnchor {
     font-size: 20px;
   }
-
-  .telephoneNumber svg {
-    width: 155px;
-  }
 }
 
 @media (max-width: 820px) {
@@ -117,8 +123,8 @@
     width: 133px;
   }
 
-  .telephoneNumber svg {
-    width: 124px;
+  .telephoneNumber {
+    font-size: 16px;
   }
 }
 
@@ -126,9 +132,5 @@
 
   .logo svg {
     width: 113px;
-  }
-
-  .telephoneNumber svg {
-    width: 104px;
   }
 }
