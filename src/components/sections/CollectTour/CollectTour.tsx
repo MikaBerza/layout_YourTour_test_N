@@ -12,7 +12,7 @@ import {
   SelectionField,
   TextareaField,
 } from '../../../components/commons/forms/indexForms';
-import { ButtonsGroup } from '../../../components/commons/buttons/indexButtons';
+import { FormButton } from '../../../components/commons/buttons/indexButtons';
 import styles from './CollectTour.module.css';
 
 const CollectTour: React.FC = () => {
@@ -84,7 +84,10 @@ const CollectTour: React.FC = () => {
             linkText='Лицензионного договора'
           />
           {/* Группа кнопок */}
-          <ButtonsGroup />
+          <div className={styles.buttonsGroup}>
+            <FormButton nameBtn='Найти тур' nameStyles='find' />
+            <FormButton nameBtn='Сбросить' nameStyles='reset' />
+          </div>
         </form>
       </div>
     </section>
