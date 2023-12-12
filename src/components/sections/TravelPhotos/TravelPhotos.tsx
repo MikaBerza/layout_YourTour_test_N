@@ -9,10 +9,7 @@ import styles from './TravelPhotos.module.css';
 const TravelPhotos: React.FC = () => {
   return (
     <>
-      <Title
-        text='Фотографии путешествий'
-        id='travel-photos'
-      />
+      <Title text='Фотографии путешествий' id='travel-photos' />
       <Subtitle
         text='Идейные соображения высшего порядка, а также рамки и место обучения
         кадров'

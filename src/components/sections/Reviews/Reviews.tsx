@@ -9,10 +9,7 @@ import styles from './Reviews.module.css';
 const Reviews: React.FC = () => {
   return (
     <section className={styles.wrapper}>
-      <Title
-        text='Отзывы наших путешественников'
-        id='reviews'
-      />
+      <Title text='Отзывы наших путешественников' id='reviews' />
       <Subtitle
         text='Идейные соображения высшего порядка, а также рамки и место обучения
         кадров'

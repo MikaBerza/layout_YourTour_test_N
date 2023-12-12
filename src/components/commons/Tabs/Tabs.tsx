@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import { MenuItemType } from '../../../types/customType';
 import styles from './Tabs.module.css';
 
@@ -10,33 +9,25 @@ const Tabs: React.FC<{
   const [elementId, setElementId] = React.useState<string>(tabsData[0].id);
 
   // функция, обработать клик по вкладке
-  const handleTabClick = (
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    item: MenuItemType
-  ) => {
-    // отменяем действие браузера по умолчанию, а именно
-    // прокрутку странице вверх после нажатия на вкладку
-    event.preventDefault();
+  const handleTabClick = (item: MenuItemType) => {
     setElementId(item.id);
     setTabName(item.name);
   };
 
   return (
     <nav className={styles.tabs}>
-      {tabsData.map((item) => {
-        return (
-          <Link
-            className={`${styles.tabsLink} ${
-              item.id === elementId && styles.tabsLinkActive
-            }`}
-            key={item.id}
-            href={item.link}
-            onClick={(event) => handleTabClick(event, item)}
-          >
-            {item.name}
-          </Link>
-        );
-      })}
+      {tabsData.map((item) => (
+        <a
+          className={`${styles.tabsLink} ${
+            item.id === elementId && styles.tabsLinkActive
+          }`}
+          key={item.id}
+          href={item.link}
+          onClick={() => handleTabClick(item)}
+        >
+          {item.name}
+        </a>
+      ))}
     </nav>
   );
 };
