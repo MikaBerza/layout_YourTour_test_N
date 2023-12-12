@@ -17,15 +17,26 @@ import styles from './ChooseTour.module.css';
 const ChooseTour: React.FC = () => {
   const [tabName, setTabName] = React.useState('Популярные');
 
+  const getTurData = React.useCallback(() => {
+    switch (tabName) {
+      case 'Популярные':
+        return cardTurData;
+      case 'Авторские':
+        return cardTurData2;
+      case 'Походы':
+        return cardTurData3;
+      case 'Сплавы':
+        return cardTurData4;
+      case 'Велопрогулки':
+        return cardTurData5;
+    }
+  }, [tabName]);
+
   return (
     <section className={styles.wrapper}>
       <Title text='Выбери свой тур' id='choose-tour' />
       <Tabs tabsData={tabsData} setTabName={setTabName} />
-      {tabName === 'Популярные' && <CardTur cardTurData={cardTurData} />}
-      {tabName === 'Авторские' && <CardTur cardTurData={cardTurData2} />}
-      {tabName === 'Походы' && <CardTur cardTurData={cardTurData3} />}
-      {tabName === 'Сплавы' && <CardTur cardTurData={cardTurData4} />}
-      {tabName === 'Велопрогулки' && <CardTur cardTurData={cardTurData5} />}
+      <CardTur cardTurData={getTurData()} />
     </section>
   );
 };
