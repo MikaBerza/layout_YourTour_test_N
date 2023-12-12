@@ -15,10 +15,10 @@ const Stories: React.FC = () => {
               кадров'
       />
       <div className={styles.inner}>
-        {cardStoriesData.length > 0 &&
-          cardStoriesData.map((item) => {
-            return <CardStories item={item} key={item.id} />;
-          })}
+        {cardStoriesData.length &&
+          cardStoriesData.map((item) => (
+            <CardStories item={item} key={item.id} />
+          ))}
       </div>
     </section>
   );

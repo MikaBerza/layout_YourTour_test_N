@@ -16,10 +16,10 @@ const Reviews: React.FC = () => {
       />
 
       <div className={styles.inner}>
-        {cardReviewsData.length > 0 &&
-          cardReviewsData.map((item) => {
-            return <CardReviews key={item.id} {...item} />;
-          })}
+        {cardReviewsData.length &&
+          cardReviewsData.map((item) => (
+            <CardReviews key={item.id} {...item} />
+          ))}
       </div>
     </section>
   );

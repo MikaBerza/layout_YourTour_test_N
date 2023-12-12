@@ -49,7 +49,7 @@ const CardStories: React.FC<{ item: CardStoriesPropsType }> = ({ item }) => {
           <h3 className={styles.title}>{item.title}</h3>
           <p className={styles.description}>{item.description}</p>
           <ul className={styles.advantages}>
-            {item.advantages.length > 0 &&
+            {item.advantages.length &&
               item.advantages.map(generateListOfAdvantages)}
           </ul>
         </div>
@@ -61,7 +61,7 @@ const CardStories: React.FC<{ item: CardStoriesPropsType }> = ({ item }) => {
             linkBtnName='Подробнее'
           />
           <div className={styles.linksSocials}>
-            {item.linksSocials.length > 0 &&
+            {item.linksSocials.length &&
               item.linksSocials.map(generateListOfSocials)}
           </div>
         </div>
