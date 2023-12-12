@@ -19,11 +19,7 @@ const ChooseTour: React.FC = () => {
 
   return (
     <section className={styles.wrapper}>
-      <Title
-        nameStyles='minorText'
-        text='Выбери свой тур'
-        uniqueName='choose-tour'
-      />
+      <Title nameStyles='minorText' text='Выбери свой тур' id='choose-tour' />
       <Tabs tabsData={tabsData} setTabName={setTabName} />
       {tabName === 'Популярные' && <CardTur cardTurData={cardTurData} />}
       {tabName === 'Авторские' && <CardTur cardTurData={cardTurData2} />}

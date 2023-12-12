@@ -18,11 +18,7 @@ import styles from './CollectTour.module.css';
 const CollectTour: React.FC = () => {
   return (
     <section className={styles.wrapper}>
-      <Title
-        nameStyles='minorText'
-        text='Собери свой тур'
-        uniqueName='collect-tour'
-      />
+      <Title nameStyles='minorText' text='Собери свой тур' id='collect-tour' />
       <Subtitle
         nameStyles='minorText'
         text='Идейные соображения высшего порядка, а также рамки и место обучения

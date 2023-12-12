@@ -12,7 +12,7 @@ const TravelPhotos: React.FC = () => {
       <Title
         nameStyles='minorText'
         text='Фотографии путешествий'
-        uniqueName='travel-photos'
+        id='travel-photos'
       />
       <Subtitle
         nameStyles='minorText'

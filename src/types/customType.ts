@@ -7,7 +7,7 @@ export type MenuItemType = {
 export type TitleElementsPropsType = {
   nameStyles: string | undefined;
   text: string | undefined;
-  uniqueName?: string;
+  id?: string;
 };
 
 export type SectionsPropsType = {
