@@ -4,25 +4,21 @@ import Image from 'next/image';
 import { Title } from '../../../components/commons/Title';
 import { Subtitle } from '../../../components/commons/Subtitle';
 import { travelPhotosData } from '../../../utils/listsOfData';
-
 import styles from './TravelPhotos.module.css';
-import { SectionsPropsType } from '../../../types/customType';
 
-const TravelPhotos: React.FC<SectionsPropsType> = ({
-  titleStyleName,
-  titleText,
-  titleUniqueName,
-  subtitleStyeName,
-  subtitleText,
-}) => {
+const TravelPhotos: React.FC = () => {
   return (
     <>
       <Title
-        nameStyles={titleStyleName}
-        text={titleText}
-        uniqueName={titleUniqueName}
+        nameStyles='minorText'
+        text='Фотографии путешествий'
+        uniqueName='travel-photos'
       />
-      <Subtitle nameStyles={subtitleStyeName} text={subtitleText} />
+      <Subtitle
+        nameStyles='minorText'
+        text='Идейные соображения высшего порядка, а также рамки и место обучения
+        кадров'
+      />
 
       <section className={styles.wrapper}>
         {travelPhotosData.length > 0 &&

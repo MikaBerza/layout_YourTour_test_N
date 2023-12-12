@@ -12,23 +12,17 @@ import {
   cardTurData4,
   cardTurData5,
 } from '../../../utils/listsOfData';
-
 import styles from './ChooseTour.module.css';
-import { SectionsPropsType } from '../../../types/customType';
 
-const ChooseTour: React.FC<SectionsPropsType> = ({
-  titleStyleName,
-  titleText,
-  titleUniqueName,
-}) => {
+const ChooseTour: React.FC = () => {
   const [tabName, setTabName] = React.useState('Популярные');
 
   return (
     <section className={styles.wrapper}>
       <Title
-        nameStyles={titleStyleName}
-        text={titleText}
-        uniqueName={titleUniqueName}
+        nameStyles='minorText'
+        text='Выбери свой тур'
+        uniqueName='choose-tour'
       />
       <Tabs tabsData={tabsData} setTabName={setTabName} />
       {tabName === 'Популярные' && <CardTur cardTurData={cardTurData} />}

@@ -4,26 +4,21 @@ import { Title } from '../../../components/commons/Title';
 import { Subtitle } from '../../../components/commons/Subtitle';
 import { CardStories } from '../../../components/commons/CardStories';
 import { cardStoriesData } from '../../../utils/listsOfData';
-
 import styles from './Stories.module.css';
-import { SectionsPropsType } from '../../../types/customType';
 
-const Stories: React.FC<SectionsPropsType> = ({
-  titleStyleName,
-  titleText,
-  titleUniqueName,
-  subtitleStyeName,
-  subtitleText,
-}) => {
+const Stories: React.FC = () => {
   return (
     <section className={styles.wrapper}>
       <Title
-        nameStyles={titleStyleName}
-        text={titleText}
-        uniqueName={titleUniqueName}
+        nameStyles='minorText'
+        text='Истории путешествий'
+        uniqueName='stories'
       />
-      <Subtitle nameStyles={subtitleStyeName} text={subtitleText} />
-
+      <Subtitle
+        nameStyles='minorText'
+        text='Идейные соображения высшего порядка, а также рамки и место обучения
+              кадров'
+      />
       <div className={styles.inner}>
         {cardStoriesData.length > 0 &&
           cardStoriesData.map((item) => {

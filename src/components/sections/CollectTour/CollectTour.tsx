@@ -13,25 +13,21 @@ import {
   TextareaField,
 } from '../../../components/commons/forms/indexForms';
 import { ButtonsGroup } from '../../../components/commons/buttons/indexButtons';
-
 import styles from './CollectTour.module.css';
-import { SectionsPropsType } from '../../../types/customType';
 
-const CollectTour: React.FC<SectionsPropsType> = ({
-  titleStyleName,
-  titleText,
-  titleUniqueName,
-  subtitleStyeName,
-  subtitleText,
-}) => {
+const CollectTour: React.FC = () => {
   return (
     <section className={styles.wrapper}>
       <Title
-        nameStyles={titleStyleName}
-        text={titleText}
-        uniqueName={titleUniqueName}
+        nameStyles='minorText'
+        text='Собери свой тур'
+        uniqueName='collect-tour'
       />
-      <Subtitle nameStyles={subtitleStyeName} text={subtitleText} />
+      <Subtitle
+        nameStyles='minorText'
+        text='Идейные соображения высшего порядка, а также рамки и место обучения
+        кадров'
+      />
 
       <div className={styles.inner}>
         <form className={styles.formFill} action='#'>

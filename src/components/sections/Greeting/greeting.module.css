@@ -6,3 +6,45 @@
     linear-gradient(0deg, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.23) 100%),
     url('../../../../public/images/greeting/greetingBackgroundImg.png');
 }
+
+.generalText {
+  margin: auto;
+  font-weight: 700;
+  text-align: center;
+}
+
+.mainText {
+  max-width: 768px;
+  padding-top: 207px;
+  font-size: 96px;
+  line-height: 109%;
+  letter-spacing: 1.92px;
+  color: var(--white-color);
+}
+
+@media (max-width: 1024px) {
+
+  .mainText {
+    padding-top: 207px;
+  }
+}
+
+/*770px___________________________________________________*/
+@media (max-width: 770px) {
+
+  .mainText {
+    font-size: 68px;
+  }
+}
+
+/*550px___________________________________________________*/
+@media (max-width: 550px) {
+
+  .mainText {
+    max-width: 360px;
+    padding-top: 141px;
+    font-size: 34px;
+    line-height: 112%;
+    letter-spacing: 0.68px;
+  }
+}

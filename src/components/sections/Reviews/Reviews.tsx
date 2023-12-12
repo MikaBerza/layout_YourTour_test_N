@@ -4,25 +4,21 @@ import { Title } from '../../../components/commons/Title';
 import { Subtitle } from '../../../components/commons/Subtitle';
 import { CardReviews } from '../../../components/commons/CardReviews';
 import { cardReviewsData } from '../../../utils/listsOfData';
-
 import styles from './Reviews.module.css';
-import { SectionsPropsType } from '../../../types/customType';
 
-const Reviews: React.FC<SectionsPropsType> = ({
-  titleStyleName,
-  titleText,
-  titleUniqueName,
-  subtitleStyeName,
-  subtitleText,
-}) => {
+const Reviews: React.FC = () => {
   return (
     <section className={styles.wrapper}>
       <Title
-        nameStyles={titleStyleName}
-        text={titleText}
-        uniqueName={titleUniqueName}
+        nameStyles='minorText'
+        text='Отзывы наших путешественников'
+        uniqueName='reviews'
       />
-      <Subtitle nameStyles={subtitleStyeName} text={subtitleText} />
+      <Subtitle
+        nameStyles='minorText'
+        text='Идейные соображения высшего порядка, а также рамки и место обучения
+        кадров'
+      />
 
       <div className={styles.inner}>
         {cardReviewsData.length > 0 &&

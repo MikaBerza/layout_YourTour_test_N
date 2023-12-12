@@ -1,26 +1,21 @@
 import React from 'react';
-import { Title } from '../../../components/commons/Title';
 import { Subtitle } from '../../../components/commons/Subtitle';
 import { AnchorButton } from '../../../components/commons/buttons/indexButtons';
-
 import styles from './Greeting.module.css';
-import { SectionsPropsType } from '../../../types/customType';
 
-const Greeting: React.FC<SectionsPropsType> = ({
-  titleStyleName,
-  titleText,
-  titleUniqueName,
-  subtitleStyeName,
-  subtitleText,
-}) => {
+const Greeting: React.FC = () => {
   return (
     <section className={`${styles.wrapper} ${'bgp-1'}`}>
-      <Title
-        nameStyles={titleStyleName}
-        text={titleText}
-        uniqueName={titleUniqueName}
+      <h1 className={`${styles.mainText} ${styles.generalText}`} id='greeting'>
+        Идеальные путешествия существуют
+      </h1>
+
+      <Subtitle
+        nameStyles='mainText'
+        text='Идейные соображения высшего порядка, а также рамки и место обучения
+      кадров'
       />
-      <Subtitle nameStyles={subtitleStyeName} text={subtitleText} />
+
       <AnchorButton name='Найти тур' />
     </section>
   );
