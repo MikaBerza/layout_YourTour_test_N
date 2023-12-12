@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={`${styles.wrapper} bgc-1`}>
       <div className={`${styles.card}`}>
-        <div className={`${styles.cardImg} bgp-1`}></div>
+        <div className={`${styles.cardImg} bgp-1`}/>
         <div className={styles.cardContent}>
           <h3 className={styles.cardTitle}>
             Пора в путешествие вместе с нами!
