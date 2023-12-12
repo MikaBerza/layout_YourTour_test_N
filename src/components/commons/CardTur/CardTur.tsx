@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import { LinkButton } from '../buttons/indexButtons';
-import styles from './cardTur.module.css';
+import styles from './CardTur.module.css';
 import { CardTurPropsType } from '../../../types/customType';
 
 const CardTur: React.FC<{ cardTurData: CardTurPropsType[] }> = ({

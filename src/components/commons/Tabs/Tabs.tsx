@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { MenuItemType } from '../../../types/customType';
-import styles from './tabs.module.css';
+import styles from './Tabs.module.css';
 
 const Tabs: React.FC<{
   tabsData: MenuItemType[];

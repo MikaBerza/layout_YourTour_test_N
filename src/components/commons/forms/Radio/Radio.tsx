@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './radio.module.css';
+import styles from './Radio.module.css';
 import { FormItemPropsType } from '../../../../types/customType';
 
 const Radio: React.FC<FormItemPropsType> = ({

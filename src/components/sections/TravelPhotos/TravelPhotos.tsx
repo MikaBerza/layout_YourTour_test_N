@@ -5,7 +5,7 @@ import { Title } from '../../../components/commons/Title';
 import { Subtitle } from '../../../components/commons/Subtitle';
 import { travelPhotosData } from '../../../utils/listsOfData';
 
-import styles from './travelPhotos.module.css';
+import styles from './TravelPhotos.module.css';
 import { SectionsPropsType } from '../../../types/customType';
 
 const TravelPhotos: React.FC<SectionsPropsType> = ({

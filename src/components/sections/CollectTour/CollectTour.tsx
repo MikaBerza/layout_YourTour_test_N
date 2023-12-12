@@ -14,7 +14,7 @@ import {
 } from '../../../components/commons/forms/indexForms';
 import { ButtonsGroup } from '../../../components/commons/buttons/indexButtons';
 
-import styles from './collectTour.module.css';
+import styles from './CollectTour.module.css';
 import { SectionsPropsType } from '../../../types/customType';
 
 const CollectTour: React.FC<SectionsPropsType> = ({

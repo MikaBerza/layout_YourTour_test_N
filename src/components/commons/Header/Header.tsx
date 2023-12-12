@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import { headerMenuData } from '../../../utils/listsOfData';
 import { handleSmoothScrolling } from '../../../utils/modules';
-import styles from './header.module.css';
+import styles from './Header.module.css';
 import { MenuItemType } from '../../../types/customType';
 
 const Header: React.FC = () => {

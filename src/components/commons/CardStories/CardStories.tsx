@@ -8,7 +8,7 @@ import {
   LinkItemSocialType,
 } from '../../../types/customType';
 
-import styles from './cardStories.module.css';
+import styles from './CardStories.module.css';
 
 const CardStories: React.FC<{ item: CardStoriesPropsType }> = ({ item }) => {
   // функция, генерации списка преимуществ

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import { CardReviewsPropsType } from '../../../types/customType';
 import { splitSentenceWithLineBreak } from '../../../utils/modules';
-import styles from './cardReviews.module.css';
+import styles from './CardReviews.module.css';
 
 const CardReviews: React.FC<CardReviewsPropsType> = (item) => {
   // функция, генерации списка отзывов

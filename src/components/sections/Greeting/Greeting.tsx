@@ -3,7 +3,7 @@ import { Title } from '../../../components/commons/Title';
 import { Subtitle } from '../../../components/commons/Subtitle';
 import { AnchorButton } from '../../../components/commons/buttons/indexButtons';
 
-import styles from './greeting.module.css';
+import styles from './Greeting.module.css';
 import { SectionsPropsType } from '../../../types/customType';
 
 const Greeting: React.FC<SectionsPropsType> = ({

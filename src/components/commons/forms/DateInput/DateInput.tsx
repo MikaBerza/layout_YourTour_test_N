@@ -1,6 +1,6 @@
 import React from 'react';
 import { FieldTitle } from '../indexForms';
-import styles from './dateInput.module.css';
+import styles from './DateInput.module.css';
 import { FormItemPropsType } from '../../../../types/customType';
 
 const DateInput: React.FC<FormItemPropsType> = ({ title, nameAttr, idAttr }) => {

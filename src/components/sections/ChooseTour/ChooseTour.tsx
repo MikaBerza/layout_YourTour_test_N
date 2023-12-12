@@ -13,7 +13,7 @@ import {
   cardTurData5,
 } from '../../../utils/listsOfData';
 
-import styles from './chooseTour.module.css';
+import styles from './ChooseTour.module.css';
 import { SectionsPropsType } from '../../../types/customType';
 
 const ChooseTour: React.FC<SectionsPropsType> = ({

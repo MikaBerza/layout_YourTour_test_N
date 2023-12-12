@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './fieldTitle.module.css';
+import styles from './FieldTitle.module.css';
 
 const FieldTitle: React.FC<{ htmlForAttr: string; text: string }> = ({
   htmlForAttr,

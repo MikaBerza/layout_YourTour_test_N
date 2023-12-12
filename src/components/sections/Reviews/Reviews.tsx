@@ -5,7 +5,7 @@ import { Subtitle } from '../../../components/commons/Subtitle';
 import { CardReviews } from '../../../components/commons/CardReviews';
 import { cardReviewsData } from '../../../utils/listsOfData';
 
-import styles from './reviews.module.css';
+import styles from './Reviews.module.css';
 import { SectionsPropsType } from '../../../types/customType';
 
 const Reviews: React.FC<SectionsPropsType> = ({

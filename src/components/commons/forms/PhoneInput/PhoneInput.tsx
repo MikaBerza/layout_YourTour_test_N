@@ -1,6 +1,6 @@
 import React from 'react';
 import { FieldTitle } from '../indexForms';
-import styles from './phoneInput.module.css';
+import styles from './PhoneInput.module.css';
 import { FormItemPropsType } from '../../../../types/customType';
 
 const PhoneInput: React.FC<FormItemPropsType> = ({

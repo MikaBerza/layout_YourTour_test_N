@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './title.module.css';
+import styles from './Title.module.css';
 import { TitleElementsPropsType } from '../../../types/customType';
 
 const Title: React.FC<TitleElementsPropsType> = ({
