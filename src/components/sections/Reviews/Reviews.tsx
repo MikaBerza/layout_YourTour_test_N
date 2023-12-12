@@ -10,12 +10,10 @@ const Reviews: React.FC = () => {
   return (
     <section className={styles.wrapper}>
       <Title
-        nameStyles='minorText'
         text='Отзывы наших путешественников'
         id='reviews'
       />
       <Subtitle
-        nameStyles='minorText'
         text='Идейные соображения высшего порядка, а также рамки и место обучения
         кадров'
       />

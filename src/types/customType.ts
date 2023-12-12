@@ -5,18 +5,9 @@ export type MenuItemType = {
 };
 
 export type TitleElementsPropsType = {
-  nameStyles: string | undefined;
-  text: string | undefined;
+  nameStyles?: string;
+  text: string;
   id?: string;
-};
-
-export type SectionsPropsType = {
-  titleStyleName: string;
-  titleText: string;
-  titleUniqueName: string;
-
-  subtitleStyeName?: string;
-  subtitleText?: string;
 };
 
 export type CardTurPropsType = {

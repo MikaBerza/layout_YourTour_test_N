@@ -9,9 +9,8 @@ import styles from './Stories.module.css';
 const Stories: React.FC = () => {
   return (
     <section className={styles.wrapper}>
-      <Title nameStyles='minorText' text='Истории путешествий' id='stories' />
+      <Title text='Истории путешествий' id='stories' />
       <Subtitle
-        nameStyles='minorText'
         text='Идейные соображения высшего порядка, а также рамки и место обучения
               кадров'
       />

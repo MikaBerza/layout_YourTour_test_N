@@ -10,12 +10,10 @@ const TravelPhotos: React.FC = () => {
   return (
     <>
       <Title
-        nameStyles='minorText'
         text='Фотографии путешествий'
         id='travel-photos'
       />
       <Subtitle
-        nameStyles='minorText'
         text='Идейные соображения высшего порядка, а также рамки и место обучения
         кадров'
       />
