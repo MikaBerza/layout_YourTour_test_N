@@ -13,12 +13,7 @@ const Header = () => {
 
   // функция, отследить прокрутку
   const trackScrolling = React.useCallback(() => {
-    const scrollY = window.scrollY;
-    if (scrollY > 450) {
-      setFlag(true);
-    } else {
-      setFlag(false);
-    }
+    () => setFlag(window.scrollY > 450);
   }, [setFlag]);
 
   React.useEffect(() => {
