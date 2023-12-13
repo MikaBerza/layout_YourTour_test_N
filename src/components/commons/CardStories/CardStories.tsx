@@ -10,6 +10,7 @@ import {
 import styles from './CardStories.module.css';
 
 const CardStories = (item: CardStoriesPropsType) => {
+  console.log(item);
   // функция, генерации списка преимуществ
   const generateListOfAdvantages = (
     item: AdvantagesItemType
@@ -48,7 +49,7 @@ const CardStories = (item: CardStoriesPropsType) => {
           <h3 className={styles.title}>{item.title}</h3>
           <p className={styles.description}>{item.description}</p>
           <ul className={styles.advantages}>
-            {item.advantages.length &&
+            {item.advantages.length > 0 &&
               item.advantages.map(generateListOfAdvantages)}
           </ul>
         </div>
