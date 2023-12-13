@@ -17,7 +17,8 @@ const InputField: React.FC<FormItemPropsType> = ({
     <div className={styles.wrapper}>
       <FieldTitle htmlForAttr={idAttr} text={title} />
       <input
-        className={`${styles.item} ${styles[nameStyles]}`}
+        // делаем проверку, чтобы в инспекторе не появлялся undefined
+        className={`${styles.item} ${nameStyles ? styles[nameStyles] : ''}`}
         name={nameAttr}
         type={typeAttr}
         id={idAttr}
