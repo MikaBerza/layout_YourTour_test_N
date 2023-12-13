@@ -36,7 +36,7 @@ const ChooseTour = () => {
     <section className={styles.wrapper}>
       <Title text='Выбери свой тур' id='choose-tour' />
       <Tabs tabsData={tabsData} setTabName={setTabName} />
-      <CardTur {...getTurData()} />
+      <CardTur cardTurData = {getTurData()} />
     </section>
   );
 };

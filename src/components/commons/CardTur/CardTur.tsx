@@ -3,12 +3,7 @@ import { LinkButton } from '../buttons/indexButtons';
 import styles from './CardTur.module.css';
 import { CardTurPropsType } from '../../../types/customType';
 
-const CardTur = (cardTurData: CardTurPropsType[]) => {
-  // после удаления React.FC потребовалась дополнительная проверка
-  if (!Array.isArray(cardTurData)) {
-    return null;
-  }
-
+const CardTur = ({ cardTurData }: { cardTurData: CardTurPropsType[] }) => {
   return (
     <div className={styles.wrapper}>
       {cardTurData.map((item: CardTurPropsType) => (
