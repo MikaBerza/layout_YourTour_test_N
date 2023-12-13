@@ -9,7 +9,7 @@ import {
   TextareaField,
 } from '../../../components/commons/forms/indexForms';
 import { FormButton } from '../../../components/commons/buttons/indexButtons';
-import styles from './QCollectTour.module.css';
+import styles from './CollectTour.module.css';
 
 const CollectTour = () => {
   return (

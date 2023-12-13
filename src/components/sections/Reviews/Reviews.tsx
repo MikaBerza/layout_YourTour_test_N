@@ -2,7 +2,7 @@ import { Title } from '../../../components/commons/Title';
 import { Subtitle } from '../../../components/commons/Subtitle';
 import { CardReviews } from '../../../components/commons/CardReviews';
 import { cardReviewsData } from '../../../utils/listsOfData';
-import styles from './QReviews.module.css';
+import styles from './Reviews.module.css';
 
 const Reviews = () => {
   return (
