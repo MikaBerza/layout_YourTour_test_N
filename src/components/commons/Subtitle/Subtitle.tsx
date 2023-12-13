@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Subtitle.module.css';
 import { TitleElementsPropsType } from '../../../types/customType';
 

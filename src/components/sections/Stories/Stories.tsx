@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Title } from '../../../components/commons/Title';
 import { Subtitle } from '../../../components/commons/Subtitle';
 import { CardStories } from '../../../components/commons/CardStories';

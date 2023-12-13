@@ -1,4 +1,3 @@
-import React from 'react';
 import { FieldTitle } from '../indexForms';
 import { listOptionData } from '../../../../utils/listsOfData';
 import styles from './SelectionField.module.css';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { FieldTitle } from '../indexForms';
 import styles from './TextareaField.module.css';
 import { FormItemPropsType } from '../../../../types/customType';
