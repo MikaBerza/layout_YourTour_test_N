@@ -6,7 +6,7 @@ import { Subtitle } from '../../../components/commons/Subtitle';
 import { travelPhotosData } from '../../../utils/listsOfData';
 import styles from './TravelPhotos.module.css';
 
-const TravelPhotos: React.FC = () => {
+const TravelPhotos = () => {
   return (
     <>
       <Title text='Фотографии путешествий' id='travel-photos' />

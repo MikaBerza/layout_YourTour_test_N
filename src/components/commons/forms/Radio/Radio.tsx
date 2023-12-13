@@ -2,12 +2,7 @@ import React from 'react';
 import styles from './Radio.module.css';
 import { FormItemPropsType } from '../../../../types/customType';
 
-const Radio: React.FC<FormItemPropsType> = ({
-  title,
-  nameAttr,
-  idAttr,
-  valueAttr,
-}) => {
+const Radio = ({ title, nameAttr, idAttr, valueAttr }: FormItemPropsType) => {
   return (
     <div className={styles.inner}>
       <input

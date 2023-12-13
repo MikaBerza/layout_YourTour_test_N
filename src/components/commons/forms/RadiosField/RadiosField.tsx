@@ -2,7 +2,7 @@ import React from 'react';
 import { Radio } from '../indexForms';
 import styles from './RadiosField.module.css';
 
-const RadiosField: React.FC<{ legendTitle: string }> = ({ legendTitle }) => {
+const RadiosField = ({ legendTitle }: { legendTitle: string }) => {
   return (
     <fieldset className={styles.wrapper}>
       <legend className={styles.title}>{legendTitle}</legend>

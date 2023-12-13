@@ -12,7 +12,7 @@ import {
 import { FormButton } from '../../../components/commons/buttons/indexButtons';
 import styles from './CollectTour.module.css';
 
-const CollectTour: React.FC = () => {
+const CollectTour = () => {
   return (
     <section className={styles.wrapper}>
       <Title text='Собери свой тур' id='collect-tour' />

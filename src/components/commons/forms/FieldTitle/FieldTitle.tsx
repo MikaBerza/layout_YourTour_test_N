@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from './FieldTitle.module.css';
 
-const FieldTitle: React.FC<{ htmlForAttr: string; text: string }> = ({
+const FieldTitle = ({
   htmlForAttr,
   text,
+}: {
+  htmlForAttr: string;
+  text: string;
 }) => {
   return (
     <label className={styles.text} htmlFor={htmlForAttr}>

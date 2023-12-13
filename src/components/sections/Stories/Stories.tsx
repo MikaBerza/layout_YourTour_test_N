@@ -6,7 +6,7 @@ import { CardStories } from '../../../components/commons/CardStories';
 import { cardStoriesData } from '../../../utils/listsOfData';
 import styles from './Stories.module.css';
 
-const Stories: React.FC = () => {
+const Stories = () => {
   return (
     <section className={styles.wrapper}>
       <Title text='Истории путешествий' id='stories' />

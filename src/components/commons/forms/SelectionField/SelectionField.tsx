@@ -4,12 +4,12 @@ import { listOptionData } from '../../../../utils/listsOfData';
 import styles from './SelectionField.module.css';
 import { FormItemPropsType } from '../../../../types/customType';
 
-const SelectionField: React.FC<FormItemPropsType> = ({
+const SelectionField = ({
   title,
   nameAttr,
   idAttr,
   placeholderAttr,
-}) => {
+}: FormItemPropsType) => {
   return (
     <div className={styles.wrapper}>
       <FieldTitle htmlForAttr={idAttr} text={title} />

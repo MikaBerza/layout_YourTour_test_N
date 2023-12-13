@@ -3,12 +3,12 @@ import { FieldTitle } from '../indexForms';
 import styles from './TextareaField.module.css';
 import { FormItemPropsType } from '../../../../types/customType';
 
-const TextareaField: React.FC<FormItemPropsType> = ({
+const TextareaField = ({
   title,
   nameAttr,
   idAttr,
-  maxLengthAttr
-}) => {
+  maxLengthAttr,
+}: FormItemPropsType) => {
   return (
     <div className={styles.wrapper}>
       <FieldTitle htmlForAttr={idAttr} text={title} />

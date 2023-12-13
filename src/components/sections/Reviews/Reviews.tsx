@@ -6,7 +6,7 @@ import { CardReviews } from '../../../components/commons/CardReviews';
 import { cardReviewsData } from '../../../utils/listsOfData';
 import styles from './Reviews.module.css';
 
-const Reviews: React.FC = () => {
+const Reviews = () => {
   return (
     <section className={styles.wrapper}>
       <Title text='Отзывы наших путешественников' id='reviews' />

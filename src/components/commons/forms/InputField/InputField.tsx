@@ -3,7 +3,7 @@ import { FieldTitle } from '../indexForms';
 import styles from './InputField.module.css';
 import { FormItemPropsType } from '../../../../types/customType';
 
-const InputField: React.FC<FormItemPropsType> = ({
+const InputField = ({
   nameStyles,
   title,
   nameAttr,
@@ -12,7 +12,7 @@ const InputField: React.FC<FormItemPropsType> = ({
   placeholderAttr,
   patternAttr,
   maxLengthAttr,
-}) => {
+}: FormItemPropsType) => {
   return (
     <div className={styles.wrapper}>
       <FieldTitle htmlForAttr={idAttr} text={title} />
