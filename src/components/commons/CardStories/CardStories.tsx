@@ -7,7 +7,7 @@ import {
   AdvantagesItemType,
   LinkItemSocialType,
 } from '../../../types/customType';
-import styles from './QCardStories.module.css';
+import styles from './CardStories.module.css';
 
 const CardStories = (item: CardStoriesPropsType) => {
 
