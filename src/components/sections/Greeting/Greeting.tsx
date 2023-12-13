@@ -1,6 +1,6 @@
 import { Subtitle } from '../../../components/commons/Subtitle';
 import { AnchorButton } from '../../../components/commons/buttons/indexButtons';
-import styles from './Greeting.module.css';
+import styles from './QGreeting.module.css';
 
 const Greeting = () => {
   return (

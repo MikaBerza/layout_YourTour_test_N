@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Title } from '../../../components/commons/Title';
 import { Subtitle } from '../../../components/commons/Subtitle';
 import { travelPhotosData } from '../../../utils/listsOfData';
-import styles from './TravelPhotos.module.css';
+import styles from './QTravelPhotos.module.css';
 
 const TravelPhotos = () => {
   return (
