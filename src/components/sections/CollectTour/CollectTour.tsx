@@ -4,10 +4,7 @@ import { Subtitle } from '../../../components/commons/Subtitle';
 
 import {
   ChecksField,
-  DateInput,
-  EmailInput,
-  NameInput,
-  PhoneInput,
+  InputField,
   RadiosField,
   SelectionField,
   TextareaField,
@@ -26,11 +23,12 @@ const CollectTour: React.FC = () => {
 
       <div className={styles.inner}>
         <form className={styles.formFill} action='#'>
-          <div className={styles.inputsFields}>
+          <div className={styles.container}>
             {/* Ввод имени */}
-            <NameInput
+            <InputField
               title='Имя'
               nameAttr='name'
+              typeAttr='text'
               idAttr='connectionName'
               placeholderAttr='Введите Ваше имя'
             />
@@ -42,30 +40,39 @@ const CollectTour: React.FC = () => {
               placeholderAttr='Куда хотите ехать'
             />
             {/* Ввод email */}
-            <EmailInput
+            <InputField
               title='Email'
               nameAttr='email'
+              typeAttr='email'
               idAttr='connectionEmail'
               placeholderAttr='example@mail.com'
             />
             {/* Ввод телефона */}
-            <PhoneInput
+            <InputField
               title='Телефон'
               nameAttr='phone'
+              typeAttr='tel'
               idAttr='connectionPhone'
               placeholderAttr='+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _'
+              patternAttr='\+7\d{10}'
+              maxLengthAttr={12}
             />
 
-            {/* Ввод даты от*/}
-            <DateInput
+            {/* Ввод даты от */}
+            <InputField
+              nameStyles='itemDate'
               title='Дата от'
               nameAttr='dateFrom'
+              typeAttr='date'
               idAttr='connectionDateFrom'
             />
-            {/* Ввод даты до*/}
-            <DateInput
+
+            {/* Ввод даты до */}
+            <InputField
+              nameStyles='itemDate'
               title='Дата до'
               nameAttr='dateTo'
+              typeAttr='date'
               idAttr='connectionDateTo'
             />
           </div>
@@ -74,6 +81,7 @@ const CollectTour: React.FC = () => {
             title='Комментарий'
             nameAttr='comment'
             idAttr='connectionComment'
+            maxLengthAttr={300}
           />
           {/* Радио кнопки */}
           <RadiosField legendTitle='Вам есть 18 лет?' />

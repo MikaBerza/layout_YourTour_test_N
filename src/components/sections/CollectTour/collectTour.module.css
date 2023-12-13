@@ -25,7 +25,7 @@
   line-height: 142%;
 }
 
-.inputsFields {
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -53,7 +53,7 @@
 /*660px___________________________________________________*/
 @media (max-width: 660px) {
 
-  .inputsFields {
+  .container {
     flex-direction: column;
   }
 }

@@ -14,6 +14,7 @@ const ChecksField: React.FC<{
         type='checkbox'
         name='acceptAgreement'
         id='connectionAgreement'
+        required
       />
       <label className={styles.customCheckbox} htmlFor='connectionAgreement' />
       <p className={styles.text}>

@@ -19,10 +19,15 @@ export type CardTurPropsType = {
 };
 
 export type FormItemPropsType = {
+  nameStyles?: string;
   title: string;
   nameAttr: string;
+  typeAttr?: string;
   idAttr: string;
   placeholderAttr?: string;
+
+  patternAttr?: string;
+  maxLengthAttr?: number;
   valueAttr?: string;
 };
 

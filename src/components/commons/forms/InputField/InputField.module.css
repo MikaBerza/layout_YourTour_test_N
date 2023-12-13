@@ -19,6 +19,16 @@
   outline: none;
 }
 
+.itemDate[type="date"]::-webkit-calendar-picker-indicator {
+  /* уберем значок календаря у (input type="date") */
+  display: none;
+}
+
+.itemDate {
+  text-transform: uppercase;
+  color: var(--gray300-color);
+}
+
 .item::placeholder {
   color: var(--gray300-color);
 }

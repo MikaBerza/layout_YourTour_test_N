@@ -1,29 +1,36 @@
 import React from 'react';
 import { FieldTitle } from '../indexForms';
-import styles from './NameInput.module.css';
+import styles from './InputField.module.css';
 import { FormItemPropsType } from '../../../../types/customType';
 
-const NameInput: React.FC<FormItemPropsType> = ({
+const InputField: React.FC<FormItemPropsType> = ({
+  nameStyles,
   title,
   nameAttr,
+  typeAttr,
   idAttr,
   placeholderAttr,
+  patternAttr,
+  maxLengthAttr,
 }) => {
   return (
     <div className={styles.wrapper}>
       <FieldTitle htmlForAttr={idAttr} text={title} />
       <input
-        className={styles.item}
+        className={`${styles.item} ${styles[nameStyles]}`}
         name={nameAttr}
-        type='text'
+        type={typeAttr}
         id={idAttr}
-        placeholder={placeholderAttr}
         autoComplete='off'
+        placeholder={placeholderAttr}
         required
+        //
+        pattern={patternAttr}
+        maxLength={maxLengthAttr}
       />
     </div>
   );
 };
 
-NameInput.displayName = 'NameInput';
-export default NameInput;
+InputField.displayName = 'InputField';
+export default InputField;

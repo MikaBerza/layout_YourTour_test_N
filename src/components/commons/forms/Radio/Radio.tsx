@@ -16,6 +16,7 @@ const Radio: React.FC<FormItemPropsType> = ({
         name={nameAttr}
         id={idAttr}
         value={valueAttr}
+        required
       />
       <label className={styles.text} htmlFor={idAttr}>
         {title}

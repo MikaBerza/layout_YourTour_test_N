@@ -7,6 +7,7 @@ const TextareaField: React.FC<FormItemPropsType> = ({
   title,
   nameAttr,
   idAttr,
+  maxLengthAttr
 }) => {
   return (
     <div className={styles.wrapper}>
@@ -16,7 +17,7 @@ const TextareaField: React.FC<FormItemPropsType> = ({
         name={nameAttr}
         id={idAttr}
         autoComplete='off'
-        maxLength={300}
+        maxLength={maxLengthAttr}
         required
       />
     </div>
