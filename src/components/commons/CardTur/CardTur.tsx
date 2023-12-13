@@ -5,9 +5,12 @@ import { LinkButton } from '../buttons/indexButtons';
 import styles from './CardTur.module.css';
 import { CardTurPropsType } from '../../../types/customType';
 
-const CardTur: React.FC<{ cardTurData: CardTurPropsType[] }> = ({
-  cardTurData,
-}) => {
+const CardTur = (cardTurData: CardTurPropsType[]) => {
+  // после удаления React.FC потребовалась дополнительная проверка
+  if (!Array.isArray(cardTurData)) {
+    return null;
+  }
+
   return (
     <div className={styles.wrapper}>
       {cardTurData.map((item: CardTurPropsType) => (

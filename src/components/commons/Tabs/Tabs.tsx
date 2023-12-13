@@ -2,10 +2,13 @@ import React from 'react';
 import { MenuItemType } from '../../../types/customType';
 import styles from './Tabs.module.css';
 
-const Tabs: React.FC<{
+const Tabs = ({
+  tabsData,
+  setTabName,
+}: {
   tabsData: MenuItemType[];
   setTabName: (itemName: string) => void;
-}> = ({ tabsData, setTabName }) => {
+}) => {
   const [elementId, setElementId] = React.useState<string>(tabsData[0].id);
 
   // функция, обработать клик по вкладке

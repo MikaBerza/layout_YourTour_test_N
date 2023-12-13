@@ -14,7 +14,7 @@ import {
 } from '../../../utils/listsOfData';
 import styles from './ChooseTour.module.css';
 
-const ChooseTour: React.FC = () => {
+const ChooseTour = () => {
   const [tabName, setTabName] = React.useState('Популярные');
 
   const getTurData = React.useCallback(() => {
@@ -36,7 +36,7 @@ const ChooseTour: React.FC = () => {
     <section className={styles.wrapper}>
       <Title text='Выбери свой тур' id='choose-tour' />
       <Tabs tabsData={tabsData} setTabName={setTabName} />
-      <CardTur cardTurData={getTurData()} />
+      <CardTur {...getTurData()} />
     </section>
   );
 };

@@ -17,7 +17,7 @@ const Stories: React.FC = () => {
       <div className={styles.inner}>
         {cardStoriesData.length &&
           cardStoriesData.map((item) => (
-            <CardStories item={item} key={item.id} />
+            <CardStories {...item} key={item.id} />
           ))}
       </div>
     </section>

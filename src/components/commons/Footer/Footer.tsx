@@ -1,11 +1,10 @@
-import React from 'react';
 import styles from './Footer.module.css';
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <footer className={`${styles.wrapper} bgc-1`}>
       <div className={`${styles.card}`}>
-        <div className={`${styles.cardImg} bgp-1`}/>
+        <div className={`${styles.cardImg} bgp-1`} />
         <div className={styles.cardContent}>
           <h3 className={styles.cardTitle}>
             Пора в путешествие вместе с нами!

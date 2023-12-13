@@ -8,7 +8,7 @@ import Logo from './Logo';
 import styles from './Header.module.css';
 import { MenuItemType } from '../../../types/customType';
 
-const Header: React.FC = () => {
+const Header = () => {
   const [flag, setFlag] = React.useState<boolean>(false);
 
   // функция, отследить прокрутку
@@ -36,10 +36,7 @@ const Header: React.FC = () => {
   // функция, сгенерировать пункты меню (JSX-элементы)
   const generateMenuItems = (item: MenuItemType): React.JSX.Element => {
     return (
-      <li
-        key={item.id}
-        className={styles.menuItem}
-      >
+      <li key={item.id} className={styles.menuItem}>
         <a
           className={`${styles.menuItemAnchor} ${
             flag ? `${styles.scrolledColor} ${styles.scrolledHover}` : ''

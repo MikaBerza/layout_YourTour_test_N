@@ -1,9 +1,11 @@
-import React from 'react';
 import styles from './FormButton.module.css';
 
-const FormButton: React.FC<{ nameBtn: string; nameStyles: string }> = ({
+const FormButton = ({
   nameBtn,
   nameStyles,
+}: {
+  nameBtn: string;
+  nameStyles: string;
 }) => {
   return <button className={styles[nameStyles]}>{nameBtn}</button>;
 };

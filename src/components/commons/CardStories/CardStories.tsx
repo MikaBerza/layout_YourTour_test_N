@@ -7,10 +7,9 @@ import {
   AdvantagesItemType,
   LinkItemSocialType,
 } from '../../../types/customType';
-
 import styles from './CardStories.module.css';
 
-const CardStories: React.FC<{ item: CardStoriesPropsType }> = ({ item }) => {
+const CardStories = (item: CardStoriesPropsType) => {
   // функция, генерации списка преимуществ
   const generateListOfAdvantages = (
     item: AdvantagesItemType
