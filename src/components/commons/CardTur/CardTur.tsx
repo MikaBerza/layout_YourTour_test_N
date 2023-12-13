@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { LinkButton } from '../buttons/indexButtons';
-import styles from './CardTur.module.css';
+import styles from './QCardTur.module.css';
 import { CardTurPropsType } from '../../../types/customType';
 
 const CardTur = ({ cardTurData }: { cardTurData: CardTurPropsType[] }) => {

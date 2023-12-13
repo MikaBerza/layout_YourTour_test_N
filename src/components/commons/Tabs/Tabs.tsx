@@ -1,6 +1,6 @@
 import React from 'react';
 import { MenuItemType } from '../../../types/customType';
-import styles from './Tabs.module.css';
+import styles from './QTabs.module.css';
 
 const Tabs = ({
   tabsData,

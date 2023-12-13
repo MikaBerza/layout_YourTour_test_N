@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { headerMenuData } from '../../../utils/listsOfData';
 import Logo from './Logo';
 
-import styles from './Header.module.css';
+import styles from './QHeader.module.css';
 import { MenuItemType } from '../../../types/customType';
 
 const Header = () => {
