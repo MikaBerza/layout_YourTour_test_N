@@ -1,4 +1,4 @@
-import styles from './Subtitle.module.css';
+import styles from './QSubtitle.module.css';
 import { TitleElementsPropsType } from '../../../types/customType';
 
 const Subtitle = ({ nameStyles = 'minorText', text }: TitleElementsPropsType) => {

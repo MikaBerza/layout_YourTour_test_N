@@ -1,4 +1,4 @@
-import styles from './Footer.module.css';
+import styles from './QFooter.module.css';
 
 const Footer = () => {
   return (

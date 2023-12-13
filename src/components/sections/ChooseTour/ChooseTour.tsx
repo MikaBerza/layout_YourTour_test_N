@@ -12,7 +12,7 @@ import {
   cardTurData4,
   cardTurData5,
 } from '../../../utils/listsOfData';
-import styles from './ChooseTour.module.css';
+import styles from './QChooseTour.module.css';
 
 const ChooseTour = () => {
   const [tabName, setTabName] = React.useState('Популярные');

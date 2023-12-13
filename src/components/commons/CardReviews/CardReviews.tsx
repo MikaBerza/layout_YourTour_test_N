@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { CardReviewsPropsType } from '../../../types/customType';
 import { splitSentenceWithLineBreak } from '../../../utils/modules';
-import styles from './CardReviews.module.css';
+import styles from './QCardReviews.module.css';
 
 const CardReviews = (item: CardReviewsPropsType) => {
   // функция, генерации списка отзывов
