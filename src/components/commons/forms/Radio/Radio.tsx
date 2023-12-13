@@ -5,7 +5,7 @@ const Radio = ({ title, name, id, value }: FormItemPropsType) => {
   return (
     <div className={styles.inner}>
       <input
-        className={styles.item}
+        className={styles.input}
         type='radio'
         name={name}
         id={id}

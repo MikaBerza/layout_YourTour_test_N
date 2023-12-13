@@ -10,7 +10,7 @@ import {
 import styles from './CardStories.module.css';
 
 const CardStories = (item: CardStoriesPropsType) => {
-  console.log(item);
+
   // функция, генерации списка преимуществ
   const generateListOfAdvantages = (
     item: AdvantagesItemType

@@ -14,7 +14,7 @@ const SelectionField = ({
       <FieldTitle htmlForAttr={id} text={title} />
       <div className={styles.inner}>
         <select
-          className={styles.item}
+          className={styles.selects}
           name={name}
           id={id}
           required

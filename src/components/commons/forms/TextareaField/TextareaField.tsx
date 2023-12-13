@@ -12,7 +12,7 @@ const TextareaField = ({
     <div className={styles.wrapper}>
       <FieldTitle htmlForAttr={id} text={title} />
       <textarea
-        className={styles.item}
+        className={styles.textarea}
         name={name}
         id={id}
         autoComplete='off'

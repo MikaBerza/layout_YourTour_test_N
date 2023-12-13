@@ -3,7 +3,7 @@
   margin-bottom: 33px;
 }
 
-.item {
+.textarea {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -20,18 +20,18 @@
   resize: none;
 }
 
-.item:hover {
+.textarea:hover {
   background: var(--beige200-color);
   cursor: pointer;
 }
 
-.item:focus {
+.textarea:focus {
   border: 1px solid var(--gray300-color);
 }
 
 @media (max-width: 1024px) {
 
-  .item {
+  .textarea {
     padding: 20px 45px 20px 20px;
   }
 }
@@ -48,7 +48,7 @@
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
 
-  .item {
+  .textarea {
     height: 132px;
     padding: 10px 31px 10px 10px;
   }

@@ -13,7 +13,7 @@ const ChecksField = ({
   return (
     <div className={styles.wrapper}>
       <input
-        className={styles.item}
+        className={styles.input}
         type='checkbox'
         name='acceptAgreement'
         id='connectionAgreement'

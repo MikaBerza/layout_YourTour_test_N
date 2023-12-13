@@ -2,7 +2,7 @@
   margin-right: 31px;
 }
 
-.item {
+.input {
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -13,13 +13,13 @@
   cursor: pointer;
 }
 
-.item+.text {
+.input+.text {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.item+.text::before {
+.input+.text::before {
   width: 24px;
   height: 24px;
   margin-right: 11px;
@@ -29,7 +29,7 @@
   content: '';
 }
 
-.item:checked+.text::before {
+.input:checked+.text::before {
   position: relative;
   font-size: 59px;
   text-align: center;
@@ -44,7 +44,7 @@
     margin-right: 30px;
   }
 
-  .item+.text::before {
+  .input+.text::before {
     width: 19px;
     height: 19px;
     margin-right: 9px;
