@@ -1,4 +1,4 @@
-import styles from './Radio.module.css';
+import styles from './QRadio.module.css';
 import { FormItemPropsType } from '../../../../types/customType';
 
 const Radio = ({ title, name, id, value }: FormItemPropsType) => {

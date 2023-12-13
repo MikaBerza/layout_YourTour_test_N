@@ -1,4 +1,4 @@
-import styles from './FieldTitle.module.css';
+import styles from './QFieldTitle.module.css';
 
 const FieldTitle = ({
   htmlForAttr,
