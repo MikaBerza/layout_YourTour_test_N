@@ -4,19 +4,19 @@ import { FormItemPropsType } from '../../../../types/customType';
 
 const TextareaField = ({
   title,
-  nameAttr,
-  idAttr,
-  maxLengthAttr,
+  name,
+  id,
+  maxLength,
 }: FormItemPropsType) => {
   return (
     <div className={styles.wrapper}>
-      <FieldTitle htmlForAttr={idAttr} text={title} />
+      <FieldTitle htmlForAttr={id} text={title} />
       <textarea
         className={styles.item}
-        name={nameAttr}
-        id={idAttr}
+        name={name}
+        id={id}
         autoComplete='off'
-        maxLength={maxLengthAttr}
+        maxLength={maxLength}
         required
       />
     </div>

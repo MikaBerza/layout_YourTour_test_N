@@ -26,61 +26,61 @@ const CollectTour = () => {
             {/* Ввод имени */}
             <InputField
               title='Имя'
-              nameAttr='name'
-              typeAttr='text'
-              idAttr='connectionName'
-              placeholderAttr='Введите Ваше имя'
+              name='name'
+              type='text'
+              id='connectionName'
+              placeholder='Введите Ваше имя'
             />
             {/* Ввод направления */}
             <SelectionField
               title='Направление'
-              nameAttr='direction'
-              idAttr='connectionDropdown'
-              placeholderAttr='Куда хотите ехать'
+              name='direction'
+              id='connectionDropdown'
+              placeholder='Куда хотите ехать'
             />
             {/* Ввод email */}
             <InputField
               title='Email'
-              nameAttr='email'
-              typeAttr='email'
-              idAttr='connectionEmail'
-              placeholderAttr='example@mail.com'
+              name='email'
+              type='email'
+              id='connectionEmail'
+              placeholder='example@mail.com'
             />
             {/* Ввод телефона */}
             <InputField
               title='Телефон'
-              nameAttr='phone'
-              typeAttr='tel'
-              idAttr='connectionPhone'
-              placeholderAttr='+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _'
-              patternAttr='\+7\d{10}'
-              maxLengthAttr={12}
+              name='phone'
+              type='tel'
+              id='connectionPhone'
+              placeholder='+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _'
+              pattern='\+7\d{10}'
+              maxLength={12}
             />
 
             {/* Ввод даты от */}
             <InputField
               nameStyles='itemDate'
               title='Дата от'
-              nameAttr='dateFrom'
-              typeAttr='date'
-              idAttr='connectionDateFrom'
+              name='dateFrom'
+              type='date'
+              id='connectionDateFrom'
             />
 
             {/* Ввод даты до */}
             <InputField
               nameStyles='itemDate'
               title='Дата до'
-              nameAttr='dateTo'
-              typeAttr='date'
-              idAttr='connectionDateTo'
+              name='dateTo'
+              type='date'
+              id='connectionDateTo'
             />
           </div>
           {/* Ввод комментария*/}
           <TextareaField
             title='Комментарий'
-            nameAttr='comment'
-            idAttr='connectionComment'
-            maxLengthAttr={300}
+            name='comment'
+            id='connectionComment'
+            maxLength={300}
           />
           {/* Радио кнопки */}
           <RadiosField legendTitle='Вам есть 18 лет?' />

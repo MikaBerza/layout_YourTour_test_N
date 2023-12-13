@@ -5,23 +5,23 @@ import { FormItemPropsType } from '../../../../types/customType';
 
 const SelectionField = ({
   title,
-  nameAttr,
-  idAttr,
-  placeholderAttr,
+  name,
+  id,
+  placeholder,
 }: FormItemPropsType) => {
   return (
     <div className={styles.wrapper}>
-      <FieldTitle htmlForAttr={idAttr} text={title} />
+      <FieldTitle htmlForAttr={id} text={title} />
       <div className={styles.inner}>
         <select
           className={styles.item}
-          name={nameAttr}
-          id={idAttr}
+          name={name}
+          id={id}
           required
           defaultValue=''
         >
           <option value='' disabled>
-            {placeholderAttr}
+            {placeholder}
           </option>
           {listOptionData.map((item) => {
             return (

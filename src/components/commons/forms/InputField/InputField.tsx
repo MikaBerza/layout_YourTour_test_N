@@ -5,28 +5,28 @@ import { FormItemPropsType } from '../../../../types/customType';
 const InputField = ({
   nameStyles,
   title,
-  nameAttr,
-  typeAttr,
-  idAttr,
-  placeholderAttr,
-  patternAttr,
-  maxLengthAttr,
+  name,
+  type,
+  id,
+  placeholder,
+  pattern,
+  maxLength,
 }: FormItemPropsType) => {
   return (
     <div className={styles.wrapper}>
-      <FieldTitle htmlForAttr={idAttr} text={title} />
+      <FieldTitle htmlForAttr={id} text={title} />
       <input
         // делаем проверку, чтобы в инспекторе не появлялся undefined
         className={`${styles.item} ${nameStyles ? styles[nameStyles] : ''}`}
-        name={nameAttr}
-        type={typeAttr}
-        id={idAttr}
+        name={name}
+        type={type}
+        id={id}
         autoComplete='off'
-        placeholder={placeholderAttr}
+        placeholder={placeholder}
         required
         //
-        pattern={patternAttr}
-        maxLength={maxLengthAttr}
+        pattern={pattern}
+        maxLength={maxLength}
       />
     </div>
   );

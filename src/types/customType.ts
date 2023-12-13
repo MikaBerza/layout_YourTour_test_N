@@ -21,14 +21,14 @@ export type CardTurPropsType = {
 export type FormItemPropsType = {
   nameStyles?: string;
   title: string;
-  nameAttr: string;
-  typeAttr?: string;
-  idAttr: string;
-  placeholderAttr?: string;
+  name: string;
+  type?: string;
+  id: string;
+  placeholder?: string;
 
-  patternAttr?: string;
-  maxLengthAttr?: number;
-  valueAttr?: string;
+  pattern?: string;
+  maxLength?: number;
+  value?: string;
 };
 
 export type LinkItemSocialType = {

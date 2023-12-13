@@ -8,15 +8,15 @@ const RadiosField = ({ legendTitle }: { legendTitle: string }) => {
       <div className={styles.group}>
         <Radio
           title='Да'
-          nameAttr='clientAge'
-          idAttr='connectionAgeYes'
-          valueAttr='Yes'
+          name='clientAge'
+          id='connectionAgeYes'
+          value='Yes'
         />
         <Radio
           title='Нет'
-          nameAttr='clientAge'
-          idAttr='connectionAgeNo'
-          valueAttr='No'
+          name='clientAge'
+          id='connectionAgeNo'
+          value='No'
         />
       </div>
     </fieldset>
