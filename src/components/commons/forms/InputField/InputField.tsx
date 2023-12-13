@@ -17,7 +17,7 @@ const InputField = ({
       <FieldTitle htmlForAttr={id} text={title} />
       <input
         // делаем проверку, чтобы в инспекторе не появлялся undefined
-        className={`${styles.item} ${nameStyles ? styles[nameStyles] : ''}`}
+        className={`${styles.input} ${nameStyles ? styles[nameStyles] : ''}`}
         name={name}
         type={type}
         id={id}

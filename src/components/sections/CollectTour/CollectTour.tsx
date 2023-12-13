@@ -59,7 +59,7 @@ const CollectTour = () => {
 
             {/* Ввод даты от */}
             <InputField
-              nameStyles='itemDate'
+              nameStyles='inputDate'
               title='Дата от'
               name='dateFrom'
               type='date'
@@ -68,7 +68,7 @@ const CollectTour = () => {
 
             {/* Ввод даты до */}
             <InputField
-              nameStyles='itemDate'
+              nameStyles='inputDate'
               title='Дата до'
               name='dateTo'
               type='date'

@@ -3,7 +3,7 @@
   margin-bottom: 33px;
 }
 
-.item {
+.input {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -19,26 +19,26 @@
   outline: none;
 }
 
-.itemDate[type="date"]::-webkit-calendar-picker-indicator {
+.inputDate[type="date"]::-webkit-calendar-picker-indicator {
   /* уберем значок календаря у (input type="date") */
   display: none;
 }
 
-.itemDate {
+.inputDate {
   text-transform: uppercase;
   color: var(--gray300-color);
 }
 
-.item::placeholder {
+.input::placeholder {
   color: var(--gray300-color);
 }
 
-.item:hover {
+.input:hover {
   background: var(--beige200-color);
   cursor: pointer;
 }
 
-.item:focus {
+.input:focus {
   border: 1px solid var(--gray300-color);
 }
 
@@ -48,11 +48,11 @@
     width: calc(50% - 10px);
   }
 
-  .item {
+  .input {
     padding: 20px 45px 20px 20px;
   }
 
-  .item::placeholder {
+  .input::placeholder {
     font-size: 20px;
   }
 }
@@ -60,7 +60,7 @@
 /*770px___________________________________________________*/
 @media (max-width: 770px) {
 
-  .item::placeholder {
+  .input::placeholder {
     font-size: 18px;
   }
 }
@@ -77,12 +77,12 @@
 /*550px___________________________________________________*/
 @media (max-width: 550px) {
 
-  .item {
+  .input {
     height: 43.5px;
     padding: 10px 31px 10px 10px;
   }
 
-  .item::placeholder {
+  .input::placeholder {
     font-size: 16px;
   }
 }
