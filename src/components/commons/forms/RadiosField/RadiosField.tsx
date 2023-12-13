@@ -1,5 +1,5 @@
 import { Radio } from '../indexForms';
-import styles from './QRadiosField.module.css';
+import styles from './RadiosField.module.css';
 
 const RadiosField = ({ legendTitle }: { legendTitle: string }) => {
   return (

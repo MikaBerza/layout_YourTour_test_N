@@ -1,6 +1,6 @@
 import { FieldTitle } from '../indexForms';
 import { listOptionData } from '../../../../utils/listsOfData';
-import styles from './QSelectionField.module.css';
+import styles from './SelectionField.module.css';
 import { FormItemPropsType } from '../../../../types/customType';
 
 const SelectionField = ({

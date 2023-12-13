@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './QChecksField.module.css';
+import styles from './ChecksField.module.css';
 
 const ChecksField = ({
   text,
