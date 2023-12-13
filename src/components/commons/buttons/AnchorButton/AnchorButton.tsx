@@ -1,5 +1,5 @@
 'use client';
-import styles from './QAnchorButton.module.css';
+import styles from './AnchorButton.module.css';
 
 const AnchorButton = ({ name }: { name: string }) => {
   return (
